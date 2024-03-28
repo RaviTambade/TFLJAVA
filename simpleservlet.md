@@ -1,3 +1,5 @@
+## Servlet
+
 A servlet is a Java class that extends the capabilities of servers to handle requests and responses in a web application. Servlets are part of the Java Enterprise Edition (Java EE) platform, now known as Jakarta EE. They are primarily used for building dynamic, server-side web applications.
 
 Servlets are managed by a servlet container, also known as a servlet engine or web container, which is typically part of a web server or an application server. The servlet container is responsible for loading, initializing, and executing servlets in response to incoming requests from clients (such as web browsers).
@@ -19,6 +21,7 @@ Some key features and characteristics of servlets include:
 Overall, servlets play a crucial role in building robust and scalable web applications in Java, providing a powerful mechanism for server-side programming and interaction with clients over the web.
 
 
+## Servlet Step by Step
 
 To create a servlet in Java, you typically follow these steps:
 
@@ -84,6 +87,9 @@ public class MyServlet extends HttpServlet {
 
 This is a very basic outline. Depending on your project requirements and the servlet container you're using, there may be additional steps or configuration settings needed.
 
+
+#Servlet Lifecycle
+
 In Java Servlets, the life cycle refers to the sequence of events that occur from the moment a servlet is initialized until it is destroyed. Understanding the servlet life cycle is essential for proper servlet development and maintenance. The servlet life cycle consists of several stages:
 
 1. **Loading**: When a servlet container (such as Tomcat, Jetty, or any other Java EE-compliant server) starts up or when the first request for a servlet is received, the container loads the servlet class. This typically involves loading the class bytecode into memory.
@@ -148,3 +154,173 @@ Inside the `service()` method:
 
 This servlet demonstrates how the `service()` method can be used to handle different types of HTTP requests within the same servlet.
 
+
+# Servlet with HTTP action methods
+
+In Java servlets, the `doGet()` and `doPost()` methods are used to handle HTTP GET and POST requests, respectively. These methods are overridden from the `HttpServlet` class and are called by the servlet container when a corresponding HTTP request is received.
+
+In addition to doGet() and doPost(), there are several other HTTP methods that can be handled by servlets, including doPut(), doDelete(), doHead(), doOptions(), doTrace(), and doPatch(). These methods correspond to different HTTP operations and can be used to implement RESTful APIs or handle various types of requests. 
+
+Here's an explanation of each method:
+
+1. **doGet() Method**:
+   - The `doGet()` method is invoked by the servlet container when the servlet receives an HTTP GET request from a client.
+   - It is typically used to handle requests that retrieve information from the server without modifying any data on the server.
+   - The `doGet()` method takes two parameters:
+     - `HttpServletRequest`: Represents the request made by the client and contains information such as parameters, headers, and cookies.
+     - `HttpServletResponse`: Represents the response that will be sent back to the client and allows the servlet to set response headers and content.
+   - Example:
+     ```java
+     protected void doGet(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle GET request here
+     }
+     ```
+
+2. **doPost() Method**:
+   - The `doPost()` method is invoked by the servlet container when the servlet receives an HTTP POST request from a client.
+   - It is typically used to handle requests that submit data to the server, such as form submissions, and modify data on the server.
+   - The `doPost()` method takes the same parameters as `doGet()`: `HttpServletRequest` and `HttpServletResponse`.
+   - Example:
+     ```java
+     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle POST request here
+     }
+     ```
+
+In many cases, a servlet will override both `doGet()` and `doPost()` methods to handle both GET and POST requests. The decision of which method to use depends on the type of request being made and the nature of the data being sent or retrieved.
+
+It's important to note that both `doGet()` and `doPost()` methods can throw `ServletException` and `IOException`, which should be handled appropriately within the method or propagated to the caller.
+
+In addition to `doGet()` and `doPost()`, there are several other HTTP methods that can be handled by servlets, including `doPut()`, `doDelete()`, `doHead()`, `doOptions()`, `doTrace()`, and `doPatch()`. These methods correspond to different HTTP operations and can be used to implement RESTful APIs or handle various types of requests. Here's a brief explanation of each method:
+
+1. **doPut() Method**:
+   - The `doPut()` method is invoked by the servlet container when the servlet receives an HTTP PUT request from a client.
+   - It is typically used to handle requests that update or replace existing resources on the server with the provided request payload.
+   - Example:
+     ```java
+     protected void doPut(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle PUT request here
+     }
+     ```
+
+2. **doDelete() Method**:
+   - The `doDelete()` method is invoked by the servlet container when the servlet receives an HTTP DELETE request from a client.
+   - It is typically used to handle requests that delete or remove resources from the server.
+   - Example:
+     ```java
+     protected void doDelete(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle DELETE request here
+     }
+     ```
+
+3. **doHead() Method**:
+   - The `doHead()` method is invoked by the servlet container when the servlet receives an HTTP HEAD request from a client.
+   - It is similar to `doGet()` but is used to retrieve only the HTTP headers for a resource without the response body.
+   - Example:
+     ```java
+     protected void doHead(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle HEAD request here
+     }
+     ```
+
+4. **doOptions() Method**:
+   - The `doOptions()` method is invoked by the servlet container when the servlet receives an HTTP OPTIONS request from a client.
+   - It is used to handle requests for retrieving information about the communication options available for the target resource.
+   - Example:
+     ```java
+     protected void doOptions(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle OPTIONS request here
+     }
+     ```
+
+5. **doTrace() Method**:
+   - The `doTrace()` method is invoked by the servlet container when the servlet receives an HTTP TRACE request from a client.
+   - It is used for debugging purposes to echo back the received request to the client.
+   - Example:
+     ```java
+     protected void doTrace(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle TRACE request here
+     }
+     ```
+
+6. **doPatch() Method**:
+   - The `doPatch()` method is invoked by the servlet container when the servlet receives an HTTP PATCH request from a client.
+   - It is used for partial modifications to a resource, similar to `doPut()`, but with a partial update instead of a complete replacement.
+   - Example:
+     ```java
+     protected void doPatch(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle PATCH request here
+     }
+     ```
+
+
+
+## Servlet example with HTTP Handlers
+
+These methods provide flexibility in handling different types of HTTP requests within a servlet. Servlet developers can implement these methods to handle specific types of operations required by their applications.
+
+Here's an example of a servlet that handles both GET and POST requests:
+
+```java
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class MyServlet extends HttpServlet {
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Handle GET request here
+        response.getWriter().println("<h1>Hello from GET request!</h1>");
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Handle POST request here
+        response.getWriter().println("<h1>Hello from POST request!</h1>");
+    }
+
+    protected void doPut(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Handle PUT request here
+    }
+
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle DELETE request here
+     }
+
+    protected void doHead(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Handle HEAD request here
+    }
+
+    protected void doOptions(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle OPTIONS request here
+     }
+
+    protected void doTrace(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Handle TRACE request here
+    }
+
+    protected void doPatch(HttpServletRequest request, HttpServletResponse response)
+             throws ServletException, IOException {
+         // Handle PATCH request here
+     }
+
+}
+```
+
+In this example, the `doGet()` method responds with "Hello from GET request!" and the `doPost()` method responds with "Hello from POST request!" when the servlet receives corresponding requests.
