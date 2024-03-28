@@ -88,7 +88,7 @@ public class MyServlet extends HttpServlet {
 This is a very basic outline. Depending on your project requirements and the servlet container you're using, there may be additional steps or configuration settings needed.
 
 
-#Servlet Lifecycle
+## Servlet Lifecycle
 
 In Java Servlets, the life cycle refers to the sequence of events that occur from the moment a servlet is initialized until it is destroyed. Understanding the servlet life cycle is essential for proper servlet development and maintenance. The servlet life cycle consists of several stages:
 
