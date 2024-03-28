@@ -324,3 +324,42 @@ public class MyServlet extends HttpServlet {
 ```
 
 In this example, the `doGet()` method responds with "Hello from GET request!" and the `doPost()` method responds with "Hello from POST request!" when the servlet receives corresponding requests.
+
+
+## Servlet Folder structure
+
+Creating a structured folder layout for a web application that includes Servlets, Data Access Objects (DAOs), Plain Old Java Objects (POJOs), and services can help organize your codebase and make it easier to manage and maintain. Below is a suggested folder structure for such an application:
+
+```
+WEB-INF
+├── classes
+│   ├── com
+│   │   └── example
+│   │       └── dao
+│   │       │   └── YourDAO.java
+│   │       ├── model
+│   │       │   └── YourPOJO.java
+│   │       └── service
+│   │           └── YourService.java
+└── lib
+    ├── (external JARs)
+    └── (application-specific JARs)
+```
+
+Here's what each folder represents:
+
+- `WEB-INF`: This folder is typically found within a web application's directory structure. It contains resources that are not directly accessible to clients (e.g., web browsers) but are required by the application.
+
+- `classes`: This folder contains compiled Java class files (.class) that are part of the web application. These classes are loaded by the servlet container when the application starts.
+
+- `com.example`: This is a package name following Java naming conventions. Replace `com.example` with your own package name.
+
+- `dao`: This folder contains Data Access Object (DAO) classes responsible for interacting with the database or any other data source. DAOs handle data retrieval, storage, and manipulation.
+
+- `model`: This folder contains Plain Old Java Object (POJO) classes that represent the domain model or data entities of your application. POJOs typically contain only fields, constructors, getters, and setters.
+
+- `service`: This folder contains service classes that encapsulate business logic and coordinate interactions between DAOs and servlets. Service classes implement higher-level operations and may perform validations, transformations, or aggregations.
+
+You can place your servlets directly in the `WEB-INF/classes` directory or organize them under appropriate packages within the `com.example` package. Similarly, DAOs, POJOs, and service classes should be organized under their respective packages within the `com.example` package or any other package structure you prefer.
+
+This folder structure provides a clear separation of concerns, making it easier to maintain, test, and extend your web application. Additionally, it aligns with Java best practices for structuring enterprise applications. Remember to adjust the package names and folder structure according to your project's requirements and conventions.
