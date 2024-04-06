@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transflower Learning Pvt. Ltd.</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<h1>Transflower Assessment 3423</h1>
+	<br>
+	<hr/>
+
+	<button id="btnRemove">Remove Book</button>
+	<hr/>
+	<form action="books" method="post">
+		<table>
+			<tr>
+				<td><label>Book id : </label></td>
+				<td><input type="text" name="id" required></td>
+			</tr>
+			<tr>
+				<td><label>Book title : </label></td>
+				<td><input type="text" name="title" required></td>
+			</tr>
+            <tr>
+				<td><label>Book Author : </label></td>
+				<td><input type="text" name="author" required></td>
+			</tr>
+            <tr>
+				<td><label>Book year : </label></td>
+				<td><input type="text" name="year" required></td>
+			</tr>
+        
+			<tr>
+				<td><input type="submit" value="Insert data"></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+
+	<script>
+	$(document).ready(function(){
+        $("#btnRemove").click(function(){
+           var url="http://localhost:8080/demoservletapp/books?id=1";
+			$.ajax({
+						url: url,
+						type: 'DELETE',
+						contentType: 'application/json',
+
+						success: function (response) {
+							console.log(response);
+						},
+						error: function (xhr, status, error) {
+							console.error(xhr.responseText);
+						}
+					});
+  		})
+	})
+	</script>
+</body>
+</html>
