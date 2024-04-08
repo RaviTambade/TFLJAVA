@@ -1,5 +1,6 @@
 package com.tfl.dao.hibernate;
 import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -23,6 +24,7 @@ public class EmployeeDAO {
 
 	public int insert(Employee p){
         try (Session session = sessionFactory.openSession()) {
+           
             Transaction transaction = session.beginTransaction();
             String sqlQuery = "INSERT INTO employees (firstname,lastname) VALUES(:firstname, :lastname)";
             NativeQuery<?> query = session.createNativeQuery(sqlQuery,Employee.class);
@@ -41,7 +43,6 @@ public class EmployeeDAO {
         }
     }
 
-
 	public int update(Employee p){
 
         try (Session session = sessionFactory.openSession()) {
@@ -56,7 +57,6 @@ public class EmployeeDAO {
         }
         return 1;
     }
-
  
 	public int remove(int pid){
         try (Session session = sessionFactory.openSession()) {

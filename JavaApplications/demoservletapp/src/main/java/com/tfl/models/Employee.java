@@ -1,7 +1,11 @@
 package com.tfl.models;
 
 import jakarta.persistence.*;
- 
+
+
+//ORM : Object Relational Mapping
+//framework: Hibernet
+
 
 @Entity
 @Table(name = "employees")
@@ -22,6 +26,12 @@ public class Employee {
 		super();
 	}
 	
+	public Employee( String firstName, String lastName) {
+		super();
+		this.firstName =firstName;
+		this.lastName = lastName;
+	}
+
 	public Employee(int id, String firstName, String lastName) {
 		super();
 		this.id = id;
