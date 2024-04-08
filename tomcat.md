@@ -1,5 +1,10 @@
 # What is Apache Tomcat ?
 
+Think of a web server as a restaurant where you go to order food. The web server is like the kitchen in the restaurant. When you order food (visit a website), the kitchen (web server) prepares it and serves it to you.
+
+Now, imagine Tomcat as a special chef in that kitchen who's really good at preparing certain types of dishes (handling certain types of web applications). So, while the main kitchen (web server) is busy cooking regular meals (serving regular web pages), if you order a special dish (visit a web application that requires specific handling), Tomcat steps in to cook it just right.
+
+
 ## WebServer?
 
  - A web server is software that serves HTTP requests from clients, typically web browsers, over the internet or an intranet. It listens for incoming requests on a specific port (usually port 80 for HTTP and port 443 for HTTPS) and responds with the appropriate content.
