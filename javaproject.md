@@ -35,7 +35,7 @@ project-name/
 
 Let's break it down:
 
-1. **src/main/java**: This directory contains your main Java source code files. Typically, you'd organize your packages here. For example, if your package is `com.example`, your Java files would be under `src/main/java/com/example/`.
+1. **src/main/java**: This directory contains your main Java source code files. Typically, you'd organize your packages here. For example, if your package is `com.tfl`, your Java files would be under `src/main/java/com/tfl/`.
 
 2. **src/main/resources**: Resources used by your main application code, such as configuration files, XML files, property files, etc., are placed here.
 
