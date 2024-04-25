@@ -26,10 +26,12 @@ public class EmployeeDAO {
         try (Session session = sessionFactory.openSession()) {
            
             Transaction transaction = session.beginTransaction();
-            String sqlQuery = "INSERT INTO employees (firstname,lastname) VALUES(:firstname, :lastname)";
+            String sqlQuery = "INSERT INTO employees (firstname, lastname, email, contact)  VALUES(:firstname, :lastname, :email, :contact)";
             NativeQuery<?> query = session.createNativeQuery(sqlQuery,Employee.class);
             query.setParameter("firstname", p.getFirstName());
-            query.setParameter("lastname", p.getFirstName());
+            query.setParameter("lastname", p.getLastName());
+            query.setParameter("email", p.getEmail());
+            query.setParameter("contact", p.getContact());
             query.executeUpdate();
             transaction.commit();
         }
@@ -47,10 +49,12 @@ public class EmployeeDAO {
 
         try (Session session = sessionFactory.openSession()) {
             Transaction transaction = session.beginTransaction();
-            String sqlQuery = "UPDATE employees SET firstname = :name, lastname = :lastname WHERE id = :id";
+            String sqlQuery = "UPDATE employees SET firstname = :firstname, lastname = :lastname, email = :email ,contact = :contact WHERE id = :id";
             NativeQuery<?> query = session.createNativeQuery(sqlQuery,Employee.class);
             query.setParameter("firstname", p.getFirstName());
-            query.setParameter("lastname", p.getFirstName());
+            query.setParameter("lastname", p.getLastName());
+            query.setParameter("email", p.getEmail());
+            query.setParameter("contact", p.getContact());
             query.setParameter("id", p.getId());
             query.executeUpdate();
             transaction.commit();
@@ -61,7 +65,7 @@ public class EmployeeDAO {
 	public int remove(int pid){
         try (Session session = sessionFactory.openSession()) {
             Transaction transaction = session.beginTransaction();
-            String sqlQuery = "DELETE FROM users WHERE id = :id";
+            String sqlQuery = "DELETE FROM employees WHERE id = :id";
             NativeQuery<?> query = session.createNativeQuery(sqlQuery,Employee.class);
             query.setParameter("id", pid);
             query.executeUpdate();

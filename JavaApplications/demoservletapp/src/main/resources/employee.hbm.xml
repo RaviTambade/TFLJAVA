@@ -5,6 +5,8 @@
 	<class name="com.tfl.models.Employee" table="employees">
 		<id column="id" name="id" type="java.lang.Integer" />
 		<property column="firstname" name="userName" type="java.lang.String" />
-		<property column="lastname" name="password1" type="java.lang.String" />
+		<property column="lastname" name="lastname" type="java.lang.String" />
+		<property column="email" name="email" type="java.lang.String" />
+		<property column="contact" name="contact" type="java.lang.String" />
 	</class>
-</hibernate-mapping>
+</hibernate-mapping>          

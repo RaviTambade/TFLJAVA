@@ -2,7 +2,6 @@ package com.tfl.models;
 
 import jakarta.persistence.*;
 
-
 //ORM : Object Relational Mapping
 //framework: Hibernet
 
@@ -22,14 +21,31 @@ public class Employee {
     @Column(name = "lastname")
     private String lastName;
 
+	@Column(name = "email")
+	private String email;
+
+	@Column(name = "contact")
+	private String contact;
+
     public Employee() {
 		super();
 	}
 	
-	public Employee( String firstName, String lastName) {
+	public Employee( String firstName, String lastName, String email,String contact) {
 		super();
 		this.firstName =firstName;
 		this.lastName = lastName;
+		this.email=email;
+		this.contact=contact;
+	}
+
+	public Employee(int id,String firstName, String lastName, String email, String contact) {
+		super();
+		this.id= id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.contact = contact;
 	}
 
 	public Employee(int id, String firstName, String lastName) {
@@ -55,11 +71,27 @@ public class Employee {
 		this.firstName = firsName;
 	}
 
-    public String geLastName() {
+    public String getLastName() {
 		return this.lastName;
 	}
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.lastName = email;
+	}
+
+	public String getContact() {
+		return this.contact;
+	}
+
+	public void setContact(String contact) {
+		this.lastName = contact;
 	}
 }
