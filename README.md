@@ -41,8 +41,9 @@ Java full-stack application development involves integrating these technologies 
 - <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/tomcat.md">Tomcat WebServer</a>
 - <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/simpleservlet.md">Simple Servlet Example</a>
 - <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/jdbc.md">JDBC</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/jdbc.md">JDBC</a>
+
 - <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/hibernate.md">Hibernate</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/jpa.md">JPA</a>
 - <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/jsp.md">Java Server Pages(JSP)</a>
 - <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/springmvc.md">Spring MVC</a>
 - <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/restapibasics.md">REST API Basics (Spring Boot API)</a>
