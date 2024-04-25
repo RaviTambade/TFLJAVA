@@ -1,6 +1,5 @@
 
-
-# Maven Build Automation Tool
+# Maven: Build Automation Tool
 
 Maven is a powerful build automation tool and dependency management framework primarily used for Java projects. It was developed by the Apache Software Foundation and is written in Java. Maven aims to simplify and streamline the process of building, packaging, testing, and deploying Java applications.
 
@@ -39,7 +38,7 @@ Maven simplifies the process of managing dependencies, building, packaging, and 
 
 7. **IDE Integration**: Maven is well-supported by popular Integrated Development Environments (IDEs) such as Eclipse, IntelliJ IDEA, and NetBeans. These IDEs provide tools to work with Maven projects, including features like dependency management, project scaffolding, and build execution.
 
-Overall, Maven simplifies the build process and helps in managing Java projects by providing a standardized way to handle dependencies, build configuration, and project lifecycle management.
+Maven simplifies the build process and helps in managing Java projects by providing a standardized way to handle dependencies, build configuration, and project lifecycle management.
 
 ## Creating Java Project using Maven Build Automation Tool
 
