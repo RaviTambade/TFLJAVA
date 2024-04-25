@@ -35,17 +35,17 @@ Java full-stack application development involves integrating these technologies 
 
 
 ## Contnets
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/javaproject.md">Java Project</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/maven.md">Maven: Build Automation Tool</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/javawebapplicaitons.md">Java Web Applications</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/tomcat.md">Tomcat WebServer</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/simpleservlet.md">Simple Servlet Example</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/jdbc.md">JDBC</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javaproject.md">Java Project</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/maven.md">Maven: Build Automation Tool</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javawebapplicaitons.md">Java Web Applications</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tomcat.md">Tomcat WebServer</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/simpleservlet.md">Simple Servlet Example</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jdbc.md">JDBC</a>
 
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/hibernate.md">Hibernate</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/jpa.md">JPA</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/jsp.md">Java Server Pages(JSP)</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/springmvc.md">Spring MVC</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/restapibasics.md">REST API Basics (Spring Boot API)</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/tdd.md">Test Driven Development (TDD)</a>
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/automationtesting.md">Automation Testing</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/hibernate.md">Hibernate</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jpa.md">JPA</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/mainnotes/jsp.md">Java Server Pages(JSP)</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/springmvc.md">Spring MVC</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/restapibasics.md">REST API Basics (Spring Boot API)</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tdd.md">Test Driven Development (TDD)</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/automationtesting.md">Automation Testing</a>
