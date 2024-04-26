@@ -16,12 +16,14 @@ import com.transflower.productcatalog.services.ProductService;
 
 @RestController
 public class ProductsController {
+
     private final ProductService productService;
 
     //@Autowired
     public ProductsController(ProductService service) {
         this.productService = service;
     }
+    
     @GetMapping("/products")  
     private List<Product> getAllProducts()   
     {  
