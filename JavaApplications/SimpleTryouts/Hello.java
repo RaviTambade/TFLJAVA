@@ -1,7 +1,6 @@
 import java.io.*;
 import java.lang.*;
 
-
 //User defined Data Type
 
 public class Hello{
