@@ -1,6 +1,4 @@
 package com.learn.mycart.dao;
-
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;

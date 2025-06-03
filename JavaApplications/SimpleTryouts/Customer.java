@@ -30,7 +30,6 @@ public class Customer {
         Customer cst2=new Customer();
         cst2.name="Yash";
         System.out.println( "Name " + cst2.name);
-
     }
     
 }

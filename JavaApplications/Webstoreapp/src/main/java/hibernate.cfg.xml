@@ -13,7 +13,5 @@
 		<mapping class="com.learn.mycart.entites.User"/>
 		<mapping class="com.learn.mycart.entites.Category"/>
 		<mapping class="com.learn.mycart.entites.Product"/>
-
-
 </session-factory>
 </hibernate-configuration>

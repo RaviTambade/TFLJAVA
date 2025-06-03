@@ -1,5 +1,3 @@
-
-
 public class Person {
     //Data Members
     public String firstName;
