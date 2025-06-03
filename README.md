@@ -163,7 +163,7 @@ Being a **Java Full-Stack Developer** means:
 
 Would you like a step-by-step **learning roadmap** or **project-based plan** to master this path? 
 
-- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/raodmap.md">Let’s build your Java story — together</a>
+<p><a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/roadmap.md">Let’s build your Java story — together</a></p>
 
 ## Contnets
 - <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javaproject.md">Java Project</a>
