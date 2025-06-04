@@ -170,59 +170,53 @@ Sure! Here's the learning sequence formatted exactly as you requested, with clic
 
 ---
 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/roadmap.md">Roadmap</a>
-  *Start here to get an overview of the entire learning path and understand how different topics connect.*
+* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/roadmap.md">  Start here to get an overview of the entire learning path and understand how different topics connect.</a>
 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/filelist.txt">File List</a>
-  *Familiarize yourself early with the available materials and resources.*
 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javaproject.md">Java Project Structure</a>
-  *Learn basics of organizing and building Java projects.*
+* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/filelist.txt">Familiarize yourself early with the available materials and resources.</a>
+  
 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jdbc.md">JDBC (Java Database Connectivity)</a>
-  *Essential for connecting Java applications with databases.*
+* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javaproject.md">Learn basics of organizing and building Java projects</a>
+ 
 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/hibernate.md">Hibernate ORM Framework</a>
-  *Simplifies database interaction using object-relational mapping.*
+* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jdbc.md">Essential for connecting Java applications with databases (JDBC)</a>
+ 
 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jpa.md">JPA (Java Persistence API)</a>
-  *Standard API for ORM, commonly implemented with Hibernate.*
+* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/hibernate.md">Simplifies database interaction using object-relational mapping (ORM)</a>
+ 
+* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jpa.md">Java Persistence AP</a>
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/maven.md">Maven Build Automation</a>
-  *Manage project builds and dependencies efficiently.*
+ 
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/mavendependencymodule.md">Maven Dependency and Module Management</a>
-  *Dive deeper into Maven’s modularization and dependency management.*
+  
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webservercontainer.md">Web Server and Servlet Container</a>
-  *Understand the role of web servers and servlet containers.*
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tomcat.md">Apache Tomcat</a>
-  *Popular servlet container for deploying Java web applications.*
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/simpleservlet.md">Simple Servlet Programming</a>
-  *Learn how to create basic servlets for web development.*
+
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jsp.md">Java Server Pages (JSP)</a>
   *Create dynamic web pages by embedding Java code in HTML.*
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javawebapplicaitons.md">Java Web Applications</a>
-  *Explore overall architecture and development of Java web apps.*
+
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/springmvc.md">Spring MVC Framework</a>
-  *Modern, powerful framework for building web applications.*
+
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/restapibasics.md">REST API Basics (Spring Boot API)</a>
-  *Learn how to build RESTful web services using Spring Boot.*
+
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tdd.md">Test-Driven Development (TDD)</a>
-  *Write tests before code to improve quality and design.*
+
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/automationtesting.md">Automation Testing</a>
-  *Automate testing to improve efficiency and reliability.*
+
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/seleniumdriver.md">Selenium WebDriver</a>
-  *Automate browser-based tests for web applications.*
-
  
 Are you ready to learn by doing projects ?
