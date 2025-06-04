@@ -163,44 +163,30 @@ Being a **Java Full-Stack Developer** means:
 
 Would you like a step-by-step **learning roadmap** or **project-based plan** to master this path? 
 
-<p><a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/roadmap.md">Let’s build your Java story — together</a></p>
+ * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/roadmap.md">Java Fullstack Roadmap</a>
 
-## Contnets
-Sure! Here's the learning sequence formatted exactly as you requested, with clickable GitHub markdown-style links and the description based on the order I suggested:
-
----
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/roadmap.md">  Start here to get an overview of the entire learning path and understand how different topics connect.</a>
-
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/filelist.txt">Familiarize yourself early with the available materials and resources.</a>
+ * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/filelist.txt">Familiarize yourself early with the available materials and resources.</a>
   
-
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javaproject.md">Learn basics of organizing and building Java projects</a>
  
-
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jdbc.md">Essential for connecting Java applications with databases (JDBC)</a>
  
-
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/hibernate.md">Simplifies database interaction using object-relational mapping (ORM)</a>
  
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jpa.md">Java Persistence AP</a>
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/maven.md">Maven Build Automation</a>
  
-
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/mavendependencymodule.md">Maven Dependency and Module Management</a>
   
-
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webservercontainer.md">Web Server and Servlet Container</a>
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tomcat.md">Apache Tomcat</a>
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/simpleservlet.md">Simple Servlet Programming</a>
 
-
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jsp.md">Java Server Pages (JSP)</a>
-  *Create dynamic web pages by embedding Java code in HTML.*
+
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javawebapplicaitons.md">Java Web Applications</a>
 
@@ -208,7 +194,7 @@ Sure! Here's the learning sequence formatted exactly as you requested, with clic
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/springmvc.md">Spring MVC Framework</a>
 
 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/restapibasics.md">REST API Basics (Spring Boot API)</a>
+* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/restapibasics.md">Spring Boot API</a>
 
 
 * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tdd.md">Test-Driven Development (TDD)</a>
