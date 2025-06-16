@@ -1,5 +1,3 @@
-
-
 ## “Servlet – The Gatekeeper of Java Web Applications”
 
 ### 🏫 Scene: College Front Desk
@@ -205,7 +203,6 @@ public class MyServlet extends HttpServlet {
 ```
 
 This is a very basic outline. Depending on your project requirements and the servlet container you're using, there may be additional steps or configuration settings needed.
-
 
 ## Servlet Lifecycle
 

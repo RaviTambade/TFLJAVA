@@ -1,10 +1,4 @@
-Absolutely! Let's dive into the world of **Java Web Applications** with a mentor-style storytelling approach that simplifies the concepts and engages students with real-world relevance.
-
----
-
-## 👨‍🏫 Mentor’s Corner: "Welcome to the World of Java Web Applications!"
-
----
+## 👨‍🏫 "Welcome to the World of Java Web Applications!"
 
 ### 🏞️ **The Story Begins: The Café Dream**
 
@@ -19,8 +13,6 @@ Sounds simple, right? But behind the scenes, it’s a complex system—and build
 
 Let’s explore how each Java web technology helps you bring this café dream to life. 🍽️☕
 
----
-
 ## 🔧 1. **Servlets – The Waiters of Your Café**
 
 > **Mentor says:** “Think of a *Servlet* as your **waiter**. Customers (users) send a request – ‘I want a pizza!’ – and your servlet receives it, processes it, and serves the response – ‘Here is your hot pizza!’”
@@ -28,8 +20,6 @@ Let’s explore how each Java web technology helps you bring this café dream to
 Servlets are Java classes that handle HTTP requests and return responses.
 
 📌 Example: A `PlaceOrderServlet` might receive order details, save them in a database, and show a confirmation page.
-
----
 
 ## 🎨 2. **JSP (JavaServer Pages) – The Café Menu Board**
 
@@ -41,8 +31,6 @@ JSP lets you embed Java code into HTML to show dynamic content like:
 <%= user.getName() %>, your cart has <%= cart.getItems().size() %> items.
 ```
 
----
-
 ## 🧱 3. **JSF – Building Blocks of the Interface**
 
 > “What if you could reuse ready-made UI blocks, like buttons, input boxes, and forms? That’s **JavaServer Faces (JSF)** for you.”
@@ -50,8 +38,6 @@ JSP lets you embed Java code into HTML to show dynamic content like:
 JSF provides a rich set of UI components and supports event handling, data binding, and validation.
 
 It’s like having a UI builder toolset at your disposal.
-
----
 
 ## 🌱 4. **Spring MVC – The Café’s Management System**
 
@@ -65,15 +51,11 @@ Spring MVC follows the **Model-View-Controller** pattern:
 
 Spring MVC brings in powerful features like dependency injection, making it easy to plug components together and write clean, testable code.
 
----
-
 ## 🧭 5. **Apache Struts – The Veteran Organizer**
 
 > “Struts is like your traditional manager who loves structure and discipline.”
 
 Though older than Spring, **Struts** also follows MVC and provides tools for organizing complex web applications. Some legacy systems still rely on it.
-
----
 
 ## 🗃️ 6. **Persistence with Hibernate & JPA – The Record Keeper**
 
@@ -84,8 +66,6 @@ Using Hibernate or JPA:
 * You write Java classes like `Order`, `User`, `Product`
 * They automatically map to database tables
 * No need to manually write SQL for every operation
-
----
 
 ## 🔌 7. **Web Servers – The Café Building**
 
@@ -98,8 +78,6 @@ Java web apps run on:
 * **JBoss / Wildfly** (for enterprise apps)
 
 They handle HTTP requests, manage servlets, and serve your dynamic web pages to users.
-
----
 
 ## 🌐 8. **HTML, CSS, JavaScript – The Customer Interface**
 
@@ -151,5 +129,3 @@ Would you like a **mini-project** like an Online Food Ordering System built step
 
 * JSP + Servlets or
 * Spring MVC + Hibernate?
-
-

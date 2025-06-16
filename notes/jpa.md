@@ -1,6 +1,5 @@
 ## "From Diaries to Databases – Understanding JPA"
 
-
 ### 🛤️ **The Tale of the Developer’s Diary**
 
 Imagine this…

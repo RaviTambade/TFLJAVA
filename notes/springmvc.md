@@ -14,7 +14,6 @@ Every teacher just talks to every student whenever they want—math, history, sc
 This is exactly how early **Servlet-based web apps** felt when they grew bigger.
 Everything was written in **one servlet** or **a bunch of JSPs**, tightly coupled together—UI, logic, and data access all jumbled up.
 
-
 ### 🧒 Student: *"Sir, but didn't Servlets and JSPs work?"*
 
 Yes, they did!
@@ -48,7 +47,6 @@ Let’s say you want to order a pizza online:
 3. It checks your order, calculates the bill, saves it – 🍕 That’s the **Model**
 4. The confirmation page is shown – 🧾 Again, the **View** takes the stage
 
-
 ## 🚀 Why Spring MVC?
 
 | Feature                | Real-Life Student Benefit                                         |
@@ -78,7 +76,6 @@ Let’s say you want to order a pizza online:
 3. 📦 The model gets data (from database)
 
 4. 🧾 View (like a JSP/Thymeleaf file) shows data to the user
-
 
 ## 🧑‍🏫 Mentor’s Message to Students
 

@@ -1,5 +1,5 @@
 
-#  “RESTful APIs – The Waiter's Notebook in a Digital Restaurant”
+# “RESTful APIs – The Waiter's Notebook in a Digital Restaurant”
 
 ## 🍽️ Scene: A Digital Restaurant
 
@@ -10,7 +10,6 @@ Students walk in and place orders from their phones. The system instantly fetche
 > *“Who’s handling all these requests so smoothly between phones, kitchen screens, and billing systems?”*
 
 ✨ **That’s the job of RESTful APIs.**
-
 
 ## 🔍 What Is a RESTful API?
 

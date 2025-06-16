@@ -1,6 +1,5 @@
 ## Understanding **Marker Interface** in Java
  
-
 #### 👨‍🏫 Let's Begin with a Simple Story:
 
 Imagine you're organizing a college event. You have hundreds of students, but you need **volunteers**. Instead of asking everyone about their skills, you just say:

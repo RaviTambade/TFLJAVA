@@ -1,4 +1,3 @@
-
 ##  Talking to Databases — The JDBC Bridge 🌉
 
 Dear students,
@@ -112,8 +111,6 @@ It’s like transferring money — you don’t want half the operation to succee
 
 When errors happen, don’t just print “Error occurred”. Log the details and be ready to recover.
 
----
-
 ## 🧪 Mini Example: Insert & Fetch a Student
 
 ```java
@@ -159,8 +156,6 @@ JDBC empowers you to:
 Learn it with care. Apply it with discipline. Use it to build smart, scalable, data-powered applications.
 
 Would you like me to share a small **hands-on console-based mini project** that connects to a MySQL database using JDBC to practice CRUD operations? I can also help students set up their first local database.
-
-
 
 ## Data Access Logic CRUD Operations
 When implementing data access logic and CRUD (Create, Read, Update, Delete) operations in a Java application, you typically use JDBC (Java Database Connectivity) or an ORM (Object-Relational Mapping) framework like Hibernate or JPA (Java Persistence API). Below, I'll outline how to implement CRUD operations using JDBC, which is lower-level but provides direct control over database interactions.

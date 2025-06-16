@@ -1,7 +1,4 @@
-
-
 ## Learning Java OOP through a Product Store
-
 
 ### 🛍️ Scene: The Product Store
 
@@ -10,8 +7,6 @@ Once upon a time in the land of JavaLand, young learners opened a digital **Prod
 Their Mentor appeared and said:
 
 > "To build anything big in software, first you must master the art of **Object-Oriented Thinking**. Let’s begin with a `Product`."
-
-
 ### 🧱 Step 1: Create a Class – The Blueprint
 
 ```java

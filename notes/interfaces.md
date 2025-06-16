@@ -1,5 +1,3 @@
-
-
 ## **Understanding Interfaces in Java**
 
 ### 🎓 Scene: The Software Gurukul

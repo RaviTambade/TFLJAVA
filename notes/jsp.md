@@ -1,4 +1,3 @@
-
 ## The Tale of the Talking HTML — Understanding JSP
 
 Dear Students,

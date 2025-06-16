@@ -1,10 +1,6 @@
-Absolutely! Let’s explain **Selenium Automation Testing** using the **Mentor’s Storytelling Style**, so even a beginner can visualize **why** and **how** we use Selenium with Java—and feel excited about testing!
 
----
+## 👨‍🏫  "Meet Arya, the Silent Guardian of the Web"
 
-## 👨‍🏫 Mentor’s Story: "Meet Arya, the Silent Guardian of the Web"
-
----
 
 ### 🎬 **Scene 1: The Software Castle and the Invisible Bugs**
 
@@ -18,7 +14,6 @@ But the testers were overwhelmed by **repetitive work**. Every release, they had
 
 That’s when the Mentor introduced **Arya**, the **Selenium Automator**.
 
----
 
 ### ⚙️ **Scene 2: What is Selenium?**
 
@@ -26,7 +21,6 @@ That’s when the Mentor introduced **Arya**, the **Selenium Automator**.
 
 It automates the browser, allowing testers to focus on **intelligence**, not **repetition**.
 
----
 
 ### 🛠️ **Scene 3: Equipping Arya – Setting Up Selenium in Java**
 
@@ -40,8 +34,6 @@ driver.get("https://example.com");
 
 This code launches Chrome, just like a real user would!
 
----
-
 ### 🎯 **Scene 4: Simulating a Real User’s Journey**
 
 Let’s say a user logs in to a site:
@@ -54,8 +46,6 @@ driver.findElement(By.id("login-button")).click();
 
 > “Selenium can fill forms, click buttons, and navigate—without needing a hand,” said the Mentor.
 
----
-
 ### ⏳ **Scene 5: Waiting Patiently – Synchronization**
 
 Just like humans wait for pages to load, Arya waits too:
@@ -66,8 +56,6 @@ WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("s
 ```
 
 > “No rushing! A good tester waits until the right moment.”
-
----
 
 ### 📸 **Scene 6: Spying, Reporting, and Logging**
 
@@ -80,8 +68,6 @@ File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 > “A good warrior always records her journey!”
 
 Arya can also **report her findings** using tools like **ExtentReports** or **TestNG reports**.
-
----
 
 ### 🤖 **Scene 7: Joining Forces – JUnit/TestNG Integration**
 
@@ -96,8 +82,6 @@ public void loginTest() {
 
 Now, every time new code is deployed, Arya tests it automatically in Jenkins or GitHub Actions!
 
----
-
 ### 🌐 **Scene 8: Cross-Browser & Cross-Platform Champion**
 
 Arya can switch her disguise:
@@ -108,8 +92,6 @@ Arya can switch her disguise:
 * SafariDriver 🍏
 
 She fights bugs **across browsers and OS**, making the app truly **battle-ready**.
-
----
 
 ## 🌟 Why Students Should Learn Selenium
 
@@ -124,8 +106,6 @@ She fights bugs **across browsers and OS**, making the app truly **battle-ready*
 | 🌍 **Cross-Browser Testing** | Ensures everyone gets the same experience |
 | 📦 **CI/CD Integration**     | Detect bugs **before** users see them     |
 | 🧘 **Reduces Stress**        | Peace of mind in production deployments   |
-
----
 
 ## 💻 Mini Exercise for Learners
 

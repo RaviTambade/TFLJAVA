@@ -1,4 +1,3 @@
-
 ## The Well-Organized Software Home 🏡
 
 Dear Students,
