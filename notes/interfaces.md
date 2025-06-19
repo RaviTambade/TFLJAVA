@@ -10,7 +10,6 @@ One day, the Guru brings a toolbox and says:
 
 Curious, all the students gather around.
 
----
 
 ### 🧰 The Interface Analogy: **Contract Without Implementation**
 
@@ -28,8 +27,6 @@ interface Vehicle {
 ```
 
 > "This is a **Vehicle interface**. Anyone who wants to be a vehicle must agree to provide `start()` and `stop()` behavior."
-
----
 
 ### 🚗 Meet the Students: Implementing the Interface
 
@@ -63,7 +60,6 @@ class ElectricScooter implements Vehicle {
 
 Guru smiles. “Wonderful! Both of you honored the contract. You followed the **interface** and implemented your own way of doing it.”
 
----
 
 ### 🎯 Why Are Interfaces So Powerful?
 
@@ -129,8 +125,6 @@ remote.turnOn(); // Samsung TV ON
 
 > 🔄 That’s the **power of abstraction and polymorphism** using interfaces.
 
- 
-
 ### 👣 Student Homework: Build Your Own Interface
 
 > "Create an interface called `PaymentGateway` with methods like `pay()` and `refund()`. Then implement it for classes like `UPI`, `CreditCard`, and `Cash`."
@@ -141,5 +135,3 @@ remote.turnOn(); // Samsung TV ON
 Guru concludes:
 
 > "In life, define what needs to be done… but trust others to find their own way of doing it. That’s the wisdom behind Java’s interface."
-
- 
