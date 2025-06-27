@@ -306,8 +306,8 @@ mvn idea:idea
 
 ### ⚡ **Quick Tips**
 
-✅ Always run `mvn clean` before `mvn package` to avoid stale builds.
-✅ Keep your `pom.xml` organized: dependencies, plugins, and profiles clearly separated.
-✅ Use `mvn dependency:tree` when troubleshooting version conflicts.
+- ✅ Always run `mvn clean` before `mvn package` to avoid stale builds.
+- ✅ Keep your `pom.xml` organized: dependencies, plugins, and profiles clearly separated.
+- ✅ Use `mvn dependency:tree` when troubleshooting version conflicts.
 
  
