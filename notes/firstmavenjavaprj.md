@@ -21,10 +21,10 @@ mvn archetype:generate -DgroupId=com.tab.tflclassroom -DartifactId=TFLProject -D
 
 What does this do?
 
-✅ `groupId`: Defines the package structure (e.g., `com.tab.tflclassroom`).
-✅ `artifactId`: The name of your project (e.g., `TFLProject`).
-✅ `archetypeArtifactId`: Specifies which Maven template to use (`maven-archetype-quickstart` for simple Java apps).
-✅ `interactiveMode=false`: Runs non-interactively.
+- ✅ `groupId`: Defines the package structure (e.g., `com.tab.tflclassroom`).
+- ✅ `artifactId`: The name of your project (e.g., `TFLProject`).
+- ✅ `archetypeArtifactId`: Specifies which Maven template to use (`maven-archetype-quickstart` for simple Java apps).
+- ✅ `interactiveMode=false`: Runs non-interactively.
 
 When you run this, Maven scans your settings, generates the folder structure, and creates a **pom.xml** file.
 
@@ -32,10 +32,10 @@ When you run this, Maven scans your settings, generates the folder structure, an
 
 I told my students: **POM stands for Project Object Model**, and your `pom.xml` file is like a blueprint for your Maven project. It contains everything Maven needs to:
 
-✅ Understand what your project is about.
-✅ Download required libraries (**dependencies**).
-✅ Define plugins to automate tasks like testing, packaging, or deployment.
-✅ Specify build configurations.
+- ✅ Understand what your project is about.
+- ✅ Download required libraries (**dependencies**).
+- ✅ Define plugins to automate tasks like testing, packaging, or deployment.
+- ✅ Specify build configurations.
 
 Remember, without `pom.xml`, Maven doesn’t know how to build your project.
 
@@ -124,12 +124,12 @@ Plugins add extra functionality. For example, the `exec-maven-plugin` lets you r
 
 ### 🌟 **Key Takeaways**
 
-✅ Always generate projects with meaningful package and artifact names.
-✅ Know the importance of `pom.xml` — your project's heart.
-✅ Use Maven’s standard directory structure for maintainability.
-✅ Leverage dependencies and plugins from Maven Central Repository.
-✅ Remember Test-Driven Development: tests guide implementation.
-✅ Automate everything with Maven commands like `clean`, `compile`, `package`, `install`.
+- ✅ Always generate projects with meaningful package and artifact names.
+- ✅ Know the importance of `pom.xml` — your project's heart.
+- ✅ Use Maven’s standard directory structure for maintainability.
+- ✅ Leverage dependencies and plugins from Maven Central Repository.
+- ✅ Remember Test-Driven Development: tests guide implementation.
+- ✅ Automate everything with Maven commands like `clean`, `compile`, `package`, `install`.
 
 
 💬 **Final Words as Your Mentor:**
@@ -141,13 +141,13 @@ Keep practicing, explore Maven’s capabilities, and don’t hesitate to break t
 
 ## 🛠️ **Basic Maven Commands**
 
-✅ **Check Maven Version**
+- ✅ **Check Maven Version**
 
 ```bash
 mvn -v
 ```
 
-✅ **Create Project from Archetype**
+- ✅ **Create Project from Archetype**
 
 ```bash
 mvn archetype:generate -DgroupId=your.group.id -DartifactId=your-artifact-id -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
@@ -155,37 +155,37 @@ mvn archetype:generate -DgroupId=your.group.id -DartifactId=your-artifact-id -Da
 
 ## 🔨 **Build Lifecycle Commands**
 
-✅ **Clean** — deletes the `target/` directory (cleanup)
+- ✅ **Clean** — deletes the `target/` directory (cleanup)
 
 ```bash
 mvn clean
 ```
 
-✅ **Compile** — compiles the source code
+- ✅ **Compile** — compiles the source code
 
 ```bash
 mvn compile
 ```
 
-✅ **Test** — runs tests in `src/test/java`
+- ✅ **Test** — runs tests in `src/test/java`
 
 ```bash
 mvn test
 ```
 
-✅ **Package** — compiles, tests, and packages the code into a JAR/WAR
+- ✅ **Package** — compiles, tests, and packages the code into a JAR/WAR
 
 ```bash
 mvn package
 ```
 
-✅ **Install** — installs the built artifact into your local Maven repository (`~/.m2/repository`)
+- ✅ **Install** — installs the built artifact into your local Maven repository (`~/.m2/repository`)
 
 ```bash
 mvn install
 ```
 
-✅ **Deploy** — copies the built artifact to a remote repository (usually used in CI/CD)
+- ✅ **Deploy** — copies the built artifact to a remote repository (usually used in CI/CD)
 
 ```bash
 mvn deploy
@@ -193,19 +193,19 @@ mvn deploy
 
 ## 🚦 **Maven Goals & Phases Shortcuts**
 
-✅ **Validate** — checks the project structure and POM
+- ✅ **Validate** — checks the project structure and POM
 
 ```bash
 mvn validate
 ```
 
-✅ **Verify** — runs integration tests (if configured)
+- ✅ **Verify** — runs integration tests (if configured)
 
 ```bash
 mvn verify
 ```
 
-✅ **Site** — generates a project site (documentation)
+- ✅ **Site** — generates a project site (documentation)
 
 ```bash
 mvn site
