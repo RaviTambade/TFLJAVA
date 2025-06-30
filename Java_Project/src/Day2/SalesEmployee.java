@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Date;
 
-public class SalesEmployee extends Employee {
+public class SalesEmployee  extends Employee {
     private float target;
     private float salesDone;
     private float incentive;

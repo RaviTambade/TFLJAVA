@@ -38,6 +38,7 @@ public abstract class Employee {
     }
 
     // Abstract method
+    //overriable method to be implemented by subclasses
     public abstract void doWork();
 
     // Virtual method for calculating pay

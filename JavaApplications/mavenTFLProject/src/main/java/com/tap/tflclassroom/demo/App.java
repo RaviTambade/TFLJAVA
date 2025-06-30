@@ -3,16 +3,30 @@ import java.sql.*;
 
 public class App 
 {
+        public enum Weekday { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY      };
+        public enum Month { JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER };
+        public enum Season { WINTER, SPRING, SUMMER, AUTUMN };
+
+        public enum Color { RED, GREEN, BLUE, YELLOW, ORANGE, PURPLE, PINK, BROWN, BLACK, WHITE };
+        public enum Direction { NORTH, SOUTH, EAST, WEST, NORTHEAST, SOUTHEAST, NORTHWEST, SOUTHWEST };
+
     public static void main( String[] args ) throws Exception
     {
-        
+
+        System.out.println(Weekday.WEDNESDAY);
+        System.out.println(Weekday.SUNDAY);
         String URL = "jdbc:mysql://localhost:3306/tflmentoringdb";
+   
+
         String USERNAME = "root";
         String PASSWORD = "password";
         Connection connection = null;
  
         connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
         System.out.println("Connection established successfully...");
+
+        Weekday today= Weekday.MONDAY;
+        System.out.println("Today is: " + today);
  
         System.out.println();
         System.out.println();
