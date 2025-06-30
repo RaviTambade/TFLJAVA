@@ -1,5 +1,5 @@
  
-##  Building a Company’s Employee System**
+##  Building a Company’s Employee System
 
 Alright, imagine we’re working together at a software company, and we’ve been asked to model employee data for the HR system. We want to start simple with two types of employees:
 
