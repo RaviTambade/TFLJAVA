@@ -132,9 +132,9 @@ public class Main {
  
 ### 📘 **Mentor’s Explanation: What Did We Learn?**
 
-✅ **Inheritance**: `SalesEmployee extends Employee` → SalesEmployee *is-a* specialized Employee.
-✅ **Containment**: `Employee has an Address` → Employee *has-a* Address → a perfect example of composition.
-✅ **Advantages**:
+- ✅ **Inheritance**: `SalesEmployee extends Employee` → SalesEmployee *is-a* specialized Employee.
+- ✅ **Containment**: `Employee has an Address` → Employee *has-a* Address → a perfect example of composition.
+- ✅ **Advantages**:
 
 * Reuse: You don’t rewrite name, ID, or salary in `SalesEmployee`.
 * Maintainability: Address can evolve separately without affecting the Employee logic.
