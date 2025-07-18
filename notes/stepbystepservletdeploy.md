@@ -1,17 +1,12 @@
-
-
-## ☕🛰️ Deploying a Servlet/JSP App on Apache Tomcat (Step-by-Step)
-
-
+## Deploying a Servlet/JSP App on Apache Tomcat (Step-by-Step)
 
 ### 🧱 **1. Prerequisites**
 
-✅ Java JDK installed
-✅ Apache Tomcat installed (e.g., Tomcat 9 or 10)
-✅ Maven installed
-✅ A basic Servlet/JSP project (WAR-packaged)
-✅ IDE (like IntelliJ IDEA, Eclipse, or VS Code)
-
+- ✅ Java JDK installed
+- ✅ Apache Tomcat installed (e.g., Tomcat 9 or 10)
+- ✅ Maven installed
+- ✅ A basic Servlet/JSP project (WAR-packaged)
+- ✅ IDE (like IntelliJ IDEA, Eclipse, or VS Code)
 
 ### 🛠️ **2. Project Structure using Maven**
 
@@ -153,8 +148,6 @@ App will be available at:
 3. Restart Tomcat, then log in
 4. Use the web interface to upload your `.war` file and deploy
 
-
-
 ### 🧪 **9. Test It!**
 
 Visit:
@@ -176,5 +169,4 @@ You should see:
 | 4    | Build WAR with `mvn package` |
 | 5    | Deploy WAR to Tomcat         |
 | 6    | Access via browser           |
-
 
