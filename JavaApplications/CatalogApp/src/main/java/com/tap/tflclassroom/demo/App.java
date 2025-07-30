@@ -6,8 +6,6 @@ public class App
     public static void main( String[] args ) throws Exception
     {
         
-        //Polymorphism
-
         IProductRepository repo=new ProductRepository();
         List<Product> products=repo.getAll();
 
