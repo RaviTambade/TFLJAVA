@@ -1,9 +1,6 @@
- 
-
 ## 🌱 Welcome to Java Basics with Database Connectivity – Storytelling Edition
 
 > 👨‍🏫 *"In our last session, we worked with C and MySQL. Today, let’s move into Java and try to do something similar – but in Java style. Don’t worry if the syntax seems new. I’ll walk you through each step as if we are exploring a new city together."*
-
 
 ### 🧩 Chapter 1: Setting the Stage – Java Setup
 

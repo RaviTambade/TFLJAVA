@@ -46,8 +46,6 @@
   * Tomcat runs as user `tomcat`
   * Only `tomcat` user has write access to deployment folders
 
- 
-
 ### 🧱 5. **Validate WAR Structure**
 
 Before deployment:
@@ -58,8 +56,6 @@ Before deployment:
   * Proper Servlet mappings
   * Dependencies included (unless marked as `provided`)
 
- 
-
 ### ⚠️ 6. **Disable Unused Features**
 
 * Disable **unnecessary Tomcat components**:
@@ -69,8 +65,6 @@ Before deployment:
   * Auto-deploy or auto-execution of scripts
 
 In `conf/server.xml` or `conf/web.xml`, comment or remove unused tags.
-
- 
 
 ### 🔥 7. **Watch for Memory Leaks**
 
@@ -87,16 +81,12 @@ In `conf/server.xml` or `conf/web.xml`, comment or remove unused tags.
 * If you deploy to `ROOT.war`, it becomes default app on `/`
 * Prefer deploying under `/yourapp/` unless it's the only app on the server
 
----
-
 ### 🧪 9. **Test Locally First**
 
 * Before putting on a production server:
 
   * Run on `localhost`
   * Test servlet responses, form submissions, sessions, error handling
-
- 
 
 ### 🧰 10. **Logging and Error Handling**
 
