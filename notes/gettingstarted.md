@@ -88,52 +88,6 @@ Welcome, young coder! Every journey starts with a single step, and your adventur
 * [todyasmemmgmt.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todyasmemmgmt.md)
 * [todayscontainmtinheritance.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todayscontainmtinheritance.md)
 
-<hr/>
- * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/roadmap.md">Java Fullstack Roadmap</a>
 
- * <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/filelist.txt">Familiarize yourself early with the available materials and resources.</a>
-  
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javaproject.md">Learn basics of organizing and building Java projects</a>
- 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jdbc.md">Essential for connecting Java applications with databases (JDBC)</a>
- 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/hibernate.md">Simplifies database interaction using object-relational mapping (ORM)</a>
- 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jpa.md">Java Persistence AP</a>
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/maven.md">Maven Build Automation</a>
- 
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/mavendependencymodule.md">Maven Dependency and Module Management</a>
-  
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webservercontainer.md">Web Server and Servlet Container</a>
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tomcat.md">Apache Tomcat</a>
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/simpleservlet.md">Simple Servlet Programming</a>
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jsp.md">Java Server Pages (JSP)</a>
-
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javawebapplicaitons.md">Java Web Applications</a>
-
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/springmvc.md">Spring MVC Framework</a>
-
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/restapibasics.md">Spring Boot API</a>
-
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tdd.md">Test-Driven Development (TDD)</a>
-
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/automationtesting.md">Automation Testing</a>
-
-
-* <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/seleniumdriver.md">Selenium WebDriver</a>
- 
-
-
-
-Here’s a **structured Java Learning Path** arranged from **beginner to advanced** using the provided `.md` filenames. This will help you or your students follow a progressive and organized journey into Java development:
-
-Are you ready to learn by doing projects ?
+<p> Kar Java, Mar Java, Meet Java  to evolve as Solution Provider</p>
+<p>Tap your potential</p>
