@@ -88,6 +88,4 @@ Welcome, young coder! Every journey starts with a single step, and your adventur
 * [todyasmemmgmt.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todyasmemmgmt.md)
 * [todayscontainmtinheritance.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todayscontainmtinheritance.md)
 
-
-<p> Kar Java, Mar Java, Meet Java  to evolve as Solution Provider</p>
-<p>Tap your potential</p>
+<p> <b>Tap your potential</b></p>
