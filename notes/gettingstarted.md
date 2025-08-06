@@ -1,5 +1,5 @@
 
-## ✨ Introduction – 🚀 Getting Started Transflower way
+## Transflower Style Learning Java
 
 Welcome, young coder! Every journey starts with a single step, and your adventure into Java begins here. Whether you're switching from C, new to programming, or just curious about how Java speaks to machines, this section lays your foundation. We'll walk together through your early learning curve, exploring how Java talks to databases, and mastering the core principles of Object-Oriented Programming (OOP). These aren't just lessons — they’re your first bricks toward building something real, powerful, and yours. Let's write your first lines of Java code — one `class` at a time!
 
