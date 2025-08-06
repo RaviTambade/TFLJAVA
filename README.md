@@ -159,10 +159,6 @@ Being a **Java Full-Stack Developer** means:
 * You understand every layer of your application.
 * You're ready to work in startups, enterprise, or freelance — with confidence.
 
-## 🧭 Ready to Begin Your Java Full-Stack Journey?
-
 Would you like a step-by-step **learning roadmap** or **project-based plan** to master this path? 
-
-Here is your **Java Learning Path** with each `.md` file linked to its corresponding GitHub URL (assuming they are stored in the `notes` folder of the given repo):
 
 <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/gettingstarted.md">Let us get started</a>
