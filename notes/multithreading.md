@@ -1,11 +1,4 @@
-Alright — let’s make this a **mentor-style storytelling Java session** for **multithreading and asynchronous programming**.
-
-I’ll structure it as if you’re in front of students, building curiosity first, then revealing concepts with small, progressive Java code examples, while weaving in analogies.
-
----
-
-## **Mentor Storytelling: Java Multithreading + Async Session**
-
+## ** Java Multithreading + Async**
 
 ### **1. Opening Hook – The Pain of Waiting**
 
