@@ -20,7 +20,7 @@ public class SingleThreadBank {
 }
 ```
 
-💡 **Mentor tip:** Run this, and students will complain it’s slow. This creates *emotional buy-in* for why concurrency matters.
+💡 **tip:** Run this, and students will complain it’s slow. This creates *emotional buy-in* for why concurrency matters.
 
 ### **2. First Taste of Multithreading**
 
