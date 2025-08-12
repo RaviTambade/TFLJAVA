@@ -1,6 +1,6 @@
-## ** Java Multithreading + Async**
+## Java Multithreading + Async
 
-### **1. Opening Hook – The Pain of Waiting**
+### **1. The Pain of Waiting**
 
 > *"Have you ever stood in a bank queue with only one cashier? You wait… the person ahead of you has a thousand coins to count… and you’re stuck doing nothing. Now imagine the bank has 4 cashiers. Suddenly, people move faster, and everyone’s happy. That’s the magic of multithreading in software — multiple workers instead of one."*
 
