@@ -1,4 +1,3 @@
-
 # 👨‍🏫 *The Time Traveler’s Backpack – Serialization with Products*
 
 > *"A good developer doesn’t just write code — they preserve business state, so it can live beyond the runtime."*
