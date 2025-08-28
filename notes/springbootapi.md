@@ -1,6 +1,5 @@
 👨‍🏫 Spring Boot API Strategy
 
-
 "Sanika, Sahil, Nirjala, Sarthak – listen carefully. You are not just writing lines of Java code. You are actually building a **mini factory**.
 
 Imagine this:
@@ -29,14 +28,14 @@ Imagine this:
 So flow is:
 
 👉 **Postman Request (Customer Slip)**
-➡️ **Controller (Reception Desk)**
-➡️ **Service (Production Department – applies business logic)**
-➡️ **Repository (Warehouse Manager – fetches from DB)**
-➡️ **Database (Godown – stores the data)**
-⬅️ **Repository returns stock**
-⬅️ **Service processes stock**
-⬅️ **Controller prepares response**
-⬅️ **Postman gets the parcel (JSON Response)**
+ - ➡️ **Controller (Reception Desk)**
+ - ➡️ **Service (Production Department – applies business logic)**
+- ➡️ **Repository (Warehouse Manager – fetches from DB)**
+- ➡️ **Database (Godown – stores the data)**
+- ⬅️ **Repository returns stock**
+- ⬅️ **Service processes stock**
+- ⬅️ **Controller prepares response**
+- ⬅️ **Postman gets the parcel (JSON Response)**
 
 This whole factory runs smoothly only because of **Spring Boot pipeline**.
 
@@ -51,4 +50,3 @@ Think: *‘My whole mini factory just got activated – Controller → Service �
 
 That’s how professional Spring Boot APIs are written – structured, layered, and loosely coupled.
 
- 
