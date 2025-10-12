@@ -1,0 +1,33 @@
+
+Agenda:
+
+Week 1:
+
+1. enviornment set up
+    jdk, maven, vs code
+
+2. write simple java program
+   Compile simple java program  
+   Exeucte simple java .class file
+
+3. Write simple Java class
+    declare private variable
+    define constructor method
+    define member function 
+    implement logic into member function
+
+4. Write public static void main() in class
+    create object from class 
+    invoke member function for object created.
+    add getter and setter method to class 
+
+5. Explore Java basics programming constructs
+    variable declaration
+    exploring inbuilt data type,int, float, char, boolean,etc.
+    arithmatic operators + , -, *, / in function 
+    conditional statement if, switch, if else , nested if
+    looping statements for loop, while , do while
+
+6. Explore has a relationship and inheritance
+    Writing containment 
+    Writing more than one classes

@@ -1,3 +1,8 @@
+
+//class relationship  Has a 
+//Association or Containment
+//Employee has Date 
+
 public class Employee {
 
     private String name;
@@ -5,6 +10,7 @@ public class Employee {
     private double dailyWages;
     private double basicSalary;
     private double tax;
+    private Date  birthdate;  //Employee has a birthdate
 
     // Optional: track number of employees
     private static int employeeCount = 0;
@@ -16,6 +22,9 @@ public class Employee {
         this.dailyWages = dailyWages;
         this.basicSalary = basicSalary;
         this.tax = tax;
+
+        this.birthdate=new Date(12,6,2003);
+        
         employeeCount++;
     }
 
