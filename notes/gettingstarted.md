@@ -31,7 +31,7 @@ Welcome, young coder! Every journey starts with a single step, and your adventur
 #### 🗂️ File Handling and Serialization
 
 * [Serialization](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/serialzation.md)
-* [JSON Serialization]](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/serialzationGson.md)
+* [JSON Serialization](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/serialzationGson.md)
 
 #### 🔍 Debugging and Clean Code
 
