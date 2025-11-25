@@ -4,88 +4,88 @@
 Welcome, young coder! Every journey starts with a single step, and your adventure into Java begins here. Whether you're switching from C, new to programming, or just curious about how Java speaks to machines, this section lays your foundation. We'll walk together through your early learning curve, exploring how Java talks to databases, and mastering the core principles of Object-Oriented Programming (OOP). These aren't just lessons — they’re your first bricks toward building something real, powerful, and yours. Let's write your first lines of Java code — one `class` at a time!
 
 * [From Native Code to Java — A Journey of Simplicity, Power, and Purpose](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/fromctojava.md)
-* [basicjavatojdbc.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/basicjavatojdbc.md)
-* [javalearingcurve.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javalearingcurve.md)
-* [oops.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/oops.md)
-* [objectmethodoverriding.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/objectmethodoverriding.md)
+* [Database Connectivity](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/basicjavatojdbc.md)
+* [Java Learning curve](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javalearingcurve.md)
+* [Object Oriented Programming](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/oops.md)
+* [Metod Overloading ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/objectmethodoverriding.md)
 
 #### 🎉 Special Topics
 
-* [celebratingjava30birthday.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/celebratingjava30birthday.md)
-* [roadmap.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/roadmap.md)
+* [Celebrating Java's 30th Birthday](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/celebratingjava30birthday.md)
+* [Java Programming Roadmap](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/roadmap.md)
 
 #### 🛠️ Core Java
 
-* [interfaces.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/interfaces.md)
-* [markerinterface.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/markerinterface.md)
-* [reflection.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/reflection.md)
-* [deepcopyshallow.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/deepcopyshallow.md)
+* [Interfaces](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/interfaces.md)
+* [Marker Interface](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/markerinterface.md)
+* [Reflection](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/reflection.md)
+* [Deep Copy Shallow Copy](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/deepcopyshallow.md)
 
 #### 📚 Collections Framework
 
-* [collectionfrmwrk.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/collectionfrmwrk.md)
-* [collectiontaskmanager.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/collectiontaskmanager.md)
-* [collectionTaskmgrTest.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/collectionTaskmgrTest.md)
-* [comparision.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/comparision.md)
+* [Collection Framework](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/collectionfrmwrk.md)
+* [Task Manager](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/collectiontaskmanager.md)
+* [Task Manaer Test](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/collectionTaskmgrTest.md)
+* [Object Comparision](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/comparision.md)
 
 #### 🗂️ File Handling and Serialization
 
-* [serialzation.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/serialzation.md)
-* [serialzationGson.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/serialzationGson.md)
+* [Serialization](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/serialzation.md)
+* [JSON Serialization]](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/serialzationGson.md)
 
 #### 🔍 Debugging and Clean Code
 
-* [cleancode.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/cleancode.md)
-* [debuggingjava.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/debuggingjava.md)
+* [The Clean Code](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/cleancode.md)
+* [Debugging Java Programs](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/debuggingjava.md)
 
 #### 🧪 TDD and Testing
 
-* [tdd.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tdd.md)
-* [automationtesting.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/automationtesting.md)
-* [seleniumdriver.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/seleniumdriver.md)
+* [Test Driven Development](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tdd.md)
+* [Automation Testing](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/automationtesting.md)
+* [Browser Automation using Selenium Web Driver](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/seleniumdriver.md)
 
 #### 🌐 JDBC, JPA, and ORM
 
-* [jdbc.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jdbc.md)
-* [jpa.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jpa.md)
-* [hibernate.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/hibernate.md)
+* [Database Connectivity using JDBC](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jdbc.md)
+* [Java Persistent Architecture](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jpa.md)
+* [Object Relational Mapping using ORM](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/hibernate.md)
 
 #### 📦 Maven and Modules
 
-* [maven.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/maven.md)
-* [mavendependencymodule.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/mavendependencymodule.md)
-* [firstmavenjavaprj.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/firstmavenjavaprj.md)
+* [Maven](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/maven.md)
+* [Maven Dependency Modules](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/mavendependencymodule.md)
+* [First Java Maven Project](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/firstmavenjavaprj.md)
 
 #### ☕ Java Web: Servlet/JSP
 
-* [javawebapplicaitons.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javawebapplicaitons.md)
-* [javawebappservlet.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javawebappservlet.md)
-* [jsp.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jsp.md)
-* [simpleservlet.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/simpleservlet.md)
-* [stepbystepservletdeploy.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/stepbystepservletdeploy.md)
+* [Web Application Development using Java](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javawebapplicaitons.md)
+* [Servlet and Web Application](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javawebappservlet.md)
+* [Java Server Pages (JSP)](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/jsp.md)
+* [The Simple Servlet Program](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/simpleservlet.md)
+* [Deploying Simple Servlet Application](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/stepbystepservletdeploy.md)
 
 #### 🌐 REST and Repository Pattern
 
-* [restapibasics.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/restapibasics.md)
-* [repository.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/repository.md)
-* [asyncrepository.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/asyncrepository.md)
-* [asyncawait.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/asyncawait.md)
+* [Basics of REST API](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/restapibasics.md)
+* [Applying Repository Pattern](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/repository.md)
+* [Asyncrhonous Repository](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/asyncrepository.md)
+* [Async and Await](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/asyncawait.md)
 
 #### 💡 Advanced Web - Spring and Containers
 
-* [springmvc.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/springmvc.md)
-* [tomcat.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tomcat.md)
-* [tomcat\_2.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tomcat_2.md)
-* [webservercontainer.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webservercontainer.md)
+* [Spring MVC Framework](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/springmvc.md)
+* [Tomcat The Web Server](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tomcat.md)
+* [Tomcat The Web Server II](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/tomcat_2.md)
+* [Web Server Container](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webservercontainer.md)
 
 #### 🎯 Application Development and Deployment
 
-* [javaproject.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javaproject.md)
-* [precationsdeployapp.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/precationsdeployapp.md)
+* [Java Project](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/javaproject.md)
+* [Create Build Deploy Java Application](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/precationsdeployapp.md)
 
 #### 🔄 Memory and Inheritance
 
 * [todyasmemmgmt.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todyasmemmgmt.md)
-* [todayscontainmtinheritance.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todayscontainmtinheritance.md)
+* [Containment](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todayscontainmtinheritance.md)
 
 <p> <b>Tap your potential</b></p>
