@@ -85,7 +85,7 @@ Welcome, young coder! Every journey starts with a single step, and your adventur
 
 #### 🔄 Memory and Inheritance
 
-* [todyasmemmgmt.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todyasmemmgmt.md)
+* [Automatic Memory Management](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todyasmemmgmt.md)
 * [Containment](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/todayscontainmtinheritance.md)
 
 <p> <b>Tap your potential</b></p>
