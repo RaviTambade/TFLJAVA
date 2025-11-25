@@ -2,30 +2,30 @@
 
 Let’s begin the story…
 
-## 🎭 **Scene: Rohan (Mentor) & Aarav (Student)**
+## 🎭 **Scene: Ravi (Mentor) & Sahil (Student)**
 
-Aarav walks into the classroom excited after learning queues yesterday.
+Sahil walks into the classroom excited after learning queues yesterday.
 
 He says:
 
 > **“Sir! Queue was fun… but I heard there is something extra powerful called STACK!
 > I want to build that too.”**
 
-Rohan smiles like a magician opening his trick box.
+Ravi smiles like a magician opening his trick box.
 
 # 🎒 **Mentor (smiling):**
 
-“Aarav, imagine you have a school bag.
+“Sahil, imagine you have a school bag.
 
 What do you put inside first?
 Your books.
 
 If you suddenly want the book at the bottom, can you pull it out directly?”
 
-Aarav:
+Sahil:
 “No sir! I must remove all the items on top first.”
 
-Rohan:
+Ravi:
 **“Exactly! That’s STACK.”**
 
 # 📚 **STACK = LIFO (Last-In, First-Out)**
@@ -77,7 +77,7 @@ public class Node implements Serializable {
 
 # 🧱 **LinkedList as Stack**
 
-Now Rohan walks to the board and writes:
+Now Ravi walks to the board and writes:
 
 ```java
 package com.dsa.stack;
@@ -139,7 +139,7 @@ public class LinkedListStack implements Serializable {
 
 # 🎥 **Mentor Story – How Push Works**
 
-Rohan draws:
+Ravi draws:
 
 ```
 top → 30
@@ -149,7 +149,7 @@ top → 30
       10
 ```
 
-Aarav pushes 40:
+Sahil pushes 40:
 
 ```
 push(40)
@@ -178,7 +178,7 @@ pop() removes 40
 top moves to 30
 ```
 
-Aarav smiles:
+Sahil smiles:
 **“This is exactly my school bag story!”**
 
 Mentor laughs:
