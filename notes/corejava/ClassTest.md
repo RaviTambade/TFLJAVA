@@ -14,7 +14,6 @@ public class Test {
 }
 ```
 
----
 
 ## 🧱 1️⃣ What is a Class?
 
@@ -26,7 +25,7 @@ Here we have two classes (from earlier code):
 * `SalesEmployee` → special kind of employee (inherits from Employee)
 * `Test` → contains `main()` method (entry point of the program)
 
----
+
 
 ## 👤 2️⃣ What is an Object?
 
@@ -51,7 +50,6 @@ SalesEmployee salesperson1 = new SalesEmployee(450000, 15000);
 
 So now, `salesperson1` refers to a real `SalesEmployee` object in memory.
 
----
 
 ## 🏗️ 3️⃣ Constructor Invocation
 
@@ -91,7 +89,6 @@ new SalesEmployee(450000, 15000)
 
 3. After the constructor finishes, the `SalesEmployee` object is **fully created** and ready to use.
 
----
 
 ## ⚙️ 4️⃣ Method Invocation (Calling a Method)
 
@@ -133,7 +130,6 @@ double salary = salesperson1.computePay();
 
 stores that computed total salary.
 
----
 
 ## 🖨️ 5️⃣ Output Display
 
@@ -149,8 +145,7 @@ System.out.println("Sales Employee salary = " + salary);
 
 ```
 Sales Employee salary = 255000.0
-```
-
+``
 ---
 
 ## 🧠 6️⃣ Behind the Scenes — Step-by-Step Flow Diagram
@@ -166,7 +161,7 @@ Sales Employee salary = 255000.0
 | 7    | `+ incentives`               | Adds extra amount for sales                  |
 | 8    | `System.out.println()`       | Displays final salary on console             |
 
----
+
 
 ## 🧩 7️⃣ Java Concepts Illustrated Here
 
@@ -182,7 +177,7 @@ Sales Employee salary = 255000.0
 | **Polymorphism**      | Deciding which version of method runs at runtime | `super.computePay()` vs overridden `computePay()` |
 | **Encapsulation**     | Data is private, accessed through methods        | `private double incentives;`                      |
 
----
+
 
 ## 💡 Quick Analogy
 
@@ -194,10 +189,8 @@ Think of:
 * `computePay()` = The employee calculating their own pay
 * `System.out.println()` = The accountant printing the pay slip
 
----
+
 
 ✅ **Summary in one sentence:**
 
 > The `Test` class creates an **object** (`salesperson1`), **invokes** its **constructor** to initialize data, then **calls a method (`computePay()`)** on that object to perform computation and finally **prints** the result — demonstrating **object creation, method invocation, inheritance, and polymorphism** working together in Java.
-
- 

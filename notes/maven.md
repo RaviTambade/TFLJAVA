@@ -1,5 +1,5 @@
 
-## Discovering Maven — The Unsung Hero Behind Java Projects
+## Maven — The Unsung Hero Behind Java Projects
 
 Dear Students,
 
@@ -126,9 +126,7 @@ With a few lines in `pom.xml`, you can access thousands of open-source tools, fr
 
  
 
-## 🎯 Final Mentor Thought
-
-Dear learners,
+<p>Dear learners,</p>
 
 > **Maven is not just a tool. It's a philosophy.**
 

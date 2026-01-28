@@ -1,8 +1,6 @@
 # **From Code Chaos to Clean Architecture — “The Day Your Project Grew Up”**
 
-Ravi, imagine this.
-
-You’re helping a student team build a **mini Amazon** for their semester project.
+While helping a student team build a **mini Amazon** for their semester project.
 At first, the code is cute — small, innocent, and obedient. A few products, a form, a simple JDBC call.
 
 Then one day…
@@ -55,7 +53,6 @@ And that's when I look at you, smile, and say:
 
 ## 🧭 **Enter the Repository Pattern — your code’s peacekeeper.**
 
----
 
 # 🍱 A Simple Analogy
 
@@ -79,8 +76,6 @@ That counter = **Repository Interface**
 Where the items are stored = **Database (JDBC, Mongo, File, API, anything)**
 
 Your business logic = **The customer**
-
----
 
 # 🛠️ Now Let's Build It in Java Step-by-Step
 
@@ -527,8 +522,6 @@ public class ProductServlet extends HttpServlet {
     }
 }
 ```
-
----
 
 # 🌟 **STEP 8 — JSP (View Layer)**
 

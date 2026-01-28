@@ -1,12 +1,8 @@
 
-
-### **Synchronous Programming in an E-Commerce World**
+### **Concurreny in an E-Commerce World**
 
 *Classroom scene – students are seated, laptops open, ready for code and coffee.*
 
-
-
-**Mentor:**
 "Alright team, imagine you’re running your own online shopping portal — like *MyDesiMart.com*. You’ve got the full package:
 
 * Product catalog with hundreds of items
@@ -78,17 +74,10 @@ That’s why modern applications need **multi-threading** and asynchronous progr
 If you want your site to handle the Diwali shopping rush without breaking a sweat, you’ll eventually need to move from **synchronous** to **asynchronous** or **multi-threaded** execution.
 
 
-Got it — you want your **existing “Synchronous Programming in an E-Commerce World”** explanation extended into a **web-scale, asynchronous-friendly version** while also mapping it to **ACID principles** (Atomicity, Consistency, Isolation, Durability) and **scalability** in a real-world e-commerce context.
-
-Here’s how I’d transform it into a **Mentor storytelling style** that blends both concepts.
-
----
 
 ## **Asynchronous Programming for a Scalable, Durable, ACID-Compliant Web Experience**
 
 *Classroom scene – students are seated, laptops open, sipping chai, half-excited about learning, half-dreaming about snacks.*
-
- 
 
 **Mentor:**
 "Last time, we saw the **Synchronous World** — one cashier, one customer at a time. Predictable but slow.
@@ -96,7 +85,6 @@ Now, let’s imagine MyDesiMart.com during a Diwali Mega Sale — **10 lakh cust
 If we stick to a single cashier, our store will collapse. That’s when we bring in **asynchronous programming**."
 
  
-
 ### 1. **From One Cashier to Many Cashiers**
 
 In the **asynchronous world**, your application doesn’t block one customer while serving another.
@@ -109,9 +97,7 @@ Here’s what changes:
 
 It’s like having 50 cashiers, all taking orders at once, without stepping on each other’s toes.
 
- 
-
-### 2. **ACID Principles in the Web Experience**
+ ### 2. **ACID Principles in the Web Experience**
 
 Even with asynchronous behavior, **data integrity** is non-negotiable in e-commerce.
 
@@ -138,8 +124,6 @@ With asynchronous programming:
 * Threads can serve **hundreds or thousands** of requests per second because they aren’t idly waiting for slow tasks to finish.
 * This allows scaling up for festival rush, flash sales, and special promotions.
 
- 
-
 ### 4. **Under the Hood**
 
 When MyDesiMart.com runs with async logic:
@@ -157,7 +141,6 @@ Example:
 All three start almost instantly, without waiting for each other’s tasks to finish.
 
  
-
 ### 5. **Mentor’s Closing Thought**
 
 *Synchronous programming is a neat, single-file queue — but it’s slow under pressure.*
@@ -172,10 +155,6 @@ Asynchronous programming with proper ACID guarantees is like running a **well-co
 That’s the kind of **durable, scalable, isolated, atomic** system you need for today’s high-demand web experiences.
 
  
-
- Got it — you want your **existing “Synchronous Programming in an E-Commerce World”** explanation extended into a **web-scale, asynchronous-friendly version** while also mapping it to **ACID principles** (Atomicity, Consistency, Isolation, Durability) and **scalability** in a real-world e-commerce context.
-
-<hr/>
 
 ## **Asynchronous Programming for a Scalable, Durable, ACID-Compliant Web Experience**
 

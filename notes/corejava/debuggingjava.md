@@ -1,5 +1,3 @@
- 
-
 # What Is Debugging?
 
 **Debugging** is the process of **finding and fixing mistakes (bugs)** in your code so that it works the way you want.
@@ -10,7 +8,6 @@ A **bug** is a **problem in your program** — it could be:
 * Error messages
 * Program crash
 * Or it just behaves weirdly
-
 
 ### 🎯 **Goal of Debugging**
 To **understand what went wrong**, and then **fix it**.

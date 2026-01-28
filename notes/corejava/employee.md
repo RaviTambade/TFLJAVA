@@ -9,7 +9,6 @@ The `Employee` class represents a **real-world employee** in a company — with 
 
 In OOP, classes like `Employee` are **blueprints for objects** (individual employees).
 
----
 
 ## 🧩 2️⃣ Instance Variables (Attributes)
 
@@ -31,7 +30,6 @@ Each employee **object** stores its own data:
 * `tax` → deducted amount
 * `birthdate` → **object of another class (`Date`)**
 
----
 
 ## 🤝 3️⃣ HAS-A Relationship (Association / Containment)
 
@@ -62,7 +60,6 @@ Employee e = new Employee("Aarav", 20, 1000, 5000, 200);
 
 Here, the Employee *has* a `Date` object inside it (his birthdate).
 
----
 
 ## 🏗️ 4️⃣ Constructors (Initialization Methods)
 
@@ -99,7 +96,6 @@ employeeCount++;
 
 This increases the total number of employees tracked globally.
 
----
 
 ## 🔄 5️⃣ Method Overloading — computePay
 
@@ -119,7 +115,6 @@ This is called **Method Overloading** (a type of compile-time polymorphism).
 * `computePay()` → basic salary computation.
 * `computePay(bonus)` → adds bonus to the basic computation.
 
----
 
 ## 💰 6️⃣ Method Example — calculateTax
 
@@ -131,7 +126,6 @@ public void calculateTax(double taxPercentage) {
 
 This method dynamically calculates tax as a percentage of total pay.
 
----
 
 ## 🧾 7️⃣ Display Information Method
 
@@ -148,7 +142,6 @@ public void displayInfo() {
 
 Shows employee data neatly formatted — typical for debugging or reporting.
 
----
 
 ## 🧮 8️⃣ Static Method Example
 
@@ -167,7 +160,6 @@ System.out.println(Employee.getEmployeeCount());
 
 This is a classic use of a **class-level property**.
 
----
 
 ## 🧠 9️⃣ Summary — Java Concepts Used Here
 
@@ -183,7 +175,6 @@ This is a classic use of a **class-level property**.
 | **this keyword**                | Refers to current object                         |
 | **Polymorphism (compile-time)** | Through overloaded methods                       |
 
----
 
 ## 🧩 10️⃣ Example Main Program
 

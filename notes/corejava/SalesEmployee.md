@@ -18,7 +18,6 @@ Here:
 
 So, `SalesEmployee` **inherits** all data and methods from `Employee` — like `name`, `basicSalary`, `computePay()`, etc.
 
----
 
 ## 🧩 2️⃣ New (Specialized) Attributes
 
@@ -35,7 +34,6 @@ A general employee doesn’t need them — so they belong only in this subclass.
 * `Employee` → general template (common features)
 * `SalesEmployee` → specialized version (extra sales-related behavior)
 
----
 
 ## 🏗️ 3️⃣ Constructor and super()
 
@@ -64,8 +62,6 @@ public SalesEmployee(double target, double incentives) {
 
 👉 The `super()` call **must be the first statement** in a subclass constructor.
 Without it, Java tries to call the **default constructor** of `Employee`, which doesn’t exist here — and causes a compile-time error.
-
----
 
 ## ⚙️ 4️⃣ Method Overriding
 
@@ -99,7 +95,6 @@ This is **method overriding**, one form of **runtime polymorphism** in Java.
 ✅ Concept: **Reuse + Extend (not duplicate)**
 This is what makes OOP powerful — we don’t rewrite logic, we **extend it**.
 
----
 
 ## 🧠 5️⃣ Summary of Java Concepts Used
 
@@ -112,7 +107,6 @@ This is what makes OOP powerful — we don’t rewrite logic, we **extend it**.
 | **Encapsulation**          | Keeping fields private and controlled via constructors or setters | `private double salesTarget`                           |
 | **Code Reuse**             | Reusing logic from parent class                                   | `super.computePay()`                                   |
 
----
 
 ## 💡 6️⃣ Single Responsibility Principle (SRP)
 
@@ -133,7 +127,6 @@ Each class focuses on **one area of responsibility**:
 
 Thus, code remains **modular, maintainable, and easy to extend**.
 
----
 
 ## 💬 7️⃣ Example Main Program
 
@@ -153,7 +146,6 @@ public class Main {
 Sales Employee Total Pay: 255000.0
 ```
 
----
 
 ## 🚀 8️⃣ Summary Analogy (for easy memory)
 
@@ -164,7 +156,6 @@ Sales Employee Total Pay: 255000.0
 | **Overriding**         | SportsCar can start faster (changes the “start” behavior)           |
 | **SRP**                | Each class has one focus: Engine handles power, Car handles driving |
 
----
 
 ### ✅ Final Thought:
 

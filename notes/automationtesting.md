@@ -41,8 +41,6 @@ Imagine a robot following your **exact test steps**:
 
 And now imagine this robot doing it every time you change the code — without making mistakes. That’s **automation testing** in action.
 
- 
-
 ## 🔟 Life Lessons from Automation Testing
 
 Let’s explore its **real-world impact** — the reasons why every professional team invests in it.
