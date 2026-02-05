@@ -35,7 +35,7 @@ Follow these structured paths to master Java:
 > Build strong fundamentals, logic, and OOP thinking.
 
 👉 **Core Java Roadmap**
-🔗 [Core Java README](./README.md)
+🔗 [Core Java README](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava//README.md)
 
 
 
@@ -44,7 +44,7 @@ Follow these structured paths to master Java:
 > Learn how real-world web applications are built using Java.
 
 👉 **Web Java Roadmap**
-🔗 [Web Java README](../WebJava/README.md)
+🔗 [Web Java README]([../](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/WebJava/README.md)
 
 
 ## 🏗️ Our Learning Philosophy
