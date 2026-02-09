@@ -1,7 +1,5 @@
 🌟 **Java Web App with Servlet + Maven + Repository Pattern**
 
-## 🧑‍🏫 Mentor Begins…
-
 > *"Team, earlier we used to build console applications using `System.out.println()` and command line input. Now it's time to move to the web — where users interact via browsers, data flows through HTTP requests, and responses are HTML or JSON."*
 
 
@@ -247,8 +245,6 @@ If you know Servlets well, you can become:
 - ✔ Spring MVC
 - ✔ REST APIs
 - ✔ Microservices
-
-
 
 ## 🔷 12. **Mentor Insight (Wisdom Layer – *“Reality Check”)**
 
