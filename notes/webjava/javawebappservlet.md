@@ -5,7 +5,7 @@
 > *"Team, earlier we used to build console applications using `System.out.println()` and command line input. Now it's time to move to the web — where users interact via browsers, data flows through HTTP requests, and responses are HTML or JSON."*
 
 
-Here is your content structured using the **Transflower Learning Framework (TLF)** — in a **mentor-style, industry-oriented format** for teaching students.
+Here is your content structured using the **Transflower Learning Framework (TFL)** — in a **mentor-style, industry-oriented format** for teaching students.
 
 
 ## **Topic: Java Servlets – Foundation of Server-Side Web Development**
@@ -219,34 +219,34 @@ If you know Servlets well, you can become:
 
 
 
-## 🔷 11. **TLF Learning Path for Servlets (Growth Layer – *“How to Master”)**
+## 🔷 11. **TFL Learning Path for Servlets (Growth Layer – *“How to Master”)**
 
 ### Phase 1: Foundation
 
-✔ HTTP Basics
-✔ Request/Response
-✔ GET/POST
-✔ Sessions
+- ✔ HTTP Basics
+- ✔ Request/Response
+- ✔ GET/POST
+- ✔ Sessions
 
 ### Phase 2: Implementation
 
-✔ HttpServlet
-✔ doGet / doPost
-✔ JDBC Integration
-✔ JSON Response
+- ✔ HttpServlet
+- ✔ doGet / doPost
+- ✔ JDBC Integration
+- ✔ JSON Response
 
 ### Phase 3: Architecture
 
-✔ MVC using Servlets
-✔ Filters
-✔ Listeners
-✔ Security
+- ✔ MVC using Servlets
+- ✔ Filters
+- ✔ Listeners
+- ✔ Security
 
 ### Phase 4: Framework Bridge
 
-✔ Spring MVC
-✔ REST APIs
-✔ Microservices
+- ✔ Spring MVC
+- ✔ REST APIs
+- ✔ Microservices
 
 
 
