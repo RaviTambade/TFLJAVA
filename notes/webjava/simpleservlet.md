@@ -115,27 +115,7 @@ While modern apps use **Spring Boot** or **REST APIs**, servlets are still the *
 > “Understanding servlets makes you a stronger Java web developer. It’s like understanding the gearbox before learning automatic driving.”
 
 
-Your mentor is ready to take you further! 🌱
 
-A servlet is a Java class that extends the capabilities of servers to handle requests and responses in a web application. Servlets are part of the Java Enterprise Edition (Java EE) platform, now known as Jakarta EE. They are primarily used for building dynamic, server-side web applications.
-
-Servlets are managed by a servlet container, also known as a servlet engine or web container, which is typically part of a web server or an application server. The servlet container is responsible for loading, initializing, and executing servlets in response to incoming requests from clients (such as web browsers).
-
-Servlets operate at a lower level than technologies like JavaServer Pages (JSP) and JavaServer Faces (JSF). They provide a more powerful and flexible mechanism for handling HTTP requests and generating responses. Servlets can process form data, interact with databases, perform business logic, and generate dynamic content in various formats such as HTML, XML, JSON, etc.
-
-Some key features and characteristics of servlets include:
-
-1. **Platform Independence**: Servlets are written in Java, making them platform-independent and capable of running on any server platform that supports the Java Virtual Machine (JVM).
-
-2. **Server-side Processing**: Servlets run on the server-side, allowing them to handle requests, process data, and generate responses dynamically before sending them back to the client.
-
-3. **Performance**: Servlets are known for their high performance and efficiency, as they are typically compiled into bytecode and executed directly by the JVM.
-
-4. **Lifecycle Management**: Servlets have a well-defined lifecycle, including initialization, request processing, and destruction, which allows for proper resource management and efficient memory usage.
-
-5. **Extensibility**: Servlets can be extended and customized to meet the specific requirements of web applications. They can also be integrated with other Java EE technologies such as Enterprise JavaBeans (EJB), Java Database Connectivity (JDBC), and Java Message Service (JMS).
-
-Overall, servlets play a crucial role in building robust and scalable web applications in Java, providing a powerful mechanism for server-side programming and interaction with clients over the web.
 
 
 ## Servlet Step by Step

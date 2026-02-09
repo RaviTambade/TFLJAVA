@@ -47,8 +47,13 @@ Imagine building a **three-floor bungalow**:
 
 A **Java Full-Stack Developer** is the architect who understands **every layer**.
 
+<<<<<<< HEAD
 Not just coding —
 **engineering.**
+=======
+👉 **Core Java Roadmap**
+🔗 [Core Java README](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava//README.md)
+>>>>>>> 9ab4d669ebe1c54a93103fb2fae314eecc5cf560
 
 
 ## 🧱 Backend (Server-Side): Where Logic Lives
@@ -57,11 +62,16 @@ Not just coding —
 
 > “The experienced guru of enterprise systems.”
 
+<<<<<<< HEAD
 - ✔ Servlets, JSP, JPA, JAX-RS
 - ✔ Session management
 - ✔ RESTful services
 
 Used heavily in traditional enterprise setups.
+=======
+👉 **Web Java Roadmap**
+🔗 [Web Java README]([../](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/WebJava/README.md)
+>>>>>>> 9ab4d669ebe1c54a93103fb2fae314eecc5cf560
 
 
 ### 🌱 Spring & Spring Boot
