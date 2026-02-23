@@ -1,0 +1,112 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440001",
+    "name": "Laptop Pro 15",
+    "description": "High-performance laptop with 15-inch display, Intel i7, 16GB RAM, 512GB SSD",
+    "price": 1299.99,
+    "category": "Electronics",
+    "stockQuantity": 25,
+    "active": true,
+    "createdAt": "2024-01-15T10:30:00",
+    "updatedAt": "2024-02-20T14:45:00"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440002",
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with 2.4GHz USB dongle, 18-month battery life",
+    "price": 29.99,
+    "category": "Accessories",
+    "stockQuantity": 150,
+    "active": true,
+    "createdAt": "2024-01-10T09:15:00",
+    "updatedAt": "2024-02-18T11:20:00"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440003",
+    "name": "USB-C Hub",
+    "description": "7-in-1 USB-C hub with HDMI, USB 3.0, SD card reader, and power delivery",
+    "price": 49.99,
+    "category": "Accessories",
+    "stockQuantity": 85,
+    "active": true,
+    "createdAt": "2024-01-20T13:00:00",
+    "updatedAt": "2024-02-15T16:30:00"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440004",
+    "name": "4K Webcam",
+    "description": "4K resolution webcam with auto-focus, built-in microphone, and wide-angle lens",
+    "price": 89.99,
+    "category": "Electronics",
+    "stockQuantity": 45,
+    "active": true,
+    "createdAt": "2024-01-25T08:45:00",
+    "updatedAt": "2024-02-19T10:15:00"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440005",
+    "name": "Mechanical Keyboard",
+    "description": "RGB mechanical keyboard with Cherry MX switches, programmable keys, aluminum frame",
+    "price": 159.99,
+    "category": "Accessories",
+    "stockQuantity": 60,
+    "active": true,
+    "createdAt": "2024-02-01T12:00:00",
+    "updatedAt": "2024-02-21T09:30:00"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440006",
+    "name": "Monitor 27 UltraWide",
+    "description": "3440x1440 curved ultrawide monitor, 144Hz refresh rate, USB-C with power delivery",
+    "price": 499.99,
+    "category": "Electronics",
+    "stockQuantity": 15,
+    "active": true,
+    "createdAt": "2024-02-05T14:20:00",
+    "updatedAt": "2024-02-20T15:45:00"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440007",
+    "name": "Laptop Stand",
+    "description": "Adjustable aluminum laptop stand with cooling ventilation for laptops up to 17 inches",
+    "price": 39.99,
+    "category": "Accessories",
+    "stockQuantity": 120,
+    "active": true,
+    "createdAt": "2024-01-30T11:10:00",
+    "updatedAt": "2024-02-17T13:25:00"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440008",
+    "name": "Portable SSD 1TB",
+    "description": "1TB portable SSD with 1050MB/s read speed, USB 3.2, durable silicone coating",
+    "price": 129.99,
+    "category": "Storage",
+    "stockQuantity": 75,
+    "active": true,
+    "createdAt": "2024-02-02T09:50:00",
+    "updatedAt": "2024-02-21T08:00:00"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440009",
+    "name": "Noise Cancelling Headphones",
+    "description": "Active noise cancelling headphones with 30-hour battery, Bluetooth 5.0, premium sound",
+    "price": 349.99,
+    "category": "Audio",
+    "stockQuantity": 40,
+    "active": true,
+    "createdAt": "2024-02-03T15:30:00",
+    "updatedAt": "2024-02-19T12:45:00"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440010",
+    "name": "Desk Lamp LED",
+    "description": "LED desk lamp with adjustable brightness, color temperature control, USB charging port",
+    "price": 44.99,
+    "category": "Office",
+    "stockQuantity": 95,
+    "active": true,
+    "createdAt": "2024-02-04T10:20:00",
+    "updatedAt": "2024-02-20T14:10:00"
+  }
+]

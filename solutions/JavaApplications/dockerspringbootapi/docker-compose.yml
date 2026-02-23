@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  products-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: products-api
+    ports:
+      - "8080:8080"
+    volumes:
+      # Persist the JSON data file on the host
+      - products-data:/app/data
+    environment:
+      - SPRING_PROFILES_ACTIVE=default
+      - APP_DATA_FILE_PATH=/app/data/products.json
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/api/products/count || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  products-data:
+    driver: local
