@@ -20,9 +20,9 @@ But behind most of these systems stands a silent powerhouse:
 
 🧠 Java is:
 
-- ✔ Platform Independent (Write Once, Run Anywhere)
-- ✔ Secure, Robust, and Scalable
-- ✔ Trusted by Amazon, Netflix, Google, Banks, and Governments
+- Platform Independent (Write Once, Run Anywhere)
+- Secure, Robust, and Scalable
+- Trusted by Amazon, Netflix, Google, Banks, and Governments
 
 If you are serious about:
 
@@ -57,9 +57,9 @@ A **Java Full-Stack Developer** is the architect who understands **every layer**
 
 > “The experienced guru of enterprise systems.”
 
-- ✔ Servlets, JSP, JPA, JAX-RS
-- ✔ Session management
-- ✔ RESTful services
+- Servlets, JSP, JPA, JAX-RS
+- Session management
+- RESTful services
 
 Used heavily in traditional enterprise setups.
 
@@ -68,11 +68,11 @@ Used heavily in traditional enterprise setups.
 
 > “Your best friend in modern Java development.”
 
-- ✔ Rapid application setup
-- ✔ Microservices
-- ✔ REST APIs
-- ✔ Security integration
-- ✔ Cloud compatibility
+- Rapid application setup
+- Microservices
+- REST APIs
+- Security integration
+- Cloud compatibility
 
 Today, **Spring Boot = Industry Standard Java Backend**
 
@@ -80,9 +80,9 @@ Today, **Spring Boot = Industry Standard Java Backend**
 
 > “The translator between Java and SQL.”
 
-- ✔ Maps Objects ↔ Tables
-- ✔ Eliminates manual SQL
-- ✔ Improves productivity
+- Maps Objects ↔ Tables
+- Eliminates manual SQL
+- Improves productivity
 
 You think in **Objects**, Hibernate talks to **Databases**.
 
@@ -93,9 +93,9 @@ A real full-stack engineer speaks both languages.
 
 ### 🖥️ Core Web Basics
 
-- ✔ HTML
-- ✔ CSS
-- ✔ JavaScript
+- HTML
+- CSS
+- JavaScript
 
 Every developer must know these.
 
@@ -116,9 +116,9 @@ Every developer must know these.
 
 ### 🛢️ Relational Databases
 
-- ✔ MySQL
-- ✔ PostgreSQL
-- ✔ Oracle
+- MySQL
+- PostgreSQL
+- Oracle
 
 Used with:
 
@@ -127,9 +127,9 @@ Used with:
 
 ### 🧱 NoSQL Databases
 
-- ✔ MongoDB
-- ✔ Redis
-- ✔ Cassandra
+- MongoDB
+- Redis
+- Cassandra
 
 Used for:
 
@@ -143,9 +143,9 @@ Without automation, Java becomes chaos.
 
 ### 📦 Maven & Gradle
 
-- ✔ Dependency handling
-- ✔ Build automation
-- ✔ Testing pipeline
+- Dependency handling
+- Build automation
+- Testing pipeline
 
 🧑‍🏫
 
@@ -156,16 +156,16 @@ Without automation, Java becomes chaos.
 
 ### 🐳 Docker
 
-- ✔ Package once
-- ✔ Run anywhere
-- ✔ Consistent environment
+- Package once
+- Run anywhere
+- Consistent environment
 
 
 ### ☸️ Kubernetes
 
-- ✔ Auto scaling
-- ✔ Load balancing
-- ✔ High availability
+- Auto scaling
+- Load balancing
+- High availability
 
 Deployment = Engineering Skill.
 
@@ -176,14 +176,14 @@ Professional code is tested code.
 
 ### 🧪 JUnit
 
-- ✔ Unit testing
-- ✔ Regression prevention
+- Unit testing
+- Regression prevention
 
 
 ### 🔍 Selenium
 
-- ✔ UI testing
-- ✔ User simulation
+- UI testing
+- User simulation
 
 No testing = No trust.
 
@@ -192,10 +192,10 @@ No testing = No trust.
 
 ### 🔐 Spring Security
 
-- ✔ Authentication
-- ✔ Authorization
-- ✔ CSRF / XSS protection
-- ✔ Role management
+- Authentication
+- Authorization
+- CSRF / XSS protection
+- Role management
 
 🧑‍🏫
 
@@ -226,19 +226,12 @@ This is **enterprise engineering**.
 
 A Java Full-Stack Developer:
 
-- ✔ Builds end-to-end systems
-- ✔ Understands architecture
-- ✔ Solves real problems
-- ✔ Works with confidence
+- Builds end-to-end systems
+- Understands architecture
+- Solves real problems
+- Works with confidence
 
 You are not learning Java for exams.
 
 You are learning Java for **life-long engineering.**
 
-
-## 🌟 Start Your Journey
-
-👉 **Let’s Begin with Core Java Foundations**
-
-🔗 **Getting Started**
-[https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/gettingstarted.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/gettingstarted.md)
