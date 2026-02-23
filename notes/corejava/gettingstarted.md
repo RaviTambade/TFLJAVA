@@ -20,9 +20,9 @@ But behind most of these systems stands a silent powerhouse:
 
 🧠 Java is:
 
-✔ Platform Independent (Write Once, Run Anywhere)
-✔ Secure, Robust, and Scalable
-✔ Trusted by Amazon, Netflix, Google, Banks, and Governments
+- ✔ Platform Independent (Write Once, Run Anywhere)
+- ✔ Secure, Robust, and Scalable
+- ✔ Trusted by Amazon, Netflix, Google, Banks, and Governments
 
 If you are serious about:
 
