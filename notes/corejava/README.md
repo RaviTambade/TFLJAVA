@@ -18,8 +18,8 @@ This track builds **logic + design sense + confidence**.
 - [Inheritance ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todayscontainmtinheritance.md)
 - [Method Overriding](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/objectmethodoverriding.md)
 - [OOP Advanced ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/oops2.md)
-- [ Interfaces ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/interfaces.md)
-- [Marker Interfacemarkerinterface.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/markerinterface.md)                    
+- [Interfaces ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/interfaces.md)
+- [Marker Interface](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/markerinterface.md)
 
 - [Memory Mgmt](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todyasmemmgmt.md)  
 - [Date & Time](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/date.md)
