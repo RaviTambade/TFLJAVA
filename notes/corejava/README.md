@@ -1,4 +1,4 @@
-# Core Java Engineering Foundation
+# Core Java 
 
 ### *Transflower Learning Framework | Build Strong Programming Roots*
 
@@ -14,29 +14,7 @@ This repository focuses on:
 - ✅ Real-world problem solving
 
 > **Goal:** Build strong foundations before moving to frameworks.
-
-
-##  Who Is This For?
-
-This repository is for:
-
-* First / Second Year Students
-* Java Beginners
-* C/C++ Programmers shifting to Java
-* Trainers & Mentors
-
-If you want to **master Java from inside out**, start here.
-
-
-## Learning Philosophy (Transflower Mindset)
-
-> **Understand → Practice → Debug → Optimize → Own**
-
-We believe:
-
-* Syntax is easy ❌
-* Thinking is hard ✅
-* Discipline wins ✅
+ 
 
 This track builds **logic + design sense + confidence**.
 
@@ -48,13 +26,13 @@ This track builds **logic + design sense + confidence**.
 
 | Topic               | Resource                                                                                                     |
 | ------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Getting Started     | [gettingstarted.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/gettingstarted.md)       |
-| Java Learning Curve | [javalearingcurve.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javalearingcurve.md)   |
-| From C to Java      | [fromctojava.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/fromctojava.md)             |
-| Comparison          | [comparision.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/comparision.md)             |
-| Date & Time         | [date.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/date.md)                           |
-| Member Init         | [memberinitialized.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/memberinitialized.md) |
-| Debugging           | [debuggingjava.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/debuggingjava.md)         |
+| Getting Started     | [Getting Started ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/gettingstarted.md)       |
+| Java Learning Curve | [Java Learning Curve](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javalearingcurve.md)   |
+| From C to Java      | [From C to Java ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/fromctojava.md)             |
+| Comparison          | [ Comparison](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/comparision.md)             |
+| Date & Time         | [Date & Time](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/date.md)                           |
+| Member Init         | [Member Init](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/memberinitialized.md) |
+| Debugging           | [Debugging ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/debuggingjava.md)         |
 
 
 ## Level 2: Object-Oriented Programming (OOP)
