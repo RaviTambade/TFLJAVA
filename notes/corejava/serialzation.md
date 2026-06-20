@@ -1,10 +1,10 @@
-# 👨‍🏫 *The Time Traveler’s Backpack – Serialization with Products*
+# * Serialization with Products*
 
 > *"A good developer doesn’t just write code — they preserve business state, so it can live beyond the runtime."*
 > — Mentor Ravi
 
 
-## 🧒 **Scene 1: A Business Problem**
+## **Scene 1: A Business Problem**
 
 Meera is now working for an **eCommerce startup**. She adds new products to the system every day:
 
@@ -22,7 +22,7 @@ Professor smiles:
 > “You need a **backpack** to carry them. In Java, we call it **Serialization**.”
 
 
-## 🧳 **Scene 2: Packing the Product – Serialization Begins**
+## **Scene 2: Packing the Product – Serialization Begins**
 
 Serialization = **Converting a Java object into a stream of bytes**.
 Those bytes can be **stored in a file** or **sent over a network**.
@@ -75,7 +75,7 @@ System.out.println("✅ Product saved successfully!");
 📦 File produced = `"product.ser"` (the Backpack)
 
 
-## 🕹️ **Scene 4: Coming Back & Unpacking – Deserialization**
+##  **Scene 4: Coming Back & Unpacking – Deserialization**
 
 Later, after restart, Meera wants to **restore her products**.
 
@@ -97,27 +97,26 @@ System.out.println("Restored: " + loadedProduct);
 Restored: Product [Id=101, Title=Laptop, Description=A lightweight business laptop]
 ```
 
-## 🧙 **Scene 5: Secret Notes from the Mentor**
+##  **Scene 5: Secret Notes from the Mentor**
 
 Professor Javaanand whispers some wisdom:
 
-1. 🛑 **Transient fields** — Don’t serialize sensitive data (like cost price).
+1.  **Transient fields** — Don’t serialize sensitive data (like cost price).
 
    ```java
    transient double costPrice;
    ```
 
-2. 🧾 **serialVersionUID** — Add a version ID for class compatibility.
+2.  **serialVersionUID** — Add a version ID for class compatibility.
 
    ```java
    private static final long serialVersionUID = 1L;
    ```
-
-3. 🚫 **Not all objects are serializable** — e.g., `Thread`, `Socket`.
+ **Not all objects are serializable** — e.g., `Thread`, `Socket`.
 
  
 
-## 🎓 **Key Takeaways**
+##  **Key Takeaways**
 
 | Concept              | Description                                  |
 | -------------------- | -------------------------------------------- |
@@ -127,7 +126,7 @@ Professor Javaanand whispers some wisdom:
 | `transient` keyword  | Skips fields during serialization            |
 | `serialVersionUID`   | Ensures class version consistency            |
 
-## 📘 **Mini Project Idea: Product Catalog**
+##  **Mini Project Idea: Product Catalog**
 
 * Create multiple `Product` objects (Id, Title, Description).
 * Serialize them into a file `"products.ser"`.
@@ -136,7 +135,7 @@ Professor Javaanand whispers some wisdom:
 👉 This mimics how **business applications preserve data between sessions**.
  
 
-## 🧑‍🏫 Mentor’s Final Words
+##  Mentor’s Final Words
 
 > “Serialization isn’t just about saving data —
 > it’s about keeping your business entities alive across time, restarts, or even across machines.
@@ -150,7 +149,7 @@ Professor Javaanand whispers some wisdom:
 
  
 
-## 🧒 **Scene 1: A Business Problem**
+##  **Scene 1: A Business Problem**
 
 Meera is now working for an **eCommerce startup**. She adds new products to the system every day:
 
@@ -169,7 +168,7 @@ Professor smiles:
 
  
 
-## 🧳 **Scene 2: Packing the Product – Serialization Begins**
+##  **Scene 2: Packing the Product – Serialization Begins**
 
 Serialization = **Converting a Java object into a stream of bytes**.
 Those bytes can be **stored in a file** or **sent over a network**.
@@ -201,7 +200,7 @@ class Product implements Serializable {
 
  
 
-## 🧾 **Scene 3: Writing to File – Backpack Activated**
+##  **Scene 3: Writing to File – Backpack Activated**
 
 Meera saves a `Product` into a file before shutting down the server.
 
@@ -224,7 +223,7 @@ System.out.println("✅ Product saved successfully!");
 
  
 
-## 🕹️ **Scene 4: Coming Back & Unpacking – Deserialization**
+##  **Scene 4: Coming Back & Unpacking – Deserialization**
 
 Later, after restart, Meera wants to **restore her products**.
 
@@ -248,23 +247,23 @@ Restored: Product [Id=101, Title=Laptop, Description=A lightweight business lapt
 
  
 
-## 🧙 **Scene 5: Secret Notes from the Mentor**
+##  **Scene 5: Secret Notes from the Mentor**
 
 Professor Javaanand whispers some wisdom:
 
-1. 🛑 **Transient fields** — Don’t serialize sensitive data (like cost price).
+1.  **Transient fields** — Don’t serialize sensitive data (like cost price).
 
    ```java
    transient double costPrice;
    ```
 
-2. 🧾 **serialVersionUID** — Add a version ID for class compatibility.
+2.  **serialVersionUID** — Add a version ID for class compatibility.
 
    ```java
    private static final long serialVersionUID = 1L;
    ```
 
-3. 🚫 **Not all objects are serializable** — e.g., `Thread`, `Socket`.
+3.  **Not all objects are serializable** — e.g., `Thread`, `Socket`.
 
 ## 🎓 **Key Takeaways**
 
@@ -277,7 +276,7 @@ Professor Javaanand whispers some wisdom:
 | `serialVersionUID`   | Ensures class version consistency            |
 
 
-## 📘 **Mini Project Idea: Product Catalog**
+##  **Mini Project Idea: Product Catalog**
 
 * Create multiple `Product` objects (Id, Title, Description).
 * Serialize them into a file `"products.ser"`.
@@ -286,7 +285,7 @@ Professor Javaanand whispers some wisdom:
 👉 This mimics how **business applications preserve data between sessions**.
 
 
-## 🧑‍🏫 Mentor’s Final Words
+##  Mentor’s Final Words
 
 > “Serialization isn’t just about saving data —
 > it’s about keeping your business entities alive across time, restarts, or even across machines.

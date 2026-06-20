@@ -1,4 +1,4 @@
-## 📌 What is Memory Management?
+## Memory Management?
 
 * When your application runs, it needs memory to store variables, objects, and other data.
 * **Memory management** is the process of allocating memory when needed and releasing it when it’s no longer in use.

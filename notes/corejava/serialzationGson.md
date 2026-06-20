@@ -1,7 +1,4 @@
-Wonderful! Let's continue the **mentor storytelling journey** with the next level:
-## Custom Serialization and JSON-based Serialization using Jackson/Gson
-
-## From Magic Backpacks to Custom Chests – Beyond Default Serialization in Java
+## Serialization in Java
 
 > *“The default magic works… until you want your own spells.”*
 > — Mentor Javaanand

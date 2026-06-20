@@ -1,7 +1,5 @@
 ##  Async Repository for Product Management
 
-### 👨‍🏫 Setting the Scene:
-
 I was mentoring a student named **Sejal**, who was building a basic **eCommerce backend** using Java. She had one class called `Product` and wanted to perform **CRUD operations** — but using **modern asynchronous techniques**, like **`async/await`** in .NET.
 
 In Java, we don't have `async/await` keywords, but we **simulate it using `CompletableFuture`** — which is part of Java’s powerful **concurrency utilities**.
