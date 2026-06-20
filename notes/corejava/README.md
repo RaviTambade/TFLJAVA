@@ -86,7 +86,7 @@ This track builds **logic + design sense + confidence**.
 
 - [Reflection](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/reflection.md) 
 - [Clean Code](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/cleancode.md) 
-- [ Copy: Deep vs Shallow ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/deepcopyshallow.md)
+- [ Copy: Deep vs Shallow ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/deepshallowcopy.md)
 - [Unit Testing](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/ClassTest.md)
 
 
