@@ -60,14 +60,3 @@
 30.  Career roadmap or personal learning path setup
 31. Appreciate Java’s legacy and community
 
-## ✅ **Suggested Naming for Learning Tracks**
-
-| Phase | Focus                       | Tag/Folder              |
-| ----- | --------------------------- | ----------------------- |
-| 1     | Core Java                   | `core-java/`            |
-| 2     | Build Tools                 | `build-tools/`          |
-| 3     | Testing & Automation        | `testing-automation/`   |
-| 4     | JDBC & ORM                  | `database-integration/` |
-| 5     | Web Development             | `web-dev/`              |
-| 6     | REST & Enterprise Patterns  | `enterprise-java/`      |
-| 7     | Final Projects & Reflection | `projects-and-career/`  |
