@@ -9,6 +9,9 @@ This track builds **logic + design sense + confidence**.
 - [Java Learning Curve](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javalearingcurve.md) 
 - [From C to Java ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/fromctojava.md)
 - [Java Project](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javaproject.md)
+- [Date & Time](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/date.md)
+- [Employe Class](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/employee.md)      
+- [SalesEmployee ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/SalesEmployee.md)
 
 
 ## Level 2: Object-Oriented Programming (OOP)
@@ -22,7 +25,6 @@ This track builds **logic + design sense + confidence**.
 - [Marker Interface](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/markerinterface.md)
 
 - [Memory Mgmt](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todyasmemmgmt.md)  
-- [Date & Time](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/date.md)
 - [Member Init](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/memberinitialized.md)
 - [Debugging ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/debuggingjava.md)
 
@@ -84,8 +86,7 @@ This track builds **logic + design sense + confidence**.
 ## Level 9: Domain & Case Studies
 
 *Learn through models (Business Entities)
-- [Employe Class](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/employee.md)      
-- [SalesEmployee ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/SalesEmployee.md)
+
 
 ## Learning Outcomes
 
