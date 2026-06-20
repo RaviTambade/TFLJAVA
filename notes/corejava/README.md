@@ -1,57 +1,52 @@
-# Core Java 
-
-### Build Strong Programming Roots*
+# Progressive Core Java Roadmap
 
 This track builds **logic + design sense + confidence**.
-
-## Progressive Core Java Roadmap
-
 ## Level 1: Getting Started & Basics
 
 *Build your programming base*
 
-- [Getting Started ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/gettingstarted.md)          |
+- [Getting Started ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/gettingstarted.md)
 - [Java Learning Curve](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javalearingcurve.md) 
-- [From C to Java ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/fromctojava.md)           
-- [ Comparison](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/comparision.md)             |
-- [Date & Time](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/date.md)                           |
-- [Member Init](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/memberinitialized.md) |
-- [Debugging ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/debuggingjava.md)         |
+- [From C to Java ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/fromctojava.md)
+- [ Comparison](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/comparision.md)
+- [Date & Time](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/date.md)
+- [Member Init](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/memberinitialized.md)
+- [Debugging ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/debuggingjava.md)
 
 
 ## Level 2: Object-Oriented Programming (OOP)
 
 *Think in objects*
 
-- [OOP Basics ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/oops.md)                                             |
-- [OOP Advanced ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/oops2.md)                                           |
-- [ Interfaces ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/interfaces.md)                                 |
-- [Marker Interfacemarkerinterface.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/markerinterface.md)                       |
-- [Method Overriding](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/objectmethodoverriding.md)         |
-- [Inheritance ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todayscontainmtinheritance.md) |
-- [Memory Mgmt](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todyasmemmgmt.md)                           |
+- [OOP Basics ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/oops.md)
+- [OOP Advanced ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/oops2.md)
+- [ Interfaces ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/interfaces.md)
+- [Marker Interfacemarkerinterface.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/markerinterface.md)                    
+- [Method Overriding](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/objectmethodoverriding.md)
+- [Inheritance ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todayscontainmtinheritance.md)
+- [Memory Mgmt](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todyasmemmgmt.md)  
 
 
 ## Level 3: Data Structures & Algorithms
 
 *Build logical strength*
 
-- [Queue](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/FIFO.md)                                 
-- [Stack](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/LIFO.md)                                    
-- [ Doubly Linked List](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/doublelinkedlist.md)              
-- [ Circular List](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/circulardobulylinkedlist.md) 
-- [Queue via List ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/linkedlistasqueue.md)             
-- [Collections](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectionfrmwrk.md)              
+- [Queue](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/FIFO.md)
+- [Stack](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/LIFO.md)
+- [ Doubly Linked List](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/doublelinkedlist.md)
+- [ Circular List](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/circulardobulylinkedlist.md)
+- [Queue via List ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/linkedlistasqueue.md)
+- [Collections](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectionfrmwrk.md)
 
 
 ## Level 4: Collections & Projects
 
 *Apply collections in real systems*
 
-- [Task Manager](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectiontaskmanager.md) |
-- [Task Test](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectionTaskmgrTest.md) |
-- [Repository](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/repository.md)                       |
-- [Java Project](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javaproject.md)                     |
+- [Task Manager](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectiontaskmanager.md)
+- [Task Test](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectionTaskmgrTest.md)
+- [Repository](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/repository.md)
+- [Java Project](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javaproject.md)
 
 
 ## Level 5: Multithreading & Concurrency
@@ -69,11 +64,11 @@ This track builds **logic + design sense + confidence**.
 ## Level 6: Build Tools & Dependency Management
 
 *Professional setup*
-- [First Maven Project](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/firstmavenjavaprj.md)           |
-- [Maven](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/maven.md)                                   |
-- [Maven Dependencies](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/mavendependencymodule.md)   |
-- [Common Maven Dependencies](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/regularlyuseddepencies.md) |
-- [Command Builder ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/commandbuilder.md)                 |
+- [First Maven Project](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/firstmavenjavaprj.md)     
+- [Maven](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/maven.md)                                 
+- [Maven Dependencies](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/mavendependencymodule.md)  
+- [Common Maven Dependencies](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/regularlyuseddepencies.md)
+- [Command Builder ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/commandbuilder.md)           
 
 
 ## Level 7: Database & Persistence
@@ -81,15 +76,13 @@ This track builds **logic + design sense + confidence**.
 *Connect Java with data*
 
  
-- [JDBC](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/jdbc.md)                         |
-- [Serialzation](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/serialzation.md)         |
-- [Serialzation Gson](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/serialzationGson.md) |
+- [JDBC](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/jdbc.md)                     
+- [Serialzation](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/serialzation.md)       
+- [Serialzation Gson](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/serialzationGson.md)
 
 
 ## Level 8: Advanced Engineering
-
 *Become serious engineer*
-
 
 - [Reflection](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/reflection.md) 
 - [Clean Code](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/cleancode.md) 
@@ -99,10 +92,9 @@ This track builds **logic + design sense + confidence**.
 
 ## Level 9: Domain & Case Studies
 
-*Learn through models (Business Entities)*
-                                                                                            |
-- [Employe Class](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/employee.md)           |
-- [SalesEmployee ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/SalesEmployee.md) |
+*Learn through models (Business Entities)
+- [Employe Class](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/employee.md)      
+- [SalesEmployee ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/SalesEmployee.md)
 
 ## Learning Outcomes
 
