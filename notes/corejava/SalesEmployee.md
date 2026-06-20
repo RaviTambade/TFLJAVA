@@ -1,5 +1,5 @@
 
-## 🧱 1️⃣ The Big Picture: Inheritance = “IS-A Relationship”
+##  1️⃣ he Big Picture: Inheritance = “IS-A Relationship”
 
 ```java
 public class SalesEmployee extends Employee {
@@ -108,7 +108,7 @@ This is what makes OOP powerful — we don’t rewrite logic, we **extend it**.
 | **Code Reuse**             | Reusing logic from parent class                                   | `super.computePay()`                                   |
 
 
-## 💡 6️⃣ Single Responsibility Principle (SRP)
+##  6️⃣ Single Responsibility Principle (SRP)
 
 Let’s relate this to a **SOLID principle** — the **S** in SOLID.
 
@@ -128,7 +128,7 @@ Each class focuses on **one area of responsibility**:
 Thus, code remains **modular, maintainable, and easy to extend**.
 
 
-## 💬 7️⃣ Example Main Program
+##  7️⃣ Example Main Program
 
 ```java
 public class Main {
@@ -147,7 +147,7 @@ Sales Employee Total Pay: 255000.0
 ```
 
 
-## 🚀 8️⃣ Summary Analogy (for easy memory)
+## 8️⃣ Summary Analogy (for easy memory)
 
 | Concept                | Real-world analogy                                                  |
 | ---------------------- | ------------------------------------------------------------------- |

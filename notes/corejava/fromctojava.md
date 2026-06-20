@@ -1,7 +1,7 @@
 
 ## From Native Code to Java — A Journey of Simplicity, Power, and Purpose
 
-### 🔧 **1: The Age of Native Code**
+###  **1: The Age of Native Code**
 
 > "Let’s go back to where it all began — to the age of C and C++."
 
@@ -13,7 +13,7 @@ Your application is talking to the operating system like a warrior with no shiel
 
 That’s why we call these **system-level applications**.
 
-### ☕ **2: Enter Java — The Language of Enterprise**
+###  **2: Enter Java — The Language of Enterprise**
 
 > “Now we are moving from the wilderness to the city — from system code to enterprise code. From C++ to Java.”
 
@@ -25,7 +25,7 @@ You’re learning how to build **systems that power banks, governments, e-commer
 Let me take you to our repository: **TFL-Java**.
 Yes, yesterday I updated it with fresh examples. This is our **launchpad** into the world of Java.
 
-### 🏗️ **3: Why Java Matters**
+###  **3: Why Java Matters**
 
 > “Behind every buzzword — AI, microservices, DevOps, Cloud — lies a quiet, steady powerhouse: Java.”
 
@@ -35,11 +35,11 @@ It’s trusted by Amazon, Netflix, Google — even Microsoft.
 
 If you're serious about building **production-grade applications**, handling **real-world business logic**, and working with **enterprise data** — Java is your foundation.
 
-### 🔨 **4: Let's Build Our First Java App**
+###  **4: Let's Build Our First Java App**
 
 So how do we begin?
 
-🧱 Step 1: **Install Java Runtime**
+ Step 1: **Install Java Runtime**
 Use either **OpenJDK** or **Oracle Java**.
 Check installation:
 
@@ -47,9 +47,9 @@ Check installation:
 java -version
 ```
 
-🧱 Step 2: **Open VS Code** (with Java Extension installed)
+ Step 2: **Open VS Code** (with Java Extension installed)
 
-🧱 Step 3: **Write your first Java class**
+ Step 3: **Write your first Java class**
 
 ```java
 public class TFLClassroom {
@@ -63,7 +63,7 @@ public class TFLClassroom {
 This is your **starting point** — your `main()` function is the **entry gate**, just like `int main()` in C++.
 
 
-### 👨‍🎓 **5: Building with Classes — Let’s Create a Student**
+###  **5: Building with Classes — Let’s Create a Student**
 
 In Java, **everything is inside a class**. Java is a **pure object-oriented language**.
 
@@ -93,7 +93,7 @@ Every Java class silently extends from the **Object class** — the mother of al
 The `toString()` method comes from this Object class.
 When you override it, you're customizing how your object prints itself.
 
-### 🧠 **6: The Memory Game — Stack vs Heap**
+### **6: The Memory Game — Stack vs Heap**
 
 Now in our main program:
 
@@ -113,7 +113,7 @@ System.out.println(s3);
 
 This is how Java merges **abstraction with performance**.
 
-### 🧪 **7: Run, Debug, Evolve**
+### **7: Run, Debug, Evolve**
 
 Open your `TFLClassroom.java` in VS Code → click "Run Java".
 
@@ -129,7 +129,7 @@ Transflower Student: Sejal
 
 > "We changed the formatting of `toString()`? Boom — the output adapts. That’s Java's beauty."
 
-### 🌟 **8: What Did You Just Learn?**
+### **8: What Did You Just Learn?**
 
 You didn’t just write Java code.
 
@@ -140,7 +140,7 @@ You just understood:
 * **Classes, Objects, Annotations, Memory**
 * The elegant concept of **Object-Oriented Programming** in practice
 
-### ⚖️ **9: Java vs C — Simplicity vs Power**
+### **9: Java vs C — Simplicity vs Power**
 
 * **C** gives you raw power — like riding a motorcycle with no helmet
 * **Java** gives you power **with safety** — it’s the bullet train of programming

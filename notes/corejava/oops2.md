@@ -1,4 +1,4 @@
-# Understanding Object-Oriented Programming (OOP) Through Real-World Stories
+# Object-Oriented Programming (OOP) Through Real-World Stories
 
 These mentor notes are based on the provided examples that explain OOP using a **Banking System** and a **Product Management System**. The goal is to help students think like software engineers by relating programming concepts to familiar real-world scenarios. 
 

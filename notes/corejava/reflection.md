@@ -1,6 +1,5 @@
 
-
-## The Curious Case of the Secret Diary**
+## Reflection**
 *Topic: Java Reflection + getClass()*
 
 
@@ -8,7 +7,7 @@
 > Similarly, in the hands of a skilled developer, Java Reflection isn't a mystery — it’s a superpower.
 
 
-👦 **Scene 1: The Hidden Identity**
+ **Scene 1: The Hidden Identity**
 Once upon a time in the land of JavaLand, there was a brilliant young developer named Rohan. One evening, he stumbled upon an old piece of code—an object passed to him with no documentation, no type, and no clue about its structure. It was like receiving a **sealed diary** without a name on the cover.
 
 Frustrated but curious, Rohan whispered,
@@ -20,7 +19,7 @@ And then his mentor, old Mr. Javajee, chuckled and said,
 > *“Use the mirror, Rohan — the **reflection**. Start with `getClass()`.”*
 
 
-👨‍🏫 **Scene 2: The First Glimpse – Using `getClass()`**
+ **Scene 2: The First Glimpse – Using `getClass()`**
 
 Rohan typed:
 
@@ -31,14 +30,14 @@ System.out.println("The class is: " + clazz.getName());
 ```
 
 And voilà! The console replied:
-🖥️ `The class is: com.transflower.models.Product`
+ `The class is: com.transflower.models.Product`
 
 > Rohan gasped, "So you're a Product! Now we’re getting somewhere..."
 
 Just like meeting a stranger and asking for their visiting card — `getClass()` tells you **who the object really is**, even if it’s hidden behind an interface or a generic `Object` reference.
 
 
-🧙‍♂️ **Scene 3: Peeking into the Diary – Reflection in Action**
+ **Scene 3: Peeking into the Diary – Reflection in Action**
 
 Mr. Javajee encouraged him to go further:
 
@@ -63,8 +62,7 @@ for (Field field : clazz.getDeclaredFields()) {
 
 He could **read values from private fields**. “Whoa! I’m inside the diary now,” Rohan said.
 
-
-🔒 **Scene 4: The Responsibility**
+ **Scene 4: The Responsibility**
 
 But as Uncle Javajee said wisely:
 
@@ -75,7 +73,7 @@ But as Uncle Javajee said wisely:
 * And should be used **only when necessary** — like frameworks do (Spring, Hibernate, etc.)
 
 
-📘 **Scene 5: Real-World Lesson**
+ **Scene 5: Real-World Lesson**
 
 Rohan later built a framework that could automatically:
 
@@ -86,13 +84,13 @@ Rohan later built a framework that could automatically:
 All thanks to **`getClass()`** — the first door he opened.
 
 
-💡 **Mentor’s Final Words**
+ **Mentor’s Final Words**
 
 > "Reflection is like a backstage pass in Java.
 > But always remember — just because you *can* sneak into the backstage, doesn’t mean you *should*… unless you’re the one running the show."
 
 
-🎓 **Key Takeaways:**
+ **Key Takeaways:**
 
 | Concept        | Description                                                                                  |
 | -------------- | -------------------------------------------------------------------------------------------- |

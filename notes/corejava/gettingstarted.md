@@ -1,6 +1,4 @@
-# 🌿 Transflower Learning Framework
-
-# Learning Java — The Transflower Way
+# Learning Java
 
 > *"Java is not just a programming language — it’s a language of enterprise, stability, and scale.
 > When you learn Java, you're not just building apps — you're building systems that banks, governments, e-commerce giants, and even satellites depend on."*
@@ -8,7 +6,7 @@
 
 Let me now pass this wisdom to you.
 
-## 🌱 The Root of It All: Why Learn Java?
+## The Root of It All: Why Learn Java?
 
 When students think about software careers, they hear words like:
 
@@ -34,7 +32,7 @@ If you are serious about:
 Java becomes your strongest foundation.
 
 
-## 🧭 The Journey: What Is Java Full-Stack Development?
+## The Journey: What Is Java Full-Stack Development?
 
 Imagine building a **three-floor bungalow**:
 
@@ -51,9 +49,9 @@ A **Java Full-Stack Developer** is the architect who understands **every layer**
 🔗 [Core Java README](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava//README.md)
 
 
-## 🧱 Backend (Server-Side): Where Logic Lives
+##  Backend (Server-Side): Where Logic Lives
 
-### 🔧 Jakarta EE (Java EE)
+###  Jakarta EE (Java EE)
 
 > “The experienced guru of enterprise systems.”
 
@@ -64,7 +62,7 @@ A **Java Full-Stack Developer** is the architect who understands **every layer**
 Used heavily in traditional enterprise setups.
 
 
-### 🌱 Spring & Spring Boot
+###  Spring & Spring Boot
 
 > “Your best friend in modern Java development.”
 
@@ -76,7 +74,7 @@ Used heavily in traditional enterprise setups.
 
 Today, **Spring Boot = Industry Standard Java Backend**
 
-### 🧩 Hibernate (ORM)
+###  Hibernate (ORM)
 
 > “The translator between Java and SQL.”
 
@@ -87,11 +85,11 @@ Today, **Spring Boot = Industry Standard Java Backend**
 You think in **Objects**, Hibernate talks to **Databases**.
 
 
-## 🎨 Frontend (Client-Side): Where Users Meet Your System
+##  Frontend (Client-Side): Where Users Meet Your System
 
 A real full-stack engineer speaks both languages.
 
-### 🖥️ Core Web Basics
+###  Core Web Basics
 
 - HTML
 - CSS
@@ -99,7 +97,7 @@ A real full-stack engineer speaks both languages.
 
 Every developer must know these.
 
-### ⚙️ Frontend Frameworks
+###  Frontend Frameworks
 
 | Tool                  | Use                   |
 | --------------------- | --------------------- |
@@ -107,14 +105,12 @@ Every developer must know these.
 | Thymeleaf             | Server-side rendering |
 | Vaadin                | Java-based UI         |
 
-🧑‍🏫
 
 > “Only backend knowledge is half engineering.”
 
+## Database Layer: Memory of Your Application
 
-## 🗃️ Database Layer: Memory of Your Application
-
-### 🛢️ Relational Databases
+### Relational Databases
 
 - MySQL
 - PostgreSQL
@@ -125,7 +121,7 @@ Used with:
 - ➡ JDBC
 - ➡ Hibernate
 
-### 🧱 NoSQL Databases
+### NoSQL Databases
 
 - MongoDB
 - Redis
@@ -137,31 +133,30 @@ Used for:
 - ➡ Flexible data
 - ➡ Distributed systems
 
-## 🧰 Build & Dependency Management
+## Build & Dependency Management
 
 Without automation, Java becomes chaos.
 
-### 📦 Maven & Gradle
+### Maven & Gradle
 
 - Dependency handling
 - Build automation
 - Testing pipeline
 
-🧑‍🏫
 
 > “Maven is your invisible assistant.”
 
 
-## 🐳 Docker & ☸️ Kubernetes: Cloud Readiness
+##  Docker & ☸️ Kubernetes: Cloud Readiness
 
-### 🐳 Docker
+###  Docker
 
 - Package once
 - Run anywhere
 - Consistent environment
 
 
-### ☸️ Kubernetes
+###  Kubernetes
 
 - Auto scaling
 - Load balancing
@@ -170,17 +165,17 @@ Without automation, Java becomes chaos.
 Deployment = Engineering Skill.
 
 
-## 🔍 Testing & Quality Control
+##  Testing & Quality Control
 
 Professional code is tested code.
 
-### 🧪 JUnit
+###  JUnit
 
 - Unit testing
 - Regression prevention
 
 
-### 🔍 Selenium
+###  Selenium
 
 - UI testing
 - User simulation
@@ -188,23 +183,21 @@ Professional code is tested code.
 No testing = No trust.
 
 
-## 🛡️ Security: Protect Your Creation
+##  Security: Protect Your Creation
 
-### 🔐 Spring Security
+###  Spring Security
 
 - Authentication
 - Authorization
 - CSRF / XSS protection
 - Role management
 
-🧑‍🏫
-
 > “Security is not optional.”
 
 
-## 🚀 Full-Stack in Action: Real Project Example
+## Full-Stack in Action: Real Project Example
 
-### 📚 Online Bookstore System
+### Online Bookstore System
 
 | Layer         | Technology        |
 | ------------- | ----------------- |
@@ -219,7 +212,7 @@ No testing = No trust.
 This is **enterprise engineering**.
 
 
-## 🎓 Final Words from Your Mentor
+## Final Words from Your Mentor
 
 > “Don’t chase tools.
 > Chase mastery.”
@@ -234,4 +227,3 @@ A Java Full-Stack Developer:
 You are not learning Java for exams.
 
 You are learning Java for **life-long engineering.**
-
