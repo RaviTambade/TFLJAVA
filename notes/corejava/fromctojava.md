@@ -1,5 +1,5 @@
 
-## From Native Code to Java — A Journey of Simplicity, Power, and Purpose
+## From C to Java 
 
 ###  **1: The Age of Native Code**
 
