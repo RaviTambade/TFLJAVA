@@ -24,64 +24,55 @@ This track builds **logic + design sense + confidence**.
 
 *Build your programming base*
 
-| Topic               | Resource                                                                                                     |
-| ------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Getting Started     | [Getting Started ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/gettingstarted.md)       |
-| Java Learning Curve | [Java Learning Curve](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javalearingcurve.md)   |
-| From C to Java      | [From C to Java ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/fromctojava.md)             |
-| Comparison          | [ Comparison](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/comparision.md)             |
-| Date & Time         | [Date & Time](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/date.md)                           |
-| Member Init         | [Member Init](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/memberinitialized.md) |
-| Debugging           | [Debugging ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/debuggingjava.md)         |
+ - [Getting Started ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/gettingstarted.md)          |
+ - [Java Learning Curve](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javalearingcurve.md) 
+ - [From C to Java ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/fromctojava.md)           
+- [ Comparison](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/comparision.md)             |
+ - [Date & Time](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/date.md)                           |
+ - [Member Init](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/memberinitialized.md) |
+ - [Debugging ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/debuggingjava.md)         |
 
 
 ## Level 2: Object-Oriented Programming (OOP)
 
 *Think in objects*
 
-| Topic             | Resource                                                                                                                       |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| OOP Basics        | [oops.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/oops.md)                                             |
-| OOP Advanced      | [oops2.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/oops2.md)                                           |
-| Interfaces        | [interfaces.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/interfaces.md)                                 |
-| Marker Interface  | [markerinterface.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/markerinterface.md)                       |
-| Method Overriding | [objectmethodoverriding.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/objectmethodoverriding.md)         |
-| Inheritance       | [todayscontainmtinheritance.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todayscontainmtinheritance.md) |
-| Memory Mgmt       | [todyasmemmgmt.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todyasmemmgmt.md)                           |
+- [OOP Basics ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/oops.md)                                             |
+- [OOP Advanced ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/oops2.md)                                           |
+- [ Interfaces ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/interfaces.md)                                 |
+- [Marker Interfacemarkerinterface.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/markerinterface.md)                       |
+- [Method Overriding](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/objectmethodoverriding.md)         |
+- [Inheritance ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todayscontainmtinheritance.md) |
+- [Memory Mgmt](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todyasmemmgmt.md)                           |
 
 
 ## Level 3: Data Structures & Algorithms
 
 *Build logical strength*
 
-| Topic              | Resource                                                                                                                   |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| FIFO               | [FIFO.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/FIFO.md)                                         |
-| LIFO               | [LIFO.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/LIFO.md)                                         |
-| Doubly Linked List | [doublelinkedlist.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/doublelinkedlist.md)                 |
-| Circular List      | [circulardobulylinkedlist.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/circulardobulylinkedlist.md) |
-| Queue via List     | [linkedlistasqueue.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/linkedlistasqueue.md)               |
-| Collections        | [collectionfrmwrk.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectionfrmwrk.md)                 |
+ - [Queue](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/FIFO.md)                                 
+- [Stack](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/LIFO.md)                                    
+- [ Doubly Linked List](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/doublelinkedlist.md)              
+- [ Circular List](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/circulardobulylinkedlist.md) 
+- [Queue via List ](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/linkedlistasqueue.md)             
+- [Collections](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectionfrmwrk.md)              
 
 
 ## Level 4: Collections & Projects
 
 *Apply collections in real systems*
 
-| Topic        | Resource                                                                                                             |
-| ------------ | -------------------------------------------------------------------------------------------------------------------- |
-| Task Manager | [collectiontaskmanager.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectiontaskmanager.md) |
-| Task Test    | [collectionTaskmgrTest.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectionTaskmgrTest.md) |
-| Repository   | [repository.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/repository.md)                       |
-| Java Project | [javaproject.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javaproject.md)                     |
+[Task Manager](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectiontaskmanager.md) |
+[Task Test](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectionTaskmgrTest.md) |
+ [Repository](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/repository.md)                       |
+[Java Project](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javaproject.md)                     |
 
 
 ## Level 5: Multithreading & Concurrency
 
 *Write parallel programs*
 
-| Topic            | Resource                                                                                                 |
-| ---------------- | -------------------------------------------------------------------------------------------------------- |
+
 | Multithreading   | [multithreading.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/multithreading.md)   |
 | Advanced Threads | [multithreading2.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/multithreading2.md) |
 | Concurrency      | [concurrency.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/concurrency.md)         |
