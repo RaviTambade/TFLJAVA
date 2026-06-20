@@ -1,7 +1,4 @@
-# Problem Statement
-
-
-## Mentor Note for Students
+# OOP's Mini Project
 
 Dear TAP Intern,
 
@@ -325,8 +322,6 @@ public class Subject {
 
 A Subject HAS assignments.
 
----
-
 # Phase 4 — Collections Framework
 
 ## Step 4: Store Users in Collection
@@ -488,8 +483,6 @@ List<User> users =
                 new TypeToken<List<User>>(){}.getType());
 ```
 
-
-
 # What Students Learn
 
 | Concept         | Real Industry Meaning   |
@@ -551,8 +544,6 @@ public interface AuthOperations {
 | Session tokens         | HashMap                            |
 | Assignment submissions | HashMap<Integer, List<Submission>> |
 
-
-
 # JSON Files
 
 ```text
@@ -561,8 +552,6 @@ subjects.json
 submissions.json
 sessions.json
 ```
-
-
 # Final Console Flow
 
 ```text
@@ -573,7 +562,6 @@ WELCOME TO TFL LEARNING PORTAL
 3. SME Login
 4. Exit
 ```
-
 
 # Example Student Journey
 
@@ -586,7 +574,6 @@ Student Login Successful
 4. Logout
 ```
 
-
 # Example SME Journey
 
 ```text
@@ -597,7 +584,6 @@ SME Login Successful
 3. View Submissions
 4. Logout
 ```
-
 
 # Advanced Enhancements (Optional)
 
@@ -635,7 +621,6 @@ Students are unknowingly learning:
 * domain modeling
 * layered architecture
 * software engineering basics
-
 
 # Final Mentor Message to Students
 
