@@ -1,4 +1,4 @@
-# **From Code Chaos to Clean Architecture — “The Day Your Project Grew Up”**
+# ** Clean Architecture — “The Day Your Project Grew Up”**
 
 While helping a student team build a **mini Amazon** for their semester project.
 At first, the code is cute — small, innocent, and obedient. A few products, a form, a simple JDBC call.

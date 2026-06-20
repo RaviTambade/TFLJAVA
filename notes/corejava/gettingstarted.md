@@ -2,7 +2,7 @@
 
 # Learning Java — The Transflower Way
 
-> *"ava is not just a programming language — it’s a language of enterprise, stability, and scale.
+> *"Java is not just a programming language — it’s a language of enterprise, stability, and scale.
 > When you learn Java, you're not just building apps — you're building systems that banks, governments, e-commerce giants, and even satellites depend on."*
 > — A mentor’s words, now passed on to you.
 

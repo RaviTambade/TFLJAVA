@@ -1,4 +1,4 @@
-# 🚀 TFLJAVA – Core Java Engineering Foundation
+# Core Java Engineering Foundation
 
 ### *Transflower Learning Framework | Build Strong Programming Roots*
 
@@ -16,19 +16,19 @@ This repository focuses on:
 > **Goal:** Build strong foundations before moving to frameworks.
 
 
-## 📌 Who Is This For?
+##  Who Is This For?
 
 This repository is for:
 
-* 🎓 First / Second Year Students
-* 💻 Java Beginners
-* 🔁 C/C++ Programmers shifting to Java
-* 👨‍🏫 Trainers & Mentors
+* First / Second Year Students
+* Java Beginners
+* C/C++ Programmers shifting to Java
+* Trainers & Mentors
 
 If you want to **master Java from inside out**, start here.
 
 
-## 🧭 Learning Philosophy (Transflower Mindset)
+## Learning Philosophy (Transflower Mindset)
 
 > **Understand → Practice → Debug → Optimize → Own**
 
@@ -40,12 +40,9 @@ We believe:
 
 This track builds **logic + design sense + confidence**.
 
+## Progressive Core Java Roadmap
 
-
-## 📚 Progressive Core Java Roadmap
-
-
-## 🟢 Level 1: Getting Started & Basics
+## Level 1: Getting Started & Basics
 
 *Build your programming base*
 
@@ -60,7 +57,7 @@ This track builds **logic + design sense + confidence**.
 | Debugging           | [debuggingjava.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/debuggingjava.md)         |
 
 
-## 🟢 Level 2: Object-Oriented Programming (OOP)
+## Level 2: Object-Oriented Programming (OOP)
 
 *Think in objects*
 
@@ -75,7 +72,7 @@ This track builds **logic + design sense + confidence**.
 | Memory Mgmt       | [todyasmemmgmt.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/todyasmemmgmt.md)                           |
 
 
-## 🟢 Level 3: Data Structures & Algorithms
+## Level 3: Data Structures & Algorithms
 
 *Build logical strength*
 
@@ -89,7 +86,7 @@ This track builds **logic + design sense + confidence**.
 | Collections        | [collectionfrmwrk.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/collectionfrmwrk.md)                 |
 
 
-## 🟢 Level 4: Collections & Projects
+## Level 4: Collections & Projects
 
 *Apply collections in real systems*
 
@@ -101,7 +98,7 @@ This track builds **logic + design sense + confidence**.
 | Java Project | [javaproject.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/javaproject.md)                     |
 
 
-## 🟢 Level 5: Multithreading & Concurrency
+## Level 5: Multithreading & Concurrency
 
 *Write parallel programs*
 
@@ -114,7 +111,7 @@ This track builds **logic + design sense + confidence**.
 | Async Repo       | [asyncrepository.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/asyncrepository.md) |
 
 
-## 🟢 Level 6: Build Tools & Dependency Management
+## Level 6: Build Tools & Dependency Management
 
 *Professional setup*
 
@@ -127,7 +124,7 @@ This track builds **logic + design sense + confidence**.
 | Command Builder | [commandbuilder.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/commandbuilder.md)                 |
 
 
-## 🟢 Level 7: Database & Persistence
+## Level 7: Database & Persistence
 
 *Connect Java with data*
 
@@ -138,7 +135,7 @@ This track builds **logic + design sense + confidence**.
 | Gson          | [serialzationGson.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/serialzationGson.md) |
 
 
-## 🟢 Level 8: Advanced Engineering
+## Level 8: Advanced Engineering
 
 *Become serious engineer*
 
@@ -150,7 +147,7 @@ This track builds **logic + design sense + confidence**.
 | Class Test      | [ClassTest.md](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/ClassTest.md)             |
 
 
-## 🟢 Level 9: Domain & Case Studies
+## Level 9: Domain & Case Studies
 
 *Learn through models*
 
@@ -161,7 +158,7 @@ This track builds **logic + design sense + confidence**.
 
 
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 After completing this track, you will be able to:
 
