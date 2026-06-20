@@ -1,9 +1,7 @@
-# kar java , Mar Java, mit Java 
+# Kar java , Mar Java, Mit Java 
 
 *"Java is not just a programming language — it’s a language of enterprise, stability, and scale. When you learn Java, you're not just learning how to build an app — you're learning how to build systems that banks, governments, e-commerce giants, and even satellites depend on."*
 – A mentor once told me this when I was where you are today.
-
-
 
 When we think of careers in software engineering, we often hear buzzwords — AI, Cloud, Microservices, DevOps. But behind many of these big systems lies a steady, time-tested powerhouse: **Java**.
 
