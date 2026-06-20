@@ -4,11 +4,10 @@
 – A mentor once told me this when I was where you are today.
 
 
-## 🌱 Thee Root of It All: Why Learn Java?
 
 When we think of careers in software engineering, we often hear buzzwords — AI, Cloud, Microservices, DevOps. But behind many of these big systems lies a steady, time-tested powerhouse: **Java**.
 
-🧠 Java is:
+ Java is:
 
 * Platform Independent (Write Once, Run Anywhere)
 * Secure, Robust, and Scalable
