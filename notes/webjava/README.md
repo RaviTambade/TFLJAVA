@@ -2,7 +2,6 @@
 
 > **Learn → Build → Debug → Improve → Own**
 
-
 This roadmap builds **thinking ability first**, then frameworks.
 
 ### 🟢 Level 1: Java → Database Foundation
@@ -17,7 +16,6 @@ This roadmap builds **thinking ability first**, then frameworks.
 - [ Web App Servlet](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webjava/javawebappservlet.md)
 - [ JSP Basics](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webjava/jsp.md)
 - [Web Applications](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webjava/javawebapplicaitons.md)
-
 
 ### 🟢 Level 3: Frameworks & ORM
 - [Spring MVC](https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webjava/springmvc.md)
