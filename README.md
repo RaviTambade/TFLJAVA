@@ -28,7 +28,8 @@ Over the years, Java has introduced features that transformed the way we write c
 - 🧵 Java 21 (LTS) – Virtual Threads (Project Loom)
 - 🔥 Java 25 (LTS) – AI, Cloud, and Performance Enhancements
 - 🚀 Java 26 – Faster JVM, Better Concurrency, and Cloud-Native Improvements
-What makes Java remarkable isn't just its age—it's its ability to evolve while maintaining backward compatibility.
+
+#####What makes Java remarkable isn't just its age—it's its ability to evolve while maintaining backward compatibility.
 Whether you're building:
 - Enterprise applications
 - Banking systems
@@ -40,7 +41,7 @@ Whether you're building:
 Java continues to be a top choice for developers and organizations worldwide.
 As someone who primarily codes in Java, it's exciting to see how the language keeps adapting to modern software development while staying true to its core principles of reliability, scalability, and performance.
 
-Would you like a step-by-step **learning roadmap** or **project-based plan** to master this path? 
+Would you like a step-by-step **Learning Roadmap** or **Project-based Plan** to master this path? 
 
 <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/gettingstarted.md">Let us get started</a>
 
