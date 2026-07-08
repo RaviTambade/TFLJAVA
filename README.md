@@ -29,7 +29,7 @@ Over the years, Java has introduced features that transformed the way we write c
 - 🔥 Java 25 (LTS) – AI, Cloud, and Performance Enhancements
 - 🚀 Java 26 – Faster JVM, Better Concurrency, and Cloud-Native Improvements
 
-#####What makes Java remarkable isn't just its age—it's its ability to evolve while maintaining backward compatibility.
+##### What makes Java remarkable isn't just its age—it's its ability to evolve while maintaining backward compatibility.
 Whether you're building:
 - Enterprise applications
 - Banking systems
