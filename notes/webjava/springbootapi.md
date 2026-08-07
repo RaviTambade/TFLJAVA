@@ -1,4 +1,4 @@
-👨‍🏫 Spring Boot API Strategy
+# Spring Boot API Strategy
 
 "Sanika, Sahil, Nirjala, Sarthak – listen carefully. You are not just writing lines of Java code. You are actually building a **mini factory**.
 
@@ -44,9 +44,8 @@ This whole factory runs smoothly only because of **Spring Boot pipeline**.
 * **Tomcat** = factory gate where customers submit requests.
 * **Postman** = customer who tests whether your factory delivers correct output.
 
-🌱 So tomorrow, when you open Postman and hit `http://localhost:8080/candidate/score?id=101`,
+So tomorrow, when you open Postman and hit `http://localhost:8080/candidate/score?id=101`,
 don’t just think *‘oh my method is called’*.
 Think: *‘My whole mini factory just got activated – Controller → Service → Repository → Database → back to JSON response.’*
 
 That’s how professional Spring Boot APIs are written – structured, layered, and loosely coupled.
-

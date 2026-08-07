@@ -1,4 +1,4 @@
-# 🧑‍🏫 Spring Boot Application
+# Spring Boot Application
 
 **1. From Standalone Apps to Web Apps**
 👉 *“Till now, whatever apps you built in Java, C, or Python were **standalone console applications**. You wrote a `main()` method, ran it on your computer, and the output appeared only on **your machine**. That means they were **single-user applications**. Each user would have to install their own copy of the app, and data remained local. For example, if you created a Library Management System like this, every librarian’s computer would have its own database — not connected to others. Clearly, this doesn’t scale.”*

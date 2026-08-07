@@ -1,26 +1,20 @@
-## The Tale of the Talking HTML — Understanding JSP
+# Java Server  Pages (JSP)
 
 Dear Students,
 
 Let me take you back to a time when websites were like **posters** — static, fixed, and lifeless. No matter who visited, the content remained the same.
 
 But as the world moved online, businesses wanted more:
-✅ Custom greetings,
-✅ Real-time product info,
-✅ User dashboards…
+- ✅ Custom greetings,
+- ✅ Real-time product info,
+- ✅ User dashboards…
 
-In short, **websites needed to talk** — to understand who you are, what you want, and respond accordingly.
+In short, **websites needed to talk** — to understand who you are, what you want, and respond accordingly. That’s when JavaServer Pages (JSP) stepped in — the magic that gave **voice to HTML** through the **power of Java**.
 
-That’s when JavaServer Pages (JSP) stepped in — the magic that gave **voice to HTML** through the **power of Java**.
-
-## 🎭 What is JSP? — A Hybrid Stage for HTML and Java
+## What is JSP? — A Hybrid Stage for HTML and Java
 
 Imagine a **stage play** — HTML is the actor delivering static dialogue.
-Now imagine adding a **Java scriptwriter backstage**, whispering new lines based on who’s in the audience.
-
-That’s **JSP**.
-
-JSP allows you to write web pages with **HTML for structure** and **Java for behavior**. When someone requests the page, the server:
+Now imagine adding a **Java scriptwriter backstage**, whispering new lines based on who’s in the audience. That’s **JSP**. JSP allows you to write web pages with **HTML for structure** and **Java for behavior**. When someone requests the page, the server:
 
 1. Reads your HTML,
 2. Executes the embedded Java,
@@ -28,13 +22,13 @@ JSP allows you to write web pages with **HTML for structure** and **Java for beh
 4. Sends pure HTML to the browser.
 
 You can say:
-👉 “HTML gives you beauty.”
-👉 “Java gives you brains.”
+- 👉 “HTML gives you beauty.”
+- 👉 “Java gives you brains.”
 JSP gives you **both**.
 
-## 🔍 Key Features — The Tools Behind the Curtain
+## Key Features — The Tools Behind the Curtain
 
-### 1. 🧩 **Easy Integration**
+### 1. **Easy Integration**
 
 JSP makes it easy to mix Java into HTML. No complicated setup. Just a `.jsp` file and your logic is ready to serve.
 
@@ -42,11 +36,11 @@ JSP makes it easy to mix Java into HTML. No complicated setup. Just a `.jsp` fil
 <h1>Welcome, <%= request.getParameter("name") %>!</h1>
 ```
 
-### 2. 🧠 **Server-Side Execution**
+### 2. **Server-Side Execution**
 
 When a browser asks for `welcome.jsp`, the **server reads and executes the Java code**, then sends back an HTML response. This keeps your logic **secure** and **efficient**.
 
-### 3. 🏷️ **Tag-Based Syntax**
+### 3. **Tag-Based Syntax**
 
 JSP uses different tags for different tasks:
 
@@ -60,7 +54,7 @@ JSP uses different tags for different tasks:
 <h1>Hello, <%= name %>!</h1>
 ```
 
-### 4. 🧱 **Reusable Components**
+### 4. **Reusable Components**
 
 JSP isn’t just about mixing Java with HTML — you can build **tag libraries** that encapsulate reusable logic. It’s like building your own **LEGO blocks** for web pages.
 
@@ -72,7 +66,7 @@ Though you can mix code and design, good practice says: **don’t let your page 
 * JavaBeans or Servlets for business logic
   This leads to **clean, maintainable code**.
 
-### 6. 🤝 **Part of the Java EE Family**
+### 6. **Part of the Java EE Family**
 
 JSP works seamlessly with:
 
@@ -81,7 +75,7 @@ JSP works seamlessly with:
 * **JDBC**: Connect to databases
   Together, they form a solid web application foundation.
 
-## 🌐 A Quick Example
+## A Quick Example
 
 Let’s say we want to display a welcome message based on user input:
 
@@ -113,7 +107,7 @@ Welcome, Ravi!
 
 ✨ That’s JSP — a **dynamic** response based on **real-time data**.
 
-## 🧭 Mentor’s Wisdom: When to Use JSP?
+## Mentor’s Wisdom: When to Use JSP?
 
 Back in the day, JSP was the **go-to solution** for Java web development. Today, with Angular, React, and modern frontend frameworks, its usage is declining for highly interactive apps.
 
@@ -231,13 +225,9 @@ Since we are not using Servlet 3.0 annotations for servlet mapping, we need to c
 
 Step 6: Build and Run
 Build the Maven project using `mvn clean install` and deploy it to a servlet container like Apache Tomcat.
-
 Access the application using the URL: `http://localhost:8080/mywebapp/hello`
-
 You should see the message "Hello from Servlet!" displayed on the webpage.
-
 That's it! You have successfully created a Maven project with JSP and Servlet.
-
 
 ## JSTL Tags
 
