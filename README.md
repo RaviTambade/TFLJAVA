@@ -43,7 +43,7 @@ As someone who primarily codes in Java, it's exciting to see how the language ke
 
 Would you like a step-by-step **Learning Roadmap** or **Project-based Plan** to master this path? 
 
-<a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/README.md">Core Java</a>
-<a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webjava/README.md">Advanced Java</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/corejava/README.md">Core Java</a>
+- <a href="https://github.com/RaviTambade/TFLJAVA/blob/main/notes/webjava/README.md">Advanced Java</a>
 
 #### Tap your potential.
