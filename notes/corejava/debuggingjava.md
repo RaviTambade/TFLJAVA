@@ -2,17 +2,17 @@
 
 **Debugging** is the process of **finding and fixing mistakes (bugs)** in your code so that it works the way you want.
 
-### 🐞 **What's a Bug?**
+### **What's a Bug?**
 A **bug** is a **problem in your program** — it could be:
 * Wrong output
 * Error messages
 * Program crash
 * Or it just behaves weirdly
 
-### 🎯 **Goal of Debugging**
+### **Goal of Debugging**
 To **understand what went wrong**, and then **fix it**.
 
-👨‍🏫 Imagine you're a **detective** investigating a crime scene:
+Imagine you're a **detective** investigating a crime scene:
 
 * The program is your **crime scene**
 * A bug is the **mystery**
@@ -24,15 +24,12 @@ That’s **debugging**!
 
 ### ⚙️ **How Debugging Works**
 
-When you **run a program normally**, it runs from top to bottom, too fast to observe.
-
-But in **debug mode**:
+When you **run a program normally**, it runs from top to bottom, too fast to observe. But in **debug mode**:
 
 1. You can **pause** the program at specific lines (called **breakpoints**)
 2. You can **see values** of variables (e.g. what’s inside `a` and `b`)
 3. You can **go line-by-line** and watch what happens next
 4. You can **fix mistakes** once you see where things went wrong
-
 
 ### 👨‍💻 Example (Java)
 

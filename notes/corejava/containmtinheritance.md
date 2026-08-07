@@ -1,4 +1,3 @@
- 
 ##  Building a Company’s Employee System
 
 Alright, imagine we’re working together at a software company, and we’ve been asked to model employee data for the HR system. We want to start simple with two types of employees:
@@ -8,7 +7,7 @@ Alright, imagine we’re working together at a software company, and we’ve bee
 2️⃣ A **sales employee**, who is also an employee but earns extra commission on top of the base salary.
 
 
-### 🟢 **First: Base Class - Employee**
+### **First: Base Class - Employee**
 
 We start by creating an `Employee` class. It contains:
 
@@ -38,7 +37,7 @@ public class Employee {
 
   
 
-### 🟡 **Inheritance: SalesEmployee extends Employee**
+### **Inheritance: SalesEmployee extends Employee**
 
 We know that a sales employee is *still* an employee, but with *extra properties* like commission. This is a classic case of **inheritance**: we extend the `Employee` class.
 
@@ -63,7 +62,7 @@ public class SalesEmployee extends Employee {
 }
 ```
 
-### 🟠 **Containment: Adding Address to Employee**
+### **Containment: Adding Address to Employee**
 
 Now, let’s say every employee also has an address. But instead of putting address fields directly into `Employee`, we create a separate `Address` class — that’s **containment** (also called *composition*), where one class *contains* another.
 
@@ -112,7 +111,7 @@ public class Employee {
 
  
 
-### 🟣 **Putting It All Together**
+### **Putting It All Together**
 
 Finally, let’s create an object and see inheritance and containment in action:
 
@@ -130,7 +129,7 @@ public class Main {
 ```
 
  
-### 📘 **Mentor’s Explanation: What Did We Learn?**
+### ** What Did We Learn?**
 
 - ✅ **Inheritance**: `SalesEmployee extends Employee` → SalesEmployee *is-a* specialized Employee.
 - ✅ **Containment**: `Employee has an Address` → Employee *has-a* Address → a perfect example of composition.
@@ -140,8 +139,7 @@ public class Main {
 * Maintainability: Address can evolve separately without affecting the Employee logic.
 * Scalability: Tomorrow, you can add `ManagerEmployee` or `InternEmployee` classes, and all share common employee functionality.
 
- 
 
-### 🔎 **Why Does This Matter?**
+### **Why Does This Matter?**
 
 In real software projects, we combine **inheritance** for *IS-A* relationships (specialization) and **containment** for *HAS-A* relationships (composition). Together, they help us model complex real-world scenarios cleanly.

@@ -1,4 +1,3 @@
-
 ## The Photocopy Twins” – Understanding Shallow vs Deep Copy”**
 
 > *"Think of your object as a person with a birth certificate. When you copy the person, are you copying **just the outer image** (like a photocopy), or are you also making a **new birth certificate**? That’s the story of shallow vs deep copy."* – says the mentor, walking into the classroom with two photo frames.

@@ -1,5 +1,5 @@
 
-### **Concurreny in an E-Commerce World**
+#  **Concurreny in an E-Commerce World**
 
 *Classroom scene – students are seated, laptops open, ready for code and coffee.*
 
