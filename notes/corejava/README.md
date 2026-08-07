@@ -2,9 +2,7 @@
 
 > **"Learning Java is not about memorizing syntax. It is about learning how to think like a software developer."**
 
-Welcome to the **Core Java Learning Roadmap**. This folder is designed as a **step-by-step learning journey**, taking you from the very first concepts of Java to advanced programming techniques.
-
-At Transflower, we believe that a learner should not jump directly into frameworks such as Spring Boot, Hibernate, or Microservices without first understanding the **foundation underneath them**. So, our journey begins with:
+Welcome to the **Core Java Learning Roadmap**. This folder is designed as a **step-by-step learning journey**, taking you from the very first concepts of Java to advanced programming techniques. At Transflower, we believe that a learner should not jump directly into frameworks such as Spring Boot, Hibernate, or Microservices without first understanding the **foundation underneath them**. So, our journey begins with:
 
 ```text
 Java Fundamentals
@@ -28,8 +26,7 @@ Advanced Java Concepts
 Enterprise Java
 ```
 
-
-## 🌱 Start With the Seed
+## Start With the Seed
 
 Think of yourself as a **Java seed**.At the beginning, you may know only:
 
@@ -65,40 +62,14 @@ But gradually, you will learn to build:
 
 Every section in this roadmap represents another step in that growth.
 
-# 🧭 Follow the Roadmap in Order
+# Follow the Roadmap in Order
 
-Do not treat the folder as a collection of independent topics. Treat it as a **learning journey**. Each concept prepares you for the next one.
-
-For example:
+Do not treat the folder as a collection of independent topics. Treat it as a **learning journey**. Each concept prepares you for the next one. For example:
 
 ```text
-Variables
-   ↓
-Operators
-   ↓
-Conditions
-   ↓
-Loops
-   ↓
-Methods
-   ↓
-Classes
-   ↓
-Objects
-   ↓
-Inheritance
-   ↓
-Polymorphism
-   ↓
-Interfaces
-   ↓
-Collections
-   ↓
-Generics
-   ↓
-Streams
-   ↓
-Multithreading
+Variables -> Operators -> Conditions -> Loops -> Methods -> Classes -> Objects -> Inheritance -> Polymorphism -> Interfaces
+   
+Collections -> Generics -> Streams  -> Multithreading
 ```
 
 When the foundation is strong, advanced concepts become much easier.
@@ -120,19 +91,7 @@ And then:
 For every concept, try to follow this cycle:
 
 ```text
-        LEARN
-          ↓
-       UNDERSTAND
-          ↓
-        PRACTICE
-          ↓
-       EXPERIMENT
-          ↓
-       BUILD
-          ↓
-       REFLECT
-          ↓
-       REPEAT
+        LEARN ->  UNDERSTAND  ->  PRACTICE -> EXPERIMENT -> BUILD  -> REFLECT ->  REPEAT
 ```
 
 This is how knowledge becomes a **developer skill**.
@@ -179,7 +138,7 @@ That is the transition we want:
 
 > **Syntax → Logic → Objects → Components → Applications**
 
-# 🌻 Your Learning Journey
+# Your Learning Journey
 
 As you move through this folder, don't rush to finish every topic.For each concept, ask yourself:
 
@@ -191,24 +150,12 @@ As you move through this folder, don't rush to finish every topic.For each conce
 Connect it with real-world applications.
 
 
-# 🚀 The Final Destination
+# The Final Destination
 
 The goal of learning Core Java is **not simply to become good at Java syntax**. The real goal is to develop the ability to:
 
 ```text
-                 THINK
-                   ↓
-             SOLVE PROBLEMS
-                   ↓
-              DESIGN LOGIC
-                   ↓
-             WRITE CLEAN CODE
-                   ↓
-             BUILD COMPONENTS
-                   ↓
-            BUILD APPLICATIONS
-                   ↓
-          BECOME INDUSTRY READY
+THINK->SOLVE PROBLEMS->DESIGN LOGIC->WRITE CLEAN CODE->BUILD COMPONENTS->BUILD APPLICATIONS->BECOME INDUSTRY READY
 ```
 
 By the time you complete this roadmap, you should be able to look at a business problem and think:
@@ -220,28 +167,7 @@ That is the beginning of becoming a **professional Java developer**.
 > **"Don't learn Java to pass an interview.
 > Learn Java to learn how software is built."**
 
-Start from the basics. Build one concept on top of another. Write code every day. Break things. Debug them. Ask *why*. Build small applications. And gradually transform yourself:
-
-```text
-        Beginner
-           │
-           ▼
-     Java Learner
-           │
-           ▼
-     Java Programmer
-           │
-           ▼
-     Problem Solver
-           │
-           ▼
-    Software Developer
-           │
-           ▼
-    Java Professional
-```
-
-## Welcome to the Core Java journey.
+## Welcome to the Transflower Core Java journey.
 
 **Let's start from the seed, grow the roots, build the branches, and eventually create real software.**
 
@@ -327,3 +253,26 @@ After completing this path, you will be able to:
 - Debug and test Java applications
 
 > Study the sections sequentially, then revisit earlier topics as you gain confidence.
+
+Start from the basics. Build one concept on top of another. Write code every day. Break things. Debug them. Ask *why*. Build small applications. And gradually transform yourself:
+
+```text
+        Beginner
+           │
+           ▼
+     Java Learner
+           │
+           ▼
+     Java Programmer
+           │
+           ▼
+     Problem Solver
+           │
+           ▼
+    Software Developer
+           │
+           ▼
+    Java Professional
+```
+
+Tap your potential.
