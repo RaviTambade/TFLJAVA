@@ -169,8 +169,6 @@ That is the beginning of becoming a **professional Java developer**.
 
 Start with Java basics and essential concepts.
 
-- [Getting Started](./gettingstarted.md)
-- [Java Learning Curve](./javalearingcurve.md)
 - [From C to Java](./fromctojava.md)
 - [Java Project](./javaproject.md)
 - [Date & Time](./date.md)
