@@ -72,11 +72,7 @@ Variables -> Operators -> Conditions -> Loops -> Methods -> Classes -> Objects -
 Collections -> Generics -> Streams  -> Multithreading
 ```
 
-When the foundation is strong, advanced concepts become much easier.
-
-# How a Transflower Mentor Approaches Java
-
-At Transflower, we don't want learners to ask only:
+When the foundation is strong, advanced concepts become much easier. At Transflower, we don't want learners to ask only:
 
 > **"What is this syntax?"**
 
@@ -91,6 +87,7 @@ And then:
 For every concept, try to follow this cycle:
 
 ```text
+
         LEARN ->  UNDERSTAND  ->  PRACTICE -> EXPERIMENT -> BUILD  -> REFLECT ->  REPEAT
 ```
 
@@ -146,8 +143,7 @@ As you move through this folder, don't rush to finish every topic.For each conce
 - 2️⃣ Why was it introduced? -> Understand the problem it solves.
 - 3️⃣ How does it work? ->Understand the execution and memory model.
 - 4️⃣ How do I use it? ->Write code.
-- 5️⃣ Where is it used? ->
-Connect it with real-world applications.
+- 5️⃣ Where is it used? -> Connect it with real-world applications.
 
 
 # The Final Destination
