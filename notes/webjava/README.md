@@ -16,7 +16,7 @@ Start with Java web architecture, containers,  servlet and jsp basics.
 - [Simple Servlet](./simpleservlet.md)
 - [Subject Servlet Example](./subjectservelet.md)
 - [Java Web App with Servlets](./javawebappservlet.md)
-- [Step-by-Step Servlet Deployment](./stepbystepservletdeploy.md)
+- [Servlet using Maven Project](./stepbystepservletdeploy.md)
 - [JSP Basics](./jsp.md)
 
 
