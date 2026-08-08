@@ -287,8 +287,7 @@ The server generates an HTTP response containing HTML.
 Suppose the Servlet puts this into the request:
 
 ```java
-request.setAttribute("message",
-                     "Hello from Servlet!");
+request.setAttribute("message","Hello from Servlet!");
 ```
 
 Then JSP can display it.
@@ -354,13 +353,8 @@ Instead of writing Java code directly into the page, we can access data using EL
 You may encounter this in older applications:
 
 ```jsp
-<%
-    String name = "Ravi";
-%>
-
-<h1>
-    Welcome <%= name %>
-</h1>
+<% String name = "Ravi"; %>
+<h1> Welcome <%= name %></h1>
 ```
 
 There are three important JSP constructs:
@@ -395,7 +389,7 @@ Used for JSP configuration.
 You **can** write:
 
 ```jsp
-<%
+<% 
     // Java code
 %>
 ```
@@ -456,13 +450,9 @@ This is where **JSTL** becomes useful.JSTL stands for: **JSP Standard Tag Librar
 Instead of Java loops:
 
 ```jsp
-<%
-for(Product p : products) {
-%>
+<% for(Product p : products) { %>
     <p><%= p.getName() %></p>
-<%
-}
-%>
+<% } %>
 ```
 
 we can use a tag-based approach:
@@ -482,11 +472,8 @@ Much easier to read.
 For iteration:
 
 ```jsp
-<c:forEach var="product"
-           items="${products}">
-
+<c:forEach var="product" items="${products}">
     <p>${product.name}</p>
-
 </c:forEach>
 ```
 
@@ -495,10 +482,8 @@ For iteration:
 For conditions:
 
 ```jsp
-<c:if test="${product.price > 1000}">
-
+<c:if test="${product.price > 1000}"> 
     <p>Premium Product</p>
-
 </c:if>
 ```
 
@@ -509,7 +494,6 @@ For multiple conditions:
 
 ```jsp
 <c:choose>
-
     <c:when test="${user.role == 'ADMIN'}">
         <p>Administrator</p>
     </c:when>
@@ -517,7 +501,6 @@ For multiple conditions:
     <c:otherwise>
         <p>Regular User</p>
     </c:otherwise>
-
 </c:choose>
 ```
 
@@ -526,8 +509,7 @@ For multiple conditions:
 Create/set a variable:
 
 ```jsp
-<c:set var="total"
-       value="${product.price * product.quantity}" />
+<c:set var="total" value="${product.price * product.quantity}" />
 ```
 
 ### `<c:out>`
@@ -543,36 +525,22 @@ Safely output a value:
 Let's connect this to the **Product CRUD application** you just learned. Our Servlet might retrieve:
 
 ```java
-List<Product> products =
-        productDAO.findAll();
+List<Product> products = productDAO.findAll();
 
-request.setAttribute(
-        "products",
-        products);
-
-request.getRequestDispatcher(
-        "/products.jsp")
-        .forward(request, response);
+request.setAttribute("products",products);
+request.getRequestDispatcher( "/products.jsp").forward(request, response);
 ```
 
 Now JSP displays them:
 
 ```jsp
-<c:forEach var="product"
-           items="${products}">
-
+<c:forEach var="product" items="${products}">
     <tr>
-
         <td>${product.id}</td>
-
         <td>${product.name}</td>
-
         <td>${product.price}</td>
-
         <td>${product.quantity}</td>
-
     </tr>
-
 </c:forEach>
 ```
 
