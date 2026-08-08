@@ -24,9 +24,9 @@ Start with Java web architecture, containers,  servlet and jsp basics.
 ###  Level 3: Spring MVC 
 Move into framework-based development with Spring MVC and request flow.
 
-- [Spring MVC](./springmvc.md)
-- [Application Flow in Spring MVC](./applicationflowspringmvc.md)
 - [Real Spring Guide](./realspring.md)
+- [Spring MVC](./springmvc.md)
+- [Spring MVC Application Flow](./sprinfmvcappflow.md)
 - [Bean vs Object](./beanvsobject.md)
 
 ###  Level 4: REST APIs and Spring Boot
