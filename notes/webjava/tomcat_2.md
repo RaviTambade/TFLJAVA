@@ -3,7 +3,7 @@
 
 > “TAP team, yesterday our Java application learned how to talk to a database using JDBC. Today, we are going to teach that application something new — how to talk to the outside world through a web browser.”
 
-## 🎬 Scene 1 — From Java Program to Web Application
+#### 🎬 Scene 1 — From Java Program to Web Application
 
 Remember our simple Java program?
 
@@ -48,7 +48,7 @@ Now who is going to receive that request?
  
 > “This is where our friend **Tomcat** enters the classroom.” 🐱
 
-# Scene 2 — Meet Apache Tomcat
+## Scene 2 — Meet Apache Tomcat
 
 **Apache Tomcat** is commonly used to run Java web applications based on the Servlet technology. It provides a **Servlet container** and HTTP server capabilities. Think of Tomcat as:
 
@@ -76,11 +76,11 @@ Now who is going to receive that request?
 > **“Tomcat is not simply a place where Java code runs. Tomcat provides the environment in which Java web components such as Servlets can live and serve HTTP requests.”**
 
 
-# Scene 3 — Web Server vs Web Container
+## Scene 3 — Web Server vs Web Container
 
 Students often confuse these two terms. Let's separate them.
 
-### Web Server
+###### Web Server
 
 Its primary responsibility is handling **HTTP communication**.
 
@@ -104,7 +104,7 @@ Nginx
 IIS
 ```
 
-### Web Container
+###### Web Container
 
 A Servlet container manages Java web components. It knows how to:
 
@@ -131,7 +131,7 @@ we should also understand:
 > **“Tomcat is a Servlet Container.”**
 
 
-# Scene 4 — The Hotel Analogy
+## Scene 4 — The Hotel Analogy
 
 Let's imagine Tomcat as a hotel.
 
@@ -155,7 +155,7 @@ The browser is the **guest**. The HTTP request is the **guest's request**. The S
 > “Students, don't think of Servlet as an independent application. Think of it as a guest living inside the Tomcat hotel.”
 
 
-# Scene 5 — Where Does Our WAR File Go?
+## Scene 5 — Where Does Our WAR File Go?
 
 Suppose we build our Java web application using Maven. Our project might look like:
 
@@ -204,7 +204,7 @@ student-web-app.war
  Servlet + JSP + Classes + Configuration
 ```
 
-# Scene 6 — What Happens When Tomcat Starts?
+## Scene 6 — What Happens When Tomcat Starts?
 
 Imagine you start Tomcat. Tomcat starts listening for HTTP requests on a configured port. A common development setup uses:
 
@@ -235,7 +235,7 @@ Tomcat is now waiting.
                     ▼
                  Servlet
 ```
-# Scene 7 — A Browser Makes a Request
+## Scene 7 — A Browser Makes a Request
 
 Suppose the student enters:
 
@@ -271,7 +271,7 @@ The appropriate Servlet is selected.
 
  
 
-# ☕ Scene 8 — Servlet Takes Over
+## ☕ Scene 8 — Servlet Takes Over
 
 Suppose we have:
 
@@ -320,7 +320,7 @@ HTTP Response
 Browser
 ```
 
-# Scene 9 — Now Bring JDBC Into the Picture
+## Scene 9 — Now Bring JDBC Into the Picture
 
 This is where your **previous JDBC learning becomes valuable**. Suppose the user asks:
 
@@ -355,13 +355,13 @@ Browser
 
 Now you have built a real web application.
 
-### 👨‍🏫 Mentor:
+###### 👨‍🏫 Mentor:
 
 > “Yesterday JDBC gave your Java program access to data. Today Tomcat gives your Java program access to HTTP requests.”
 
 That's an important milestone.
 
-# Scene 10 — Complete Java Web Application Flow
+## Scene 10 — Complete Java Web Application Flow
 
 Let's put everything together.
 
@@ -407,7 +407,7 @@ Let's put everything together.
                   🌐 BROWSER
 ```
 
-# Scene 11 — Who Does What?
+## Scene 11 — Who Does What?
 
 Students, remember this table.
 
@@ -423,7 +423,7 @@ Students, remember this table.
 | JSP           | Helps generate dynamic HTML in traditional Java web applications |
 
 
-# Scene 12 — Servlet Lifecycle
+## Scene 12 — Servlet Lifecycle
 
 Another important responsibility of the Servlet container is managing the Servlet lifecycle. You don't normally write:
 
@@ -457,13 +457,13 @@ Conceptually:
             destroy()
 ```
 
-### Mentor Mantra
+###### Mentor Mantra
 
 > **“Servlet lifecycle is container-managed.”**
 
 That's a very important concept for understanding Java web development.
 
-# Scene 13 — What About Multiple Students?
+## Scene 13 — What About Multiple Students?
 
 Suppose five students access the application.
 
@@ -504,7 +504,7 @@ Core Java
 ```
 
 
-# Scene 14 — What Is Inside a WAR?
+## Scene 14 — What Is Inside a WAR?
 
 A traditional Java web application can be packaged as:
 
@@ -541,7 +541,7 @@ Developer
  Running Web Application
 ```
 
-# Scene 15 — From Servlet to Spring Boot
+## Scene 15 — From Servlet to Spring Boot
 
 Now students, here is the important part. You may be thinking:
 
@@ -594,7 +594,7 @@ Spring Boot Application
 
 That is why understanding Tomcat helps you understand what is happening underneath Spring Boot.
 
-# Final Transflower Mentor Story
+## Final Transflower Mentor Story
 
 >
 > “Students, don't memorize Tomcat as just another software that you install.”
@@ -627,7 +627,7 @@ Your Java application contains web components. Your browser sends HTTP requests.
              🗄️ DATABASE
 ```
 
-### Remember this sentence
+###### Remember this sentence
 
 > **“Tomcat is the runtime home for traditional Java web applications; its Servlet container manages the lifecycle and processing of Servlets, while its HTTP server capabilities allow it to receive and respond to web requests.”**
 
