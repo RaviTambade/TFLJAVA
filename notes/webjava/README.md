@@ -10,12 +10,12 @@ Welcome to the **Java Web Development Roadmap**. This roadmap is designed as a *
 
 ### Level 1: Web Fundamentals
 Start with Java web architecture, containers, and servlet basics.
-
-- [Web Server & Container](./webservercontainer.md)
-- [Tomcat Setup](./tomcat.md)
-- [Tomcat Advanced](./tomcat_2.md)
 - [JDBC Basics](./basicjavatojdbc.md)
 - [Java Web Applications Overview](./javawebapplicaitons.md)
+- [Tomcat Setup](./tomcat.md)
+- [Tomcat Advanced](./tomcat_2.md)
+
+
 
 ###  Level 2: Servlets and JSP
 Learn servlet programming, form handling, and JSP pages.
