@@ -3,7 +3,7 @@
 
 > “TAP team, yesterday our Java application learned how to talk to a database using JDBC. Today, we are going to teach that application something new — how to talk to the outside world through a web browser.”
 
-#### 🎬 Scene 1 — From Java Program to Web Application
+#### Scene 1 — From Java Program to Web Application
 
 Remember our simple Java program?
 
@@ -271,7 +271,7 @@ The appropriate Servlet is selected.
 
  
 
-## ☕ Scene 8 — Servlet Takes Over
+## Scene 8 — Servlet Takes Over
 
 Suppose we have:
 
