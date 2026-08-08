@@ -1,349 +1,835 @@
-# Java Server  Pages (JSP)
+# Java  Server Pages (JSP)
 
-Dear Students,
+Students, you already know **Core Java**, **OOP**, **JDBC**, and recently we introduced **Servlets**. Now imagine this situation: your Servlet has successfully fetched products from MySQL. Great! But how do we show those products nicely in a browser?”. “We need a **View**.”. “That is where **JSP — JavaServer Pages** enters our journey.
 
-Let me take you back to a time when websites were like **posters** — static, fixed, and lifeless. No matter who visited, the content remained the same.
+## 1️⃣ From JDBC → Servlet → JSP
 
-But as the world moved online, businesses wanted more:
-- ✅ Custom greetings,
-- ✅ Real-time product info,
-- ✅ User dashboards…
+Let's connect what you have already learned.Earlier:
 
-In short, **websites needed to talk** — to understand who you are, what you want, and respond accordingly. That’s when JavaServer Pages (JSP) stepped in — the magic that gave **voice to HTML** through the **power of Java**.
-
-## What is JSP? — A Hybrid Stage for HTML and Java
-
-Imagine a **stage play** — HTML is the actor delivering static dialogue.
-Now imagine adding a **Java scriptwriter backstage**, whispering new lines based on who’s in the audience. That’s **JSP**. JSP allows you to write web pages with **HTML for structure** and **Java for behavior**. When someone requests the page, the server:
-
-1. Reads your HTML,
-2. Executes the embedded Java,
-3. Generates a customized page,
-4. Sends pure HTML to the browser.
-
-You can say:
-- 👉 “HTML gives you beauty.”
-- 👉 “Java gives you brains.”
-JSP gives you **both**.
-
-## Key Features — The Tools Behind the Curtain
-
-### 1. **Easy Integration**
-
-JSP makes it easy to mix Java into HTML. No complicated setup. Just a `.jsp` file and your logic is ready to serve.
-
-```jsp
-<h1>Welcome, <%= request.getParameter("name") %>!</h1>
+```text
+Java Application
+      │
+      │ JDBC
+      ▼
+   MySQL
 ```
 
-### 2. **Server-Side Execution**
+Then we moved to web applications:
 
-When a browser asks for `welcome.jsp`, the **server reads and executes the Java code**, then sends back an HTML response. This keeps your logic **secure** and **efficient**.
-
-### 3. **Tag-Based Syntax**
-
-JSP uses different tags for different tasks:
-
-* `<% %>` for logic (`scriptlets`)
-* `<%= %>` for output
-* `<%@ %>` for configuration
-
-```jsp
-<%@ page language="java" contentType="text/html" %>
-<% String name = "Transflower"; %>
-<h1>Hello, <%= name %>!</h1>
+```text
+Browser
+   │
+   │ HTTP Request
+   ▼
+Tomcat
+   │
+   ▼
+Servlet
+   │
+   │ JDBC
+   ▼
+MySQL
 ```
 
-### 4. **Reusable Components**
+Now we add JSP:
 
-JSP isn’t just about mixing Java with HTML — you can build **tag libraries** that encapsulate reusable logic. It’s like building your own **LEGO blocks** for web pages.
+```text
+                         Java Web Application
+                                 │
+             ┌───────────────────┴───────────────────┐
+             │                                       │
+          Request                                  Response
+             │                                       ▲
+             ▼                                       │
+           Browser                                   │
+             │                                       │
+             ▼                                       │
+          Tomcat                                    JSP
+             │                                       ▲
+             ▼                                       │
+        Servlet ──────── Service ──────── DAO ──────┘
+                                      │
+                                      │ JDBC
+                                      ▼
+                                    MySQL
 
-### 5. 🧹 **Separation of Concerns**
+> “Servlet is primarily interested in **controlling the request**. JSP is primarily interested in **presenting the result**.”
 
-Though you can mix code and design, good practice says: **don’t let your page become spaghetti**! Use:
 
-* JSP for the view (HTML)
-* JavaBeans or Servlets for business logic
-  This leads to **clean, maintainable code**.
 
-### 6. **Part of the Java EE Family**
+##  2️⃣ What Exactly Is JSP?
 
-JSP works seamlessly with:
-
-* **Servlets**: Control the flow and logic
-* **JavaBeans**: Hold your data
-* **JDBC**: Connect to databases
-  Together, they form a solid web application foundation.
-
-## A Quick Example
-
-Let’s say we want to display a welcome message based on user input:
-
-**welcome.jsp**
+**JSP = JavaServer Pages**. A JSP is a server-side page used to generate dynamic web content. A simple JSP might look like:
 
 ```jsp
-<%@ page language="java" %>
 <html>
 <body>
-<%
-    String user = request.getParameter("username");
-%>
-<h2>Welcome, <%= user %>!</h2>
+    <h1>Welcome to Transflower!</h1>
 </body>
 </html>
 ```
 
-When a user visits:
-
-```
-http://localhost:8080/welcome.jsp?username=Ravi
-```
-
-They’ll see:
-
-```
-Welcome, Ravi!
-```
-
-✨ That’s JSP — a **dynamic** response based on **real-time data**.
-
-## Mentor’s Wisdom: When to Use JSP?
-
-Back in the day, JSP was the **go-to solution** for Java web development. Today, with Angular, React, and modern frontend frameworks, its usage is declining for highly interactive apps.
-
-However:
-
-* JSP is **still used in legacy enterprise applications**
-* It’s a **great learning tool** to understand server-side rendering and request-response mechanics
-* It’s **lightweight**, making it ideal for quick internal tools or admin panels
-
-## 🧠 Final Thoughts: Let HTML Speak Smartly
-
-Dear student, remember:
-
-> “JSP is where **design meets logic** — where your web page doesn’t just look good, but **thinks** and **responds** like a human.”
-
-As a Java developer, learning JSP builds your foundation for:
-
-* Java Web App Development
-* MVC architecture (with Servlets + JSP)
-* Frameworks like Spring MVC (where JSP is often the view layer)
-
- 
-## Simple JSP  step by step
-Let us explore step-by-step, how to use JSP with a Servlet in a Maven project:
-
-Step 1: Set Up Maven Project
-Create a new Maven project using your preferred IDE or the Maven command line. You can use the following command to create a new Maven project from the command line:
-
-```
-mvn archetype:generate -DgroupId=com.example -DartifactId=mywebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
-```
-
-This will generate a basic Maven web application structure.
-
-Step 2: Add Dependencies
-Add the dependencies for Servlet API and JSP support in the `pom.xml` file:
-
-```xml
-<dependencies>
-    <!-- Servlet API -->
-    <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>4.0.1</version>
-        <scope>provided</scope>
-    </dependency>
-    <!-- JSP API -->
-    <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>jstl</artifactId>
-        <version>1.2</version>
-    </dependency>
-</dependencies>
-```
-
-Step 3: Create Servlet
-Create a Servlet class in the `src/main/java` directory:
-
-```java
-package com.example.mywebapp;
-
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-@WebServlet("/test")
-public class TestServlet extends HttpServlet {
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("message", "Hello from Servlet!");
-        request.getRequestDispatcher("/test.jsp").forward(request, response);
-    }
-}
-```
-
-Step 4: Create JSP
-Create a JSP file in the `src/main/webapp` directory:
+It looks almost like HTML. But JSP can also access server-side data:
 
 ```jsp
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<h1>Welcome, ${user.name}!</h1>
+```
+
+So think of JSP as:
+
+```text
+HTML
+ +
+Dynamic server-side data
+ =
+JSP
+```
+
+
+
+## 3️⃣ The Important Question: Where Does JSP Execute?
+
+> “Sir, does JSP execute inside Chrome?”
+
+> **Mentor:**
+> “No!”
+
+This is extremely important.
+
+```text
+             SERVER
+┌──────────────────────────────┐
+│                              │
+│   Tomcat                     │
+│      │                       │
+│      ▼                       │
+│   JSP Processing             │
+│      │                       │
+│      ▼                       │
+│   Generated HTML             │
+│                              │
+└──────────────┬───────────────┘
+               │
+               │ HTTP Response
+               ▼
+          🌐 Browser
+```
+
+The browser receives **HTML**, not JSP source code.
+
+
+
+## 4️⃣ JSP Is Server-Side Technology
+
+Suppose we have:
+
+```text
+welcome.jsp
+```
+
+and the browser requests:
+
+```text
+http://localhost:8080/shop/welcome.jsp
+```
+
+The journey is:
+
+```text
+Browser
+   │
+   │ GET /welcome.jsp
+   ▼
+Tomcat
+   │
+   ▼
+JSP Engine
+   │
+   ▼
+HTML Response
+   │
+   ▼
+Browser
+```
+
+The browser finally sees:
+
+```html
+<h1>Welcome Ravi!</h1>
+```
+
+It doesn't see the JSP processing code.
+
+
+## 5️⃣ The JSP Lifecycle — A Very Important Concept
+
+Students often think:
+
+```text
+Browser → JSP → Browser
+```
+
+But internally, the container performs more work.
+
+Conceptually:
+
+```text
+              welcome.jsp
+                   │
+                   ▼
+          JSP translated into
+             Servlet source
+                   │
+                   ▼
+              Java compile
+                   │
+                   ▼
+              .class file
+                   │
+                   ▼
+          Servlet execution
+                   │
+                   ▼
+              HTML output
+                   │
+                   ▼
+                Browser
+```
+
+> 👨‍🏫 **Mentor:**
+> “This is one of the most beautiful things to understand about JSP.”
+
+A JSP is processed by the web container and ultimately executed through the Servlet mechanism.
+
+
+## 6️⃣ JSP + Servlet = MVC Foundation
+
+Now our architecture becomes clearer.
+
+```text
+             🌐 Browser
+                  │
+                  │ Request
+                  ▼
+             ┌─────────┐
+             │ Servlet │
+             │   C     │
+             └────┬────┘
+                  │
+                  ▼
+             Business Logic
+                  │
+                  ▼
+                JDBC
+                  │
+                  ▼
+               Database
+                  │
+                  │ Data
+                  ▼
+             ┌─────────┐
+             │  JSP    │
+             │   V     │
+             └────┬────┘
+                  │
+                  │ HTML
+                  ▼
+             🌐 Browser
+```
+
+Where:
+
+```text
+C = Controller
+V = View
+M = Model
+```
+
+This becomes the foundation for understanding **MVC**.
+
+
+## 7️⃣ Your First JSP
+
+Create:
+
+```text
+src/main/webapp/hello.jsp
+```
+
+```jsp
+<%@ page contentType="text/html;charset=UTF-8" %>
+
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Hello JSP</title>
+    <title>Transflower JSP</title>
 </head>
+
 <body>
-    <h1><%= request.getAttribute("message") %></h1>
+    <h1>Welcome to Transflower!</h1>
+    <p>We are learning Java Web Development.</p>
 </body>
+
 </html>
 ```
 
-Step 5: Configure Web Deployment Descriptor (web.xml)
-Since we are not using Servlet 3.0 annotations for servlet mapping, we need to configure the servlet mapping in the `web.xml` file. Create `web.xml` in the `src/main/webapp/WEB-INF` directory:
+Deploy the application to Tomcat and request:
 
-```xml
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-         version="4.0">
-         
-    <servlet>
-        <servlet-name>TestServlet</servlet-name>
-        <servlet-class>com.tfl.servlets.TestServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>TestServlet</servlet-name>
-        <url-pattern>/test</url-pattern>
-    </servlet-mapping>
-</web-app>
+```text
+http://localhost:8080/mywebapp/hello.jsp
 ```
 
-Step 6: Build and Run
-Build the Maven project using `mvn clean install` and deploy it to a servlet container like Apache Tomcat.
-Access the application using the URL: `http://localhost:8080/mywebapp/hello`
-You should see the message "Hello from Servlet!" displayed on the webpage.
-That's it! You have successfully created a Maven project with JSP and Servlet.
+The server generates an HTTP response containing HTML.
 
-## JSTL Tags
+## 8️⃣ JSP Can Display Dynamic Data
 
-JSTL (JavaServer Pages Standard Tag Library) is a collection of custom tags used in JSP (JavaServer Pages) to simplify the development of dynamic web pages. JSP allows embedding Java code within HTML, but mixing presentation logic with business logic can lead to code that is difficult to maintain and understand. JSTL provides a set of predefined tags that encapsulate common tasks and promote better code organization and separation of concerns.
+Suppose the Servlet puts this into the request:
 
-JSTL tags can be divided into several categories:
+```java
+request.setAttribute("message",
+                     "Hello from Servlet!");
+```
 
-1. **Core Tags (`<c:...>`)**: These tags provide basic functionality such as iteration, conditional execution, variable manipulation, and URL handling.
-
-2. **Formatting Tags (`<fmt:...>`)**: These tags facilitate the formatting and internationalization of text, numbers, dates, and times.
-
-3. **XML Tags (`<x:...>`)**: These tags are used for XML processing tasks such as parsing and transforming XML documents.
-
-4. **SQL Tags (`<sql:...>`)**: These tags enable interaction with databases using SQL queries directly within JSP pages (though this approach is generally discouraged in favor of using a separate data access layer).
-
-Using JSTL with JSP allows developers to create more maintainable and modular web applications. Instead of embedding Java code directly into JSP files, developers can use JSTL tags to perform common tasks, resulting in cleaner and more readable code. Additionally, JSTL promotes the reuse of components and facilitates internationalization by providing tags for handling localized content.
-
-Here's a simple example of using JSTL in a JSP page:
+Then JSP can display it.
 
 ```jsp
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-
-<html>
-<head>
-    <title>Using JSTL in JSP</title>
-</head>
-<body>
-    <c:set var="user" value="John Doe" />
-    <c:if test="${not empty user}">
-        <p>Welcome, <c:out value="${user}" />!</p>
-    </c:if>
-    
-    <fmt:formatDate var="currentDate" value="${now}" pattern="dd/MM/yyyy" />
-    <p>Today's date: <fmt:parseDate value="${currentDate}" pattern="dd/MM/yyyy" /></p>
-</body>
-</html>
+<h1>${message}</h1>
 ```
 
-In this example, we're using `<c:set>` to assign a value to a variable, `<c:if>` to conditionally display content, and `<fmt:formatDate>` to format the current date. These tags make the JSP code more concise and easier to understand compared to embedding Java code directly.
+The execution becomes:
+
+```text
+Servlet
+   │
+   │ setAttribute()
+   ▼
+Request
+   │
+   ▼
+JSP
+   │
+   │ ${message}
+   ▼
+HTML
+   │
+   ▼
+Browser
+```
+
+This is much cleaner than putting database logic inside JSP.
 
 
-## Frequently used JSTL tags
-JSTL (JavaServer Pages Standard Tag Library) provides a set of tags that encapsulate core functionality common to many web applications. Here are some frequently used JSTL tags along with their purposes:
+## 9️⃣ JSP Expression Language — EL
 
-1. **`<c:forEach>`**: Used for iterating over collections like arrays, Lists, or Maps. It generates HTML output for each item in the collection.
+You will frequently see:
 
-    Example:
-    ```jsp
-    <c:forEach items="${userList}" var="user">
-        <tr>
-            <td>${user.id}</td>
-            <td>${user.name}</td>
-            <td>${user.email}</td>
-        </tr>
-    </c:forEach>
-    ```
+```jsp
+${message}
+```
 
-2. **`<c:if>`**: Conditionally includes or excludes content based on a boolean expression.
+This is called:
 
-    Example:
-    ```jsp
-    <c:if test="${user.isAdmin}">
-        <p>Welcome Admin!</p>
-    </c:if>
-    ```
+> **Expression Language (EL)**
 
-3. **`<c:choose>`, `<c:when>`, `<c:otherwise>`**: Allows for conditional branching similar to a switch statement in Java.
+For example:
 
-    Example:
-    ```jsp
-    <c:choose>
-        <c:when test="${user.role eq 'ADMIN'}">
-            <p>Welcome Admin!</p>
-        </c:when>
-        <c:otherwise>
-            <p>Welcome User!</p>
-        </c:otherwise>
-    </c:choose>
-    ```
+```jsp
+${product.name}
+```
 
-4. **`<c:set>`**: Assigns a value to a variable.
+```jsp
+${product.price}
+```
 
-    Example:
-    ```jsp
-    <c:set var="totalPrice" value="${product.price * product.quantity}" />
-    ```
+```jsp
+${student.email}
+```
 
-5. **`<c:import>`**: Imports the content of another resource (such as a JSP page or a text file) into the current JSP page.
+Instead of writing Java code directly into the page, we can access data using EL.
 
-    Example:
-    ```jsp
-    <c:import url="/header.jsp" />
-    ```
 
-6. **`<c:url>`**: Constructs a URL with optional query parameters, session ID, and URL rewriting.
+## 🔟 JSP Scriptlets — The Old Style
 
-    Example:
-    ```jsp
-    <c:url value="/login.jsp" var="loginUrl">
-        <c:param name="redirect" value="/dashboard.jsp" />
-    </c:url>
-    ```
+You may encounter this in older applications:
 
-7. **`<c:out>`**: Writes the value of an expression to the output stream, escaping HTML characters.
+```jsp
+<%
+    String name = "Ravi";
+%>
 
-    Example:
-    ```jsp
-    <c:out value="${user.name}" />
-    ```
+<h1>
+    Welcome <%= name %>
+</h1>
+```
 
-8. **`<c:remove>`**: Removes a scoped variable.
+There are three important JSP constructs:
 
-    Example:
-    ```jsp
-    <c:remove var="user" scope="session" />
-    ```
+###### Scriptlet
 
-These are just some of the frequently used tags provided by JSTL. There are more tags available in JSTL for various purposes like formatting, internationalization, XML manipulation, etc. JSTL simplifies the development of JSP pages by providing reusable components for common tasks, reducing the need for embedded Java code in JSP files.
+```jsp
+<% ... %>
+```
+
+Used historically to embed Java statements.
+
+### Expression
+
+```jsp
+<%= ... %>
+```
+
+Used historically to output a value.
+
+### Directive
+
+```jsp
+<%@ ... %>
+```
+
+Used for JSP configuration.
+
+
+## ⚠️ Mentor Advice: Don't Put Business Logic Here
+
+You **can** write:
+
+```jsp
+<%
+    // Java code
+%>
+```
+
+But should you put:
+
+```java
+Connection conn = ...
+ResultSet rs = ...
+SELECT * FROM products
+```
+
+inside JSP?
+
+> **Mentor:**
+> “No. Please don't turn your JSP into a kitchen where everything is cooked together!”
+
+Avoid:
+
+```text
+JSP
+ ├── HTML
+ ├── JDBC
+ ├── SQL
+ ├── Business Rules
+ ├── Authentication
+ └── Everything else 
+```
+
+Instead:
+
+```text
+JSP
+ ↓
+Presentation
+
+Servlet
+ ↓
+Request Control
+
+Service
+ ↓
+Business Logic
+
+DAO
+ ↓
+Database Access
+
+JDBC
+ ↓
+Database
+```
+
+## 1️⃣1️⃣ JSTL — Cleaner JSP
+
+This is where **JSTL** becomes useful.JSTL stands for: **JSP Standard Tag Library**
+
+Instead of Java loops:
+
+```jsp
+<%
+for(Product p : products) {
+%>
+    <p><%= p.getName() %></p>
+<%
+}
+%>
+```
+
+we can use a tag-based approach:
+
+```jsp
+<c:forEach var="product" items="${products}">
+    <p>${product.name}</p>
+</c:forEach>
+```
+
+Much easier to read.
+
+## 1️⃣2️⃣ Common JSTL Tags
+
+### `<c:forEach>`
+
+For iteration:
+
+```jsp
+<c:forEach var="product"
+           items="${products}">
+
+    <p>${product.name}</p>
+
+</c:forEach>
+```
+
+### `<c:if>`
+
+For conditions:
+
+```jsp
+<c:if test="${product.price > 1000}">
+
+    <p>Premium Product</p>
+
+</c:if>
+```
+
+
+### `<c:choose>`
+
+For multiple conditions:
+
+```jsp
+<c:choose>
+
+    <c:when test="${user.role == 'ADMIN'}">
+        <p>Administrator</p>
+    </c:when>
+
+    <c:otherwise>
+        <p>Regular User</p>
+    </c:otherwise>
+
+</c:choose>
+```
+
+### `<c:set>`
+
+Create/set a variable:
+
+```jsp
+<c:set var="total"
+       value="${product.price * product.quantity}" />
+```
+
+### `<c:out>`
+
+Safely output a value:
+
+```jsp
+<c:out value="${product.name}" />
+```
+
+## 1️⃣3️⃣ Product Example
+
+Let's connect this to the **Product CRUD application** you just learned. Our Servlet might retrieve:
+
+```java
+List<Product> products =
+        productDAO.findAll();
+
+request.setAttribute(
+        "products",
+        products);
+
+request.getRequestDispatcher(
+        "/products.jsp")
+        .forward(request, response);
+```
+
+Now JSP displays them:
+
+```jsp
+<c:forEach var="product"
+           items="${products}">
+
+    <tr>
+
+        <td>${product.id}</td>
+
+        <td>${product.name}</td>
+
+        <td>${product.price}</td>
+
+        <td>${product.quantity}</td>
+
+    </tr>
+
+</c:forEach>
+```
+
+The complete flow:
+
+```text
+🌐 Browser
+     │
+     │ GET /products
+     ▼
+🐱 Tomcat
+     │
+     ▼
+ProductServlet
+     │
+     ▼
+ProductDAO
+     │
+     │ JDBC
+     ▼
+🗄️ MySQL
+     │
+     │ Products
+     ▼
+ProductServlet
+     │
+     │ request.setAttribute()
+     ▼
+products.jsp
+     │
+     │ HTML
+     ▼
+🌐 Browser
+```
+
+## 1️⃣4️⃣ JSP Project Structure
+
+A traditional Maven web application can look like:
+
+```text
+ProductWebApp/
+│
+├── pom.xml
+│
+└── src/
+    └── main/
+        │
+        ├── java/
+        │   └── com/transflower/
+        │       ├── model/
+        │       │   └── Product.java
+        │       │
+        │       ├── dao/
+        │       │   └── ProductDAO.java
+        │       │
+        │       └── controller/
+        │           └── ProductServlet.java
+        │
+        └── webapp/
+            │
+            ├── products.jsp
+            ├── product-form.jsp
+            │
+            └── WEB-INF/
+                └── web.xml
+```
+
+Notice the separation:
+
+```text
+Java
+ ↓
+Application Logic
+
+JSP
+ ↓
+Presentation
+
+WEB-INF
+ ↓
+Web Application Configuration
+```
+
+## 1️⃣5️⃣ JSP Include
+
+Suppose every page needs the same header. Instead of copying it everywhere:
+
+```jsp
+<%@ include file="header.jsp" %>
+```
+
+Similarly:
+
+```jsp
+<%@ include file="footer.jsp" %>
+```
+
+Conceptually:
+
+```text
+products.jsp
+     │
+     ├── header.jsp
+     │
+     ├── product content
+     │
+     └── footer.jsp
+```
+
+This encourages reuse.
+
+   
+
+## 1️⃣6️⃣ JSP Implicit Objects
+
+JSP provides several predefined objects.
+
+Common ones include:
+
+```text
+request
+response
+session
+application
+out
+pageContext
+```
+
+For example:
+
+```jsp
+${sessionScope.user.name}
+```
+
+or traditionally:
+
+```jsp
+<%= request.getParameter("name") %>
+```
+
+The important idea is:
+
+> **JSP already has access to the current web request and application context.**
+
+
+## 1️⃣7️⃣ JSP Request → Response
+
+Let's finish with the simplest mental model. Suppose the browser requests:
+
+```text
+/products
+```
+
+Tomcat receives it.
+
+```text
+Browser
+   │
+   ▼
+Tomcat
+   │
+   ▼
+Servlet
+   │
+   ▼
+Service
+   │
+   ▼
+DAO
+   │
+   ▼
+Database
+   │
+   ▼
+DAO
+   │
+   ▼
+Service
+   │
+   ▼
+Servlet
+   │
+   │ forward()
+   ▼
+JSP
+   │
+   │ HTML
+   ▼
+Tomcat
+   │
+   │ HTTP Response
+   ▼
+Browser
+```
+
+
+Students, don't learn JSP merely as a collection of tags.Understand **why JSP exists**. You started with:
+
+```text
+Core Java
+     ↓
+OOP
+     ↓
+JDBC
+     ↓
+Database
+```
+
+Then:
+
+```text
+Servlet
+     ↓
+HTTP Request / Response
+     ↓
+Tomcat
+```
+
+Now:
+
+```text
+Servlet
+     ↓
+JSP
+     ↓
+HTML
+     ↓
+Browser
+```
+
+And this naturally leads to:
+
+```text
+Servlet + JSP
+      ↓
+     MVC
+      ↓
+ Spring MVC
+      ↓
+ Spring Boot
+      ↓
+ REST API
+      ↓
+ Spring Security
+      ↓
+ Microservices
+```
+
+### Remember this simple formula
+
+```text
+Servlet   = Controller
+JSP   = View
+Java Object = Model
+JDBC / DAO   = Data Access
+```
+
+> **“JSP is not the destination. JSP is one of the bridges that helps you understand how a Java web application transforms an HTTP request into a meaningful HTML response.”**
+
+That understanding will make **Spring MVC** feel much less magical when you reach it.
