@@ -18,8 +18,8 @@ Start with Java web architecture, containers,  servlet and jsp basics.
 - [Java Web App with Servlets](./javawebappservlet.md)
 - [Servlet using Maven Project](./stepbystepservletdeploy.md)
 - [JSP Basics](./jsp.md)
-
-
+- [JSP Maven Prjoect](./jspmaven.md)
+ 
 
 ###  Level 3: Spring MVC 
 Move into framework-based development with Spring MVC and request flow.

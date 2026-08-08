@@ -266,7 +266,7 @@ Container = Virtualizes Application
 ```
 +--------------------------------------------------+
 |                Physical Hardware                 |
-|        (CPU | RAM | Storage | Network)          |
+|        (CPU | RAM | Storage | Network)           |
 +--------------------------------------------------+
                      ↓
 +--------------------------------------------------+
@@ -301,7 +301,7 @@ Container = Virtualizes Application
 ```
 +--------------------------------------------------+
 |                Physical Hardware                 |
-|        (CPU | RAM | Storage | Network)          |
+|        (CPU | RAM | Storage | Network)           |
 +--------------------------------------------------+
                      ↓
 +--------------------------------------------------+
@@ -689,17 +689,7 @@ In real companies:
 - Order Service → 5 replicas
 - Payment Service → 2 replicas
 
-All automatically managed by Kubernetes.
-
-If one Pod crashes?
-
-Kubernetes recreates it automatically.
-
-That is orchestration power.
- 
-“Microservices give modularity.
-Docker gives portability.
-Kubernetes gives scalability and resilience.”
+All automatically managed by Kubernetes. f one Pod crashes? Kubernetes recreates it automatically. That is orchestration power. Microservices give modularity. Docker gives portability. Kubernetes gives scalability and resilience.”
 
  
  
@@ -995,11 +985,7 @@ Now your powerful line:
 
 “Docker is like container shipping company.”
 
-You manufacture product (Java app).
-
-Docker packs it.
-
-You push to registry.
+You manufacture product (Java app). Docker packs it. You push to registry.
 
 Registry example:
 
@@ -1018,11 +1004,7 @@ Same behavior everywhere.
 
 ## 🧑‍🏫 Scene 6: Kubernetes – The Steering Wheel
 
-Now go deeper.
-
-Show Kubernetes logo.
-
-Steering wheel.
+Now go deeper. Show Kubernetes logo. Steering wheel.
 
 Say:
 
@@ -1070,11 +1052,7 @@ Business Users
 
 ## 🧑‍🏫 Scene 8: Service Apartment Analogy (Very Powerful)
 
-You said something beautiful:
-
-Imagine service apartment.
-
-Each person:
+You said something beautiful: Imagine service apartment. Each person:
 
 * Has own bedroom
 * Own environment
@@ -1086,9 +1064,7 @@ But shares:
 * Electricity
 * Water
 
-That is container.
-
-Each container:
+That is container. Each container:
 
 * Own runtime
 * Own dependencies
@@ -1117,9 +1093,7 @@ They want:
 * Simple run
 * Reliable system
 
-Container hides complexity.
-
-That is why industry moved to containers.
+Container hides complexity. That is why industry moved to containers.
 
 ## 🧑‍🏫 Scene 10: DevOps Automation Layer
 
@@ -1152,11 +1126,7 @@ No manual deployment.
 “Container is not about technology.
 It is about standardization of software delivery.”
 
-Just like shipping container revolutionized global trade,
-
-Docker revolutionized software deployment.
-
-And Kubernetes industrialized it.
+Just like shipping container revolutionized global trade, Docker revolutionized software deployment. And Kubernetes industrialized it.
 
 
 
@@ -1164,18 +1134,14 @@ And Kubernetes industrialized it.
 
 ## 🧑‍🏫 Step 1: Product Company vs Service Company
 
-Ask students:
-
-“Who manufactures airplane?”
+Ask students: “Who manufactures airplane?”
 
 Examples:
 
 * Boeing
 * Airbus
 
-Now ask:
-
-“Does airline manufacture airplane?”
+Now ask: “Does airline manufacture airplane?”
 
 Examples:
 
@@ -1183,10 +1149,7 @@ Examples:
 * IndiGo
 * British Airways
 
-No.
-
-Airlines **operate** aircraft.
-Boeing & Airbus **manufacture** aircraft.
+No. Airlines **operate** aircraft.Boeing & Airbus **manufacture** aircraft.
 
 
 ### 💡 Map This to Software
@@ -1245,7 +1208,7 @@ They may not own product.
 
 # 🧑‍🏫 Now Connect to Java + Docker
 
-You explained something very important:
+You explained something very important: 
 
 Earlier Java deployment:
 
@@ -1259,9 +1222,7 @@ Earlier Java deployment:
 * JDBC manual connection
 * Hard-coded configs
 
-Very risky.
-
-Very environment-dependent.
+Very risky. Very environment-dependent.
 
 # 🐳 Docker Solves Standardization Problem
 
@@ -1331,11 +1292,7 @@ private String url;
 
 This separates:
 
-Code ≠ Environment
-
-That is called:
-
-👉 Separation of Concerns
+Code ≠ Environment That is called: 👉 Separation of Concerns
 
  
 
@@ -1343,24 +1300,15 @@ That is called:
 
 You mentioned Java 8 → Java 17 → Java 24.
 
-Problem:
+Problem: If server Java version changes, Application may break.
 
-If server Java version changes,
-Application may break.
-
-Solution:
-
-Dockerfile defines version:
+Solution: Dockerfile defines version:
 
 ```id="dockerfile-java"
 FROM openjdk:17
 ```
 
-Now your app always runs on Java 17.
-
-Standardized.
-
-No surprises.
+Now your app always runs on Java 17. Standardized. No surprises.
 
   
 
@@ -1382,7 +1330,7 @@ Tools used:
 
  
 
-# 🧑‍🏫 Thread & Controller Explanation (Clean Version)
+# Thread & Controller Explanation (Clean Version)
 
 In Spring Boot:
 
