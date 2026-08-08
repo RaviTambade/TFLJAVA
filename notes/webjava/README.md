@@ -9,24 +9,19 @@ Welcome to the **Java Web Development Roadmap**. This roadmap is designed as a *
 **Welcome to the Java Web Development journey — from Servlet basics to Spring Boot, Security, and Production Deployment.**
 
 ### Level 1: Web Fundamentals
-Start with Java web architecture, containers, and servlet basics.
+Start with Java web architecture, containers,  servlet and jsp basics.
 - [JDBC Basics](./basicjavatojdbc.md)
-- [Java Web Applications Overview](./javawebapplicaitons.md)
-- [Tomcat Setup](./tomcat.md)
-- [Tomcat Advanced](./tomcat_2.md)
-
-
-
-###  Level 2: Servlets and JSP
-Learn servlet programming, form handling, and JSP pages.
-
+- [Java Web Applications](./tomcat_2.md)
+- [Tomcat Server Installation](./tomcat.md)
 - [Simple Servlet](./simpleservlet.md)
 - [Subject Servlet Example](./subjectservelet.md)
 - [Java Web App with Servlets](./javawebappservlet.md)
 - [Step-by-Step Servlet Deployment](./stepbystepservletdeploy.md)
 - [JSP Basics](./jsp.md)
 
-###  Level 3: Spring MVC and Application Flow
+
+
+###  Level 3: Spring MVC 
 Move into framework-based development with Spring MVC and request flow.
 
 - [Spring MVC](./springmvc.md)

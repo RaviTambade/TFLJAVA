@@ -1,1320 +1,815 @@
+#  **Simple Servlet-based Product CRUD application**
 
-##  Java Servlet as Foundation for SpringBoot, SpringMVC
+> **Mentor Ravi:**
+> “Students, you already know Java classes and JDBC. Now we are going to connect the two worlds: **HTTP + Servlet + JDBC + MySQL**.”
 
+The request journey will be:
 
-👉  **Controller → Service → File (JSON) / Data access**, very basic, no over-engineering.
-
-
-Think of the **TFL Assessment / Question Bank app** like this:
-
-```
-Browser / Client
-      |
-      v
-Servlet Controller
-      |
-      v
-Service Layer
-      |
-      v
-JSON File (Question Bank)
-```
-
-No magic. No confusion. Just **flow**.
-
-
-## Example use case: Question Bank
-
-Operations you mentioned (perfect 👍):
-
-* Get all subjects
-* Add subject
-* Delete subject
-* Get questions for a subject
-
-
-## Folder structure (simple & clean)
-
-```
-src
- └── main
-     ├── java
-     │   └── com.tfl.assessment
-     │       ├── controllers
-     │       │   └── SubjectController.java
-     │       ├── services
-     │       │   └── SubjectService.java
-     │       ├── repositories
-     │       │   └── SubjectRepository.java
-     │       └── models
-     │           └── Subject.java
-     └── resources
-         └── data
-             └── subjects.json
+```text
+🌐 Browser
+     │
+     │ HTTP Request
+     ▼
+🐱 Tomcat
+     │
+     ▼
+☕ ProductServlet
+     │
+     ▼
+⚙️ ProductDAO
+     │
+     │ JDBC
+     ▼
+🗄️ MySQL
 ```
 
+## 1. Database Table
 
+Let's start with a simple `products` table.
 
-## subjects.json (Question Bank data)
+```sql
+CREATE DATABASE transflower_store;
 
-```json
-[
-  {
-    "id": 1,
-    "name": "Java",
-    "questions": [
-      "What is JVM?",
-      "Difference between JDK and JRE?"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "SQL",
-    "questions": [
-      "What is normalization?",
-      "What is a primary key?"
-    ]
-  }
-]
+USE transflower_store;
+
+CREATE TABLE products (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    quantity INT NOT NULL
+);
 ```
 
+---
 
-## 1️⃣ Controller (Servlet)
+## 2. Product Model
 
-**Only handles HTTP request & response**
+Create:
+
+```text
+src/main/java/com/transflower/model/Product.java
+```
 
 ```java
-@WebServlet("/subjects")
-public class SubjectController extends HttpServlet {
+package com.transflower.model;
 
-    private SubjectService service = new SubjectService();
+public class Product {
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws IOException {
-
-        resp.setContentType("application/json");
-        resp.getWriter().write(service.getAllSubjects());
-    }
-}
-```
-
-👉 Controller **does NOT read files**
-👉 Controller **does NOT contain business logic**
-
-
-
-## 2️⃣ Service layer
-
-**Business logic lives here**
-
-```java
-public class SubjectService {
-
-    private SubjectRepository repo = new SubjectRepository();
-
-    public String getAllSubjects() {
-        return repo.readSubjectsFromFile();
-    }
-}
-```
-
-
-## 3️⃣ Repository (File I/O)
-
-**Only responsibility: data access**
-
-```java
-public class SubjectRepository {
-
-    public String readSubjectsFromFile() {
-        try (InputStream is = getClass()
-                .getClassLoader()
-                .getResourceAsStream("data/subjects.json")) {
-
-            return new String(is.readAllBytes());
-        } catch (Exception e) {
-            return "[]";
-        }
-    }
-}
-```
-
-
-
-## Why this approach works (mentor mindset)
-
-* ✔ Easy to understand for learners
-* ✔ Clear separation of responsibility
-* ✔ Can later replace JSON with:
-
-  * JDBC
-  * Hibernate / JPA
-  * REST API
-* ✔ Same structure works for **Servlets → Spring Boot**
-
-
-
-## How this maps to what you heard in the call
-
-* **Controller** → Servlet (AssessmentController / SubjectController)
-* **Service** → Ravi Tambade style business layer
-* **Repository** → File / JDBC / Hibernate
-* **resources/data** → JSON question bank
-* **MVP friendly** → Simple, readable, teachable
-
-
-
-## Mentor takeaway 
-
-> First **clarity**, then **architecture**, then **frameworks**.
-
-Once learners understand this flow:
-
-* Servlets make sense
-* Spring MVC feels natural
-* Hibernate is no longer scary
-
- 
-
-
-
-## 1️⃣ What we are fixing first: Manual object creation
-
-👉 **Clean, simplified explanation of Dependency Injection + Spring + JSON (File I/O) + JDBC option**
-👉 In the same **Transflower Learning teaching style** — step-by-step, calm, practical, no noise.
- 
-Earlier we had things like:
-
-```java
-SubjectService service = new SubjectService();
-```
-
-or inside service:
-
-```java
-SubjectRepository repo = new SubjectRepository();
-```
-
-❌ Problem:
-
-* Tight coupling
-* Hard to change implementation
-* Not test-friendly
-
-## 2️⃣ Dependency Injection (DI) — idea only (no Spring yet)
-
-**Simple rule:**
-
-> *Don’t create objects yourself. Ask for them.*
-
-### Constructor Injection (plain Java)
-
-```java
-public class SubjectService {
-
-    private SubjectRepository repository;
-
-    public SubjectService(SubjectRepository repository) {
-        this.repository = repository;
-    }
-
-    public List<Subject> getAllSubjects() {
-        return repository.getAllSubjects();
-    }
-}
-```
-
-Controller now decides *what implementation to give*.
-
-
-## 3️⃣ Now bring Spring into the picture 🌱
-
-Spring will:
-
-* Create objects
-* Inject dependencies
-* Manage lifecycle
-
-You **stop writing `new` keyword**.
-
-
-## 4️⃣ Spring Boot Structure (clean & standard)
-
-```
-com.tfl.assessment
- ├── controller
- ├── service
- ├── repository
- ├── model
- └── AssessmentApplication.java
-```
-
-
-## 5️⃣ Model (Subject)
-
-```java
-public class Subject {
     private int id;
-    private String title;
+    private String name;
+    private double price;
+    private int quantity;
 
-    // getters & setters
+    public Product() {
+    }
+
+    public Product(int id, String name, double price, int quantity) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    public Product(String name, double price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 }
 ```
 
+---
 
-## 6️⃣ Repository Interface (important concept)
+## 3. ProductDAO
 
-```java
-public interface SubjectRepository {
-    List<Subject> getAllSubjects();
-    void addSubject(Subject subject);
-    void deleteSubject(int id);
-}
+Now our Servlet should not directly contain SQL.
+
+> 👨‍🏫 **Mentor:**
+> “Remember our separation of responsibilities. Servlet handles the **web request**. DAO handles the **database**.”
+
+Create:
+
+```text
+src/main/java/com/transflower/dao/ProductDAO.java
 ```
 
-👉 Interface = **contract**
-👉 Implementation can change (JSON / JDBC / Hibernate)
-
-
-
-## 7️⃣ JSON File Repository (File I/O + Jackson)
-
-### Dependency (pom.xml)
-
-```xml
-<dependency>
-  <groupId>com.fasterxml.jackson.core</groupId>
-  <artifactId>jackson-databind</artifactId>
-</dependency>
-```
-
-
-### Repository Implementation
-
 ```java
-@Repository
-public class SubjectFileRepository implements SubjectRepository {
+package com.transflower.dao;
 
-    private ObjectMapper mapper = new ObjectMapper();
+import com.transflower.model.Product;
 
-    @Override
-    public List<Subject> getAllSubjects() {
-        try {
-            File file = new File("src/main/resources/data/subjects.json");
-            return mapper.readValue(
-                file,
-                new TypeReference<List<Subject>>() {}
-            );
-        } catch (Exception e) {
-            return new ArrayList<>();
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductDAO {
+
+    private static final String URL =
+            "jdbc:mysql://localhost:3306/transflower_store";
+
+    private static final String USER = "root";
+    private static final String PASSWORD = "TFL@678";
+
+    // CREATE
+    public void insert(Product product) throws SQLException {
+
+        String sql =
+                "INSERT INTO products(name, price, quantity) VALUES (?, ?, ?)";
+
+        try (Connection conn =
+                     DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement stmt =
+                     conn.prepareStatement(sql)) {
+
+            stmt.setString(1, product.getName());
+            stmt.setDouble(2, product.getPrice());
+            stmt.setInt(3, product.getQuantity());
+
+            stmt.executeUpdate();
+        }
+    }
+
+    // READ ALL
+    public List<Product> findAll() throws SQLException {
+
+        List<Product> products = new ArrayList<>();
+
+        String sql = "SELECT * FROM products";
+
+        try (Connection conn =
+                     DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement stmt =
+                     conn.prepareStatement(sql);
+             ResultSet rs =
+                     stmt.executeQuery()) {
+
+            while (rs.next()) {
+
+                Product product = new Product();
+
+                product.setId(rs.getInt("id"));
+                product.setName(rs.getString("name"));
+                product.setPrice(rs.getDouble("price"));
+                product.setQuantity(rs.getInt("quantity"));
+
+                products.add(product);
+            }
+        }
+
+        return products;
+    }
+
+    // READ ONE
+    public Product findById(int id) throws SQLException {
+
+        String sql =
+                "SELECT * FROM products WHERE id = ?";
+
+        try (Connection conn =
+                     DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement stmt =
+                     conn.prepareStatement(sql)) {
+
+            stmt.setInt(1, id);
+
+            try (ResultSet rs = stmt.executeQuery()) {
+
+                if (rs.next()) {
+
+                    Product product = new Product();
+
+                    product.setId(rs.getInt("id"));
+                    product.setName(rs.getString("name"));
+                    product.setPrice(rs.getDouble("price"));
+                    product.setQuantity(rs.getInt("quantity"));
+
+                    return product;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    // UPDATE
+    public void update(Product product) throws SQLException {
+
+        String sql =
+                """
+                UPDATE products
+                SET name = ?, price = ?, quantity = ?
+                WHERE id = ?
+                """;
+
+        try (Connection conn =
+                     DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement stmt =
+                     conn.prepareStatement(sql)) {
+
+            stmt.setString(1, product.getName());
+            stmt.setDouble(2, product.getPrice());
+            stmt.setInt(3, product.getQuantity());
+            stmt.setInt(4, product.getId());
+
+            stmt.executeUpdate();
+        }
+    }
+
+    // DELETE
+    public void delete(int id) throws SQLException {
+
+        String sql =
+                "DELETE FROM products WHERE id = ?";
+
+        try (Connection conn =
+                     DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement stmt =
+                     conn.prepareStatement(sql)) {
+
+            stmt.setInt(1, id);
+
+            stmt.executeUpdate();
         }
     }
 }
 ```
 
-- ✔ File I/O
-- ✔ JSON serialization
-- ✔ Jackson `ObjectMapper`
+> 💡 **Important:** `PreparedStatement` is preferred over building SQL strings with user input. It helps prevent SQL injection and handles parameters correctly.
 
-## 8️⃣ Service Layer (Spring-managed)
+## 4. ProductServlet
+
+Now comes our main character.
+
+```text
+ProductServlet.java
+```
 
 ```java
-@Service
-public class SubjectService {
+package com.transflower.controller;
 
-    private SubjectRepository repository;
+import com.transflower.dao.ProductDAO;
+import com.transflower.model.Product;
 
-    @Autowired
-    public SubjectService(SubjectRepository repository) {
-        this.repository = repository;
-    }
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.*;
 
-    public List<Subject> getAllSubjects() {
-        return repository.getAllSubjects();
-    }
-}
-```
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
-- 👉 No `new`
-- 👉 Spring injects repository automatically
+@WebServlet("/products")
+public class ProductServlet extends HttpServlet {
 
-## 9️⃣ Controller (REST API)
-
-```java
-@RestController
-@RequestMapping("/api/subjects")
-public class SubjectController {
-
-    private SubjectService service;
-
-    @Autowired
-    public SubjectController(SubjectService service) {
-        this.service = service;
-    }
-
-    @GetMapping
-    public List<Subject> getSubjects() {
-        return service.getAllSubjects();
-    }
-}
-```
-
-## 🔁 Flow (very important for learners)
-
-```
-HTTP Request
-   ↓
-Controller
-   ↓
-Service
-   ↓
-Repository
-   ↓
-JSON file / DB
-```
-
-## 🔄 Want JDBC instead of JSON? No problem.
-
-Create **another implementation**:
-
-```java
-@Repository
-public class SubjectJdbcRepository implements SubjectRepository {
+    private ProductDAO productDAO;
 
     @Override
-    public List<Subject> getAllSubjects() {
-        // JDBC code
-        // Connection
-        // PreparedStatement
-        // ResultSet
-        return subjects;
+    public void init() {
+        productDAO = new ProductDAO();
+    }
+
+    // =========================
+    // READ
+    // =========================
+
+    @Override
+    protected void doGet(
+            HttpServletRequest request,
+            HttpServletResponse response)
+            throws ServletException, IOException {
+
+        String action = request.getParameter("action");
+
+        try {
+
+            if ("edit".equals(action)) {
+
+                int id = Integer.parseInt(
+                        request.getParameter("id"));
+
+                Product product =
+                        productDAO.findById(id);
+
+                request.setAttribute(
+                        "product", product);
+
+                request.getRequestDispatcher(
+                        "/product-form.jsp")
+                        .forward(request, response);
+
+            } else if ("delete".equals(action)) {
+
+                int id = Integer.parseInt(
+                        request.getParameter("id"));
+
+                productDAO.delete(id);
+
+                response.sendRedirect(
+                        request.getContextPath()
+                        + "/products");
+
+            } else {
+
+                List<Product> products =
+                        productDAO.findAll();
+
+                request.setAttribute(
+                        "products", products);
+
+                request.getRequestDispatcher(
+                        "/products.jsp")
+                        .forward(request, response);
+            }
+
+        } catch (SQLException e) {
+
+            throw new ServletException(
+                    "Unable to process product request", e);
+        }
+    }
+
+    // =========================
+    // CREATE / UPDATE
+    // =========================
+
+    @Override
+    protected void doPost(
+            HttpServletRequest request,
+            HttpServletResponse response)
+            throws ServletException, IOException {
+
+        String action = request.getParameter("action");
+
+        try {
+
+            String name =
+                    request.getParameter("name");
+
+            double price =
+                    Double.parseDouble(
+                            request.getParameter("price"));
+
+            int quantity =
+                    Integer.parseInt(
+                            request.getParameter("quantity"));
+
+            Product product =
+                    new Product(name, price, quantity);
+
+            if ("update".equals(action)) {
+
+                int id =
+                        Integer.parseInt(
+                                request.getParameter("id"));
+
+                product.setId(id);
+
+                productDAO.update(product);
+
+            } else {
+
+                productDAO.insert(product);
+            }
+
+            response.sendRedirect(
+                    request.getContextPath()
+                    + "/products");
+
+        } catch (SQLException e) {
+
+            throw new ServletException(
+                    "Unable to save product", e);
+        }
     }
 }
 ```
 
-- 👉 Service & Controller remain unchanged
-- 👉 **This is real flexibility**
 
- 
+##  5. How CRUD Maps to HTTP
 
-## 10️⃣  takeaway (this is the gold 🥇)
+Now look carefully.
 
-* DI is **not about Spring**
-* Spring is **just a helper**
-* Real power is:
+| Operation      | HTTP | Servlet    |
+| -------------- | ---- | ---------- |
+| List products  | GET  | `doGet()`  |
+| Get product    | GET  | `doGet()`  |
+| Delete product | GET* | `doGet()`  |
+| Create product | POST | `doPost()` |
+| Update product | POST | `doPost()` |
 
-  * Interfaces
-  * Loose coupling
-  * Replaceable implementations
-* File → JDBC → Hibernate → API
-  **same architecture**
+`GET` for delete is acceptable for a simple learning exercise, but in a production application you would normally use **POST/DELETE** for state-changing operations.
 
- 
+# 6. Product List JSP
 
-## Transflower Learning philosophy 🌼
+Create:
 
-> *First clarity, then structure, then frameworks.*
-
-Once students understand:
-
-* Controller ≠ Service ≠ Repository
-* DI removes `new`
-* JSON is just data, not magic
-
-They stop fearing:
-
-* Spring
-* Hibernate
-* Microservices
-
-
- 
-
-## 1️⃣ Why not Excel as a Question Bank source?
-
-**Short answer:**
-You *can* use Excel — but it’s **not the right first teaching step**.
-
-### Excel problems (for beginners & MVPs)
-
-* ❌ Extra library (Apache POI) → more confusion
-* ❌ Heavy I/O & memory usage
-* ❌ Not web-friendly
-* ❌ Hard to version-control
-* ❌ Not production-like
-
-### Excel is good when:
-
-* Business uploads bulk data
-* Admin tools
-* Reporting / export
-
-### But for learning & APIs:
-
-✅ **JSON wins**
-
- 
-
-## 2️⃣ Why JSON in `resources/data` is ideal 🌱
-
-* Human-readable
-* Web-native
-* Version-controlled
-* Easy serialization
-* Same structure as REST responses
-
-> JSON teaches **how backend actually talks to frontend**
-
-That’s why Transflower uses it 👌
-
- 
-
-## 3️⃣ Where exactly is the file stored?
-
-```
-src/main/resources/data/subjects.json
+```text
+src/main/webapp/products.jsp
 ```
 
-⚠️ Important:
+```jsp
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c"
+           uri="jakarta.tags.core" %>
 
-* **Never use absolute paths**
-* Always load via **ClassLoader**
+<!DOCTYPE html>
+<html>
 
- 
+<head>
+    <title>Product List</title>
+</head>
 
-## 4️⃣ Correct way to read resource file (no `/`, no `./`)
+<body>
 
-```java
-InputStream is = getClass()
-        .getClassLoader()
-        .getResourceAsStream("data/subjects.json");
+<h1>Product Management</h1>
+
+<a href="product-form.jsp">
+    Add Product
+</a>
+
+<br><br>
+
+<table border="1" cellpadding="10">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Actions</th>
+    </tr>
+
+    <c:forEach var="product"
+               items="${products}">
+
+        <tr>
+
+            <td>${product.id}</td>
+
+            <td>${product.name}</td>
+
+            <td>${product.price}</td>
+
+            <td>${product.quantity}</td>
+
+            <td>
+
+                <a href="products?action=edit&id=${product.id}">
+                    Edit
+                </a>
+
+                |
+
+                <a href="products?action=delete&id=${product.id}"
+                   onclick="return confirm('Delete this product?');">
+                    Delete
+                </a>
+
+            </td>
+
+        </tr>
+
+    </c:forEach>
+
+</table>
+
+</body>
+</html>
 ```
-
-- ✔ Works in IDE
-- ✔ Works in JAR
-- ✔ Works on server
-
- 
-
-## 5️⃣ Full flow (this is the key explanation students need)
-
-### Step-by-step flow
-
-```
-Browser
-  ↓
-/api/subjects
-  ↓
-Controller
-  ↓
-Service
-  ↓
-Repository
-  ↓
-JSON File
-  ↓
-ObjectMapper
-  ↓
-List<Subject>
-  ↓
-JSON Response
-```
-
-## 6️⃣ What exactly happens inside Repository?
-
-### Code logic (plain English)
-
-1. Spring creates repository object
-2. Repository loads `subjects.json` as stream
-3. Jackson `ObjectMapper`:
-
-   * Reads JSON
-   * Converts it into `List<Subject>`
-4. Repository returns list
-5. Service forwards it
-6. Controller returns response
-
-
-## 7️⃣ ObjectMapper – the heart of serialization
-
-```java
-List<Subject> subjects =
-    mapper.readValue(
-        inputStream,
-        new TypeReference<List<Subject>>() {}
-    );
-```
-
-### Meaning:
-
-* **1st parameter** → *From where* (file/stream)
-* **2nd parameter** → *Into what type* (List of Subject)
-
-- JSON ➜ Java Object
-- Java Object ➜ JSON (automatic in Spring)
-
-
-## 8️⃣ Why NOT database first?
-
-Learners always ask:
-
-> “What’s DB connection now?”
-
-Answer:
-
-* DB is **next step**
-* First understand:
-
-  * Flow
-  * Layers
-  * DI
-  * Serialization
-
-After that:
-
-* JDBC
-* Hibernate
-* JPA
-  are **easy upgrades**
-
-
-## 9️⃣ Same interface → different data source
-
-| Implementation   | Use case          |
-| ---------------- | ----------------- |
-| JSON Repository  | Learning / MVP    |
-| JDBC Repository  | SQL understanding |
-| JPA Repository   | Enterprise        |
-| Excel Repository | Import only       |
-
-👉 **Controller & Service never change**
-
-That’s real architecture.
-
- 
-
-## 🔟 How to explain this to students (mentor script)
-
-> “We start with JSON because it teaches backend thinking.
-> Once you understand the flow, the data source can be anything — Excel, DB, API.”
-
- 
-
-## Final mentor takeaway 🌼
-
-* Excel is a **tool**, not a foundation
-* JSON builds **correct mental models**
-* DI + interfaces = freedom
-* Same code scales from:
-
-  * File → DB → Cloud
-
- 
-
-## When Spring Boot is running… what is *really* happening?
-
-Think of Spring Boot as a **very smart receptionist + factory**.
-
-You hit a URL, and Spring says:
-
-> “Okay, I know exactly *who* should handle this, *what* objects are needed, and *how* to convert data.”
-
- 
-
-## 1️⃣ App start time (this happens only once)
-
-When you run:
-
-```java
-@SpringBootApplication
-public class AssessmentApplication
-```
-
-Spring Boot does **a lot automatically**:
-
-### Internally Spring does:
-
-* Scans packages
-* Finds classes with:
-
-  * `@Controller / @RestController`
-  * `@Service`
-  * `@Repository`
-* Creates objects (beans)
-* Stores them in **Application Context** (container)
-
-👉 This is why you **don’t write `new`**
-
- 
-
-## 2️⃣ Resource files (JSON) — how Spring sees them
-
-Your file:
-
-```
-src/main/resources/data/subjects.json
-```
-
-At runtime:
-
-* Spring **packs it inside the classpath**
-* Not a normal file anymore
-* That’s why we use:
-
-```java
-getClass()
-  .getClassLoader()
-  .getResourceAsStream("data/subjects.json");
-```
-
-📌 Important:
-
-* No `/`
-* No `./`
-* Because it’s **inside the JAR**
-
- 
-
-## 3️⃣ Now you hit the API
-
-Example:
-
-```
-GET /api/subjects
-```
-
-### What happens step-by-step 👇
-
- 
-
-## 4️⃣ DispatcherServlet (the real boss)
-
-Spring has **one front controller**:
-
-> 🧠 `DispatcherServlet`
-
-Every HTTP request goes here first.
-
-```
-Browser
-  ↓
-DispatcherServlet
-```
-
- 
-
-## 5️⃣ How does Spring know which method to call?
-
-Because of annotations 👇
-
-```java
-@GetMapping("/api/subjects")
-```
-
-Spring already built a **mapping table** at startup:
-
-```
-GET /api/subjects → SubjectController.getAllSubjects()
-```
-
-No magic. Just mapping.
-
- 
-
-## 6️⃣ Controller method is called
-
-```java
-@GetMapping
-public List<Subject> getAllSubjects() {
-    return service.getAllSubjects();
-}
-```
-
-At this moment:
-
-* Controller object already exists
-* Service object already injected
-* Repository already injected
-
-👉 **No object creation now**
-👉 Only method calls
-
- 
-
-## 7️⃣ Service → Repository → JSON
-
-Repository logic:
-
-1. Load JSON as InputStream
-2. `ObjectMapper.readValue(...)`
-3. Convert JSON → `List<Subject>`
-4. Return list
-
-This is **deserialization**.
-
- 
-
-## 8️⃣ Returning data — who converts Java → JSON?
-
-Very important point 👇
-
-You **did NOT write JSON conversion code in controller**.
-
-Spring does this automatically using:
-
-* **Jackson**
-* **HttpMessageConverter**
-
-### Internally:
-
-```
-List<Subject>
-   ↓
-Jackson ObjectMapper
-   ↓
-JSON
-```
-
-This is **serialization**.
-
- 
-
-## 9️⃣ Response goes back to browser
-
-Spring:
-
-* Sets `Content-Type: application/json`
-* Writes JSON to response body
-* Sends HTTP 200
-
-You never touched:
-
-* `PrintWriter`
-* `response.getWriter()`
-
-Spring handled it.
-
-  
-
-## 🔁 Same flow for POST, PUT, DELETE
-
-Example:
-
-```java
-@PostMapping
-public void addSubject(@RequestBody Subject subject)
-```
-
-Spring automatically:
-
-1. Reads request body JSON
-2. Converts JSON → `Subject`
-3. Calls method
-4. Saves data (file / DB)
-5. Returns response
-
-👉 This is **deserialization again**
-
-## 10️⃣ Why learners feel “Spring is doing magic”
-
-Because Spring:
-
-* Hides boilerplate
-* Automates wiring
-* Manages lifecycle
-
-But internally it’s still:
-
-* Java objects
-* Method calls
-* Maps
-* Reflection
-
-
-
-## Mentor explanation (this line always works 👇)
-
-> “Spring Boot doesn’t add logic.
-> It only **removes plumbing**.”
-
-
-## One-line mental model 🧠
-
-```
-Spring Boot = Java + DI + HTTP mapping + JSON conversion
-```
-
-Nothing more.
-
-
-
-## Final Transflower takeaway 🌼
-
-* JSON file → learning data source
-* ObjectMapper → data translator
-* DispatcherServlet → traffic police
-* Annotations → configuration, not magic
-* Same flow works for:
-
-  * File
-  * Excel
-  * Database
-  * Cloud API
-
-We’re **absolutely on the right track** by slowing this down and understanding the *why*, not just the *what*.
-
-
-# Servlet vs Spring Boot — Same Use Case
-
-### Use case
-
-👉 **Get all subjects from JSON and return as JSON**
 
 ---
 
-## 1️⃣ Servlet-based implementation (Old school)
+## 7. Product Form JSP
 
-### Controller (Servlet)
+Create:
 
-```java
-@WebServlet("/api/subjects")
-public class SubjectServlet extends HttpServlet {
-
-    private SubjectService service = new SubjectService();
-
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws IOException {
-
-        List<Subject> subjects = service.getAllSubjects();
-
-        ObjectMapper mapper = new ObjectMapper();
-        String json = mapper.writeValueAsString(subjects);
-
-        resp.setContentType("application/json");
-        resp.getWriter().write(json);
-    }
-}
+```text
+src/main/webapp/product-form.jsp
 ```
 
-### What YOU must do
+```jsp
+<%@ page contentType="text/html;charset=UTF-8" %>
 
-* Create servlet
-* Map URL
-* Create service object
-* Convert Java → JSON
-* Write response manually
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Product Form</title>
+</head>
 
-## 2️⃣ Spring Boot implementation (Modern)
+<body>
 
-### Controller
+<h1>
+    ${empty product ? "Add Product" : "Edit Product"}
+</h1>
 
-```java
-@RestController
-@RequestMapping("/api/subjects")
-public class SubjectController {
+<form method="post" action="products">
 
-    private final SubjectService service;
+    <input type="hidden"
+           name="action"
+           value="${empty product ? 'insert' : 'update'}">
 
-    public SubjectController(SubjectService service) {
-        this.service = service;
-    }
+    <input type="hidden"
+           name="id"
+           value="${product.id}">
 
-    @GetMapping
-    public List<Subject> getAllSubjects() {
-        return service.getAllSubjects();
-    }
-}
+    <label>Product Name:</label>
+
+    <input type="text"
+           name="name"
+           value="${product.name}"
+           required>
+
+    <br><br>
+
+    <label>Price:</label>
+
+    <input type="number"
+           step="0.01"
+           name="price"
+           value="${product.price}"
+           required>
+
+    <br><br>
+
+    <label>Quantity:</label>
+
+    <input type="number"
+           name="quantity"
+           value="${product.quantity}"
+           required>
+
+    <br><br>
+
+    <button type="submit">
+        Save Product
+    </button>
+
+</form>
+
+<br>
+
+<a href="products">
+    Back to Products
+</a>
+
+</body>
+</html>
 ```
 
-### What Spring does for you
+##  8. Complete Project Structure
 
-* URL mapping
-* Object creation (DI)
-* JSON serialization
-* Response writing
-* Content-Type headers
+Your project now looks like:
 
-
-
-## 3️⃣ Side-by-side comparison
-
-| Concern          | Servlet                 | Spring Boot         |
-| ---------------- | ----------------------- | ------------------- |
-| Entry point      | `HttpServlet`           | `DispatcherServlet` |
-| URL mapping      | `@WebServlet` / web.xml | `@GetMapping`       |
-| Object creation  | Manual (`new`)          | DI (`@Autowired`)   |
-| JSON conversion  | Manual `ObjectMapper`   | Automatic           |
-| Response writing | `getWriter()`           | Automatic           |
-| Boilerplate      | High                    | Very low            |
-| Testability      | Hard                    | Easy                |
-
-
-
-## 4️⃣ Request flow comparison (visual)
-
-### Servlet flow
-
+```text
+ProductWebApp/
+│
+├── pom.xml
+│
+└── src/
+    └── main/
+        │
+        ├── java/
+        │   └── com/
+        │       └── transflower/
+        │
+        │           ├── model/
+        │           │   └── Product.java
+        │           │
+        │           ├── dao/
+        │           │   └── ProductDAO.java
+        │           │
+        │           └── controller/
+        │               └── ProductServlet.java
+        │
+        └── webapp/
+            │
+            ├── products.jsp
+            └── product-form.jsp
 ```
+
+
+## 9. Complete CRUD Execution Flow
+
+### CREATE
+
+User fills the form:
+
+```text
 Browser
-  ↓
-Servlet Container (Tomcat)
-  ↓
-SubjectServlet.doGet()
-  ↓
-Service
-  ↓
-Repository
-  ↓
-JSON
+   │
+   │ POST /products
+   ▼
+ProductServlet
+   │
+   ▼
+ProductDAO
+   │
+   │ INSERT
+   ▼
+MySQL
 ```
 
+### READ
 
+User opens:
 
-### Spring Boot flow
-
+```text
+/products
 ```
+
+Flow:
+
+```text
 Browser
-  ↓
-DispatcherServlet
-  ↓
-Controller
-  ↓
-Service
-  ↓
-Repository
-  ↓
-JSON
+   │
+   │ GET /products
+   ▼
+ProductServlet
+   │
+   ▼
+ProductDAO
+   │
+   │ SELECT
+   ▼
+MySQL
+   │
+   ▼
+ProductDAO
+   │
+   ▼
+ProductServlet
+   │
+   ▼
+products.jsp
+   │
+   ▼
+Browser
 ```
 
-- 👉 Same flow
-- 👉 Different **who handles plumbing**
+### UPDATE
 
-
-
-## 5️⃣ JSON handling difference (key learning point)
-
-### Servlet
-
-```java
-ObjectMapper mapper = new ObjectMapper();
-mapper.writeValueAsString(data);
+```text
+Browser
+   │
+   │ GET /products?action=edit&id=5
+   ▼
+ProductServlet
+   │
+   ▼
+ProductDAO
+   │
+   ▼
+product-form.jsp
 ```
 
-### Spring Boot
+User changes the data:
 
-```java
-return data;
+```text
+Browser
+   │
+   │ POST /products
+   ▼
+ProductServlet
+   │
+   ▼
+ProductDAO
+   │
+   │ UPDATE
+   ▼
+MySQL
 ```
 
-🧠 Spring internally uses:
+### DELETE
 
-* Jackson
-* HttpMessageConverters
-
-
-
-## 6️⃣ POST example (important demo)
-
-### Servlet
-
-```java
-@Override
-protected void doPost(HttpServletRequest req, HttpServletResponse resp)
-        throws IOException {
-
-    ObjectMapper mapper = new ObjectMapper();
-    Subject subject = mapper.readValue(req.getInputStream(), Subject.class);
-
-    service.addSubject(subject);
-}
+```text
+Browser
+   │
+   │ /products?action=delete&id=5
+   ▼
+ProductServlet
+   │
+   ▼
+ProductDAO
+   │
+   │ DELETE
+   ▼
+MySQL
+   │
+   ▼
+Redirect
+   │
+   ▼
+Product List
 ```
 
-### Spring Boot
+> “Students, this small Product application is actually teaching you a very important architecture.”
 
-```java
-@PostMapping
-public void addSubject(@RequestBody Subject subject) {
-    service.addSubject(subject);
-}
+```text
+                 🌐 BROWSER
+                     │
+                     │ HTTP
+                     ▼
+              ┌──────────────┐
+              │    TOMCAT    │
+              │              │
+              │  Servlet     │
+              │  Container   │
+              └──────┬───────┘
+                     │
+                     ▼
+             ProductServlet
+                Controller
+                     │
+                     ▼
+              ProductDAO
+               Data Access
+                     │
+                     │ JDBC
+                     ▼
+                🗄️ MySQL
 ```
 
+And the responsibilities are separated:
 
+```text
+Product
+   ↓
+Data / Model
 
-## 7️⃣ Why Spring Boot feels “automatic”
+ProductServlet
+   ↓
+Web Request / Response
 
-Because Spring:
+ProductDAO
+   ↓
+Database Access
 
-* Preconfigures:
+MySQL
+   ↓
+Persistent Data
 
-  * Tomcat
-  * Jackson
-  * DI
-* Detects annotations
-* Builds mapping tables at startup
-
-> Nothing happens at runtime by surprise.
-
-
-
-## 8️⃣ How to explain this to students (one killer line)
-
-> “If you know Servlets, Spring Boot is **not new** — it just saves your time.”
-
-
-
-## 9️⃣ When to teach Servlets vs Spring Boot
-
-### Teach Servlets when:
-
-* Explaining HTTP basics
-* Request / response lifecycle
-* Web fundamentals
-
-### Teach Spring Boot when:
-
-* Building APIs
-* Real-world apps
-* Microservices
-* Industry-ready skills
-
-
-
-## Final mentor takeaway 🌱
-
-* Servlets = **foundation**
-* Spring Boot = **productivity**
-* Same Java
-* Same HTTP
-* Same architecture
-
-
-# 1️⃣ Big Picture: Servlet vs Spring Boot
-
-```
-           USER / BROWSER
-                  |
-                  v
-             HTTP REQUEST
+JSP
+   ↓
+Presentation
 ```
 
+### The learning progression
 
-## Servlet-based Flow
-
-```
-+----------------------+
-|   Browser / Client   |
-+----------------------+
-            |
-            v
-+----------------------+
-|     Tomcat Server    |
-+----------------------+
-            |
-            v
-+----------------------+
-|   SubjectServlet     |
-|  (doGet / doPost)    |
-+----------------------+
-            |
-            v
-+----------------------+
-|   SubjectService     |
-+----------------------+
-            |
-            v
-+----------------------+
-| SubjectRepository    |
-| (File / DB / JSON)   |
-+----------------------+
-            |
-            v
-+----------------------+
-|   ObjectMapper       |
-| (Java -> JSON)       |
-+----------------------+
-            |
-            v
-+----------------------+
-| HttpServletResponse  |
-| getWriter().write()  |
-+----------------------+
-            |
-            v
-         HTTP RESPONSE
+```text
+Core Java
+    ↓
+OOP
+    ↓
+JDBC
+    ↓
+Servlet
+    ↓
+JSP
+    ↓
+MVC
+    ↓
+CRUD Web Application
+    ↓
+Spring MVC
+    ↓
+Spring Boot
+    ↓
+REST API
+    ↓
+Spring Data JPA
 ```
 
-👉 **You control everything manually**
-
-
-## Spring Boot Flow
-
-```
-+----------------------+
-|   Browser / Client   |
-+----------------------+
-            |
-            v
-+----------------------+
-|  DispatcherServlet   |
-|  (Front Controller)  |
-+----------------------+
-            |
-            v
-+----------------------+
-| SubjectController    |
-|   (@GetMapping)      |
-+----------------------+
-            |
-            v
-+----------------------+
-|   SubjectService     |
-+----------------------+
-            |
-            v
-+----------------------+
-| SubjectRepository    |
-| (File / DB / JSON)   |
-+----------------------+
-            |
-            v
-+----------------------+
-|   HttpMessageConv.   |
-|   (Jackson)          |
-+----------------------+
-            |
-            v
-         HTTP RESPONSE
-```
-
-👉 **Spring handles plumbing**
-
- 
-
-# 2️⃣ Object Creation Difference (VERY important)
-
-## Servlet
-
-```
-SubjectServlet
-    |
-    +--> new SubjectService()
-             |
-             +--> new SubjectRepository()
-```
-
-- ❌ Tight coupling
-- ❌ Hard to test
-
----
-
-## Spring Boot (DI)
-
-```
-Spring Container
-    |
-    +--> SubjectController
-            |
-            +--> SubjectService
-                    |
-                    +--> SubjectRepository
-```
-
-- ✔ Loose coupling
-- ✔ Replaceable implementations
-
-
-
-# 3️⃣ JSON Handling Comparison
-
-## Servlet
-
-```
-List<Subject>
-      |
-      v
-ObjectMapper
-      |
-      v
-JSON String
-      |
-      v
-response.getWriter()
-```
-
-
-## Spring Boot
-
-```
-List<Subject>
-      |
-      v
-HttpMessageConverter
-      |
-      v
-JSON (automatic)
-```
-
-
-
-# 4️⃣ POST Request Flow (Deserialization)
-
-## Spring Boot
-
-```
-JSON Request Body
-        |
-        v
-HttpMessageConverter
-        |
-        v
-Subject Object
-        |
-        v
-Controller Method
-```
-
-
-
-# 5️⃣ Resource File Loading (JSON)
-
-```
-subjects.json
-     |
-     v
-Classpath (resources)
-     |
-     v
-ClassLoader
-     |
-     v
-InputStream
-     |
-     v
-ObjectMapper.readValue()
-     |
-     v
-List<Subject>
-```
-
- 
-
-# 6️⃣ One-line mental model 🧠
-
-```
-Servlet = You do everything
-Spring Boot = You do business logic
-```
-
- 
-
-# 7️⃣ Teaching tip (Transflower gold 🌼)
-
-
-> “Spring Boot is built **on top of Servlets**.
-> If you remove Spring, the Servlet is still there.”
-
-
- 
-
+> **“Don't memorize `ProductServlet`. Understand the journey of the request. Once you understand the journey, the framework becomes much easier to learn.”**
