@@ -26,7 +26,7 @@ Move into framework-based development with Spring MVC and request flow.
 
 - [Real Spring Guide](./realspring.md)
 - [Spring MVC](./springmvc.md)
-- [Spring MVC Application Flow](./sprinfmvcappflow.md)
+- [Spring MVC Application Flow](./springmvcappflow.md)
 - [Bean vs Object](./beanvsobject.md)
 
 ###  Level 4: REST APIs and Spring Boot

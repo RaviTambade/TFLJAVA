@@ -1,11 +1,10 @@
 # Spring MVC Application Execution Flow
 
-
 > “Students, don't start by memorizing `@Controller`, `@GetMapping`, `Model`, and `ViewResolver`.First understand one thing: **What happens when a user types a URL in the browser?** Once you understand that journey, Spring MVC becomes very easy.”
 
 
 
-## 🎬 Let's Take a Real Example
+## Let's Take a Real Example
 
 Suppose we have a Product application. The user enters:
 
@@ -23,7 +22,7 @@ Now the real journey begins.
 
 
 
-# 🛣️ Complete Spring MVC Execution Flow
+# Complete Spring MVC Execution Flow
 
 ```text
                     USER
@@ -115,7 +114,7 @@ Now the real journey begins.
 ```
 
 
-# 🧩 Step 1 — User Sends a Request
+# Step 1 — User Sends a Request
 
 The user enters:
 
@@ -150,7 +149,7 @@ Spring MVC Application
 
 Tomcat receives the HTTP request and passes it into the application's web layer.
 
-# 🚦 Step 3 — DispatcherServlet Takes Charge
+# Step 3 — DispatcherServlet Takes Charge
 
 Now comes the most important character:
 
@@ -171,7 +170,7 @@ It does not normally contain your product business logic. Its job is to **coordi
                  ProductController
 ```
 
-# 🔍 Step 4 — Find the Correct Controller
+# Step 4 — Find the Correct Controller
 
 Suppose we have:
 
@@ -204,7 +203,7 @@ ProductController.listProducts()
 This mapping is one of the key things Spring MVC manages for us.
 
 
-# ⚙️ Step 5 — Controller Calls the Service
+# Step 5 — Controller Calls the Service
 
 The controller should not become a giant class containing all business logic.
 
@@ -239,7 +238,7 @@ The controller's responsibility is primarily:
 
 > **Receive → Delegate → Prepare Model → Select View**
 
-# 🧠 Step 6 — Service Performs Business Logic
+# Step 6 — Service Performs Business Logic
 
 The service represents the business layer.
 
@@ -263,7 +262,7 @@ Apply business rules
 
 The service then asks the repository/DAO for data.
 
-# 🗄️ Step 7 — Repository/DAO Talks to Database
+# Step 7 — Repository/DAO Talks to Database
 
 The repository or DAO handles data access.
 
@@ -293,7 +292,7 @@ The database might return:
 That data travels back upward.
 
 
-# 🔄 Step 8 — Data Comes Back to Controller
+# Step 8 — Data Comes Back to Controller
 
 The journey reverses:
 
@@ -330,7 +329,7 @@ Model
       └── Mouse
 ```
 
-# 🎨 Step 9 — Controller Returns a View Name
+# Step 9 — Controller Returns a View Name
 
 The controller returns:
 
@@ -355,7 +354,7 @@ products
 Spring's view resolution mechanism determines which actual view should render that name.
 
 
-# 🔎 Step 10 — ViewResolver Finds the JSP
+# Step 10 — ViewResolver Finds the JSP
 
 For a JSP-based Spring MVC application, the view resolver can translate:
 
@@ -411,7 +410,7 @@ JSP
 HTML
 ```
 
-# 📤 Step 12 — HTML Goes Back to Browser
+# Step 12 — HTML Goes Back to Browser
 
 Finally:
 
@@ -444,7 +443,7 @@ ID       Product       Price
 
 🎉 The request-response journey is complete.
 
-# 🧠 The Golden Flow
+# The Golden Flow
 
 Students, remember this one line:
 
@@ -480,7 +479,7 @@ HTML
 Browser
 ```
 
-# 🍕 A Simple Pizza Analogy
+# A Simple Pizza Analogy
 
 Imagine ordering pizza.
 
@@ -522,7 +521,7 @@ So:
 
 It doesn't cook the pizza. It makes sure the order reaches the correct person.
 
-# 🎯 Why Is This Architecture Powerful?
+# Why Is This Architecture Powerful?
 
 Because responsibilities are separated.
 
@@ -551,7 +550,7 @@ or another presentation technology, the business logic doesn't necessarily need 
 > **Separation of concerns.**
 
 
-# Transflower Mentor's Final Lesson
+###  Transflower Mentor's Final Lesson
 
 > “Students, don't learn Spring MVC by memorizing 50 annotations. Learn it by following **one HTTP request**.”
 
