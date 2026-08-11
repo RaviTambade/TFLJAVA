@@ -53,6 +53,30 @@ Secure your APIs and learn deployment best practices.
 - [Deployment Practices](./precationsdeployapp.md)
 - [Docker Notes](./docker_24_2_25.md)
 
+###  Level 7: Distributed Systems
+Learn how Spring Boot applications communicate, scale, handle failures, and work together as distributed systems.
+
+- [Distributed Systems Fundamentals](./distributedsystems.md)
+- [Microservices Architecture](./microservices.md)
+- REST Communication Between Services
+- Service Discovery
+- API Gateway
+- Load Balancing
+- [Distributed Caching](./caching.md)
+- Redis with Spring Boot
+- Messaging and Event-Driven Architecture
+- Kafka with Spring Boot
+- RabbitMQ with Spring Boot
+- Resilience and Fault Tolerance
+- Circuit Breaker and Retry
+- Idempotency and Duplicate Requests
+- Eventual Consistency
+- Saga Pattern
+- Distributed Transactions
+- Observability: Logs, Metrics and Tracing
+- Distributed System Design Patterns
+
+
 ###  Bonus Resources
 
 - [Java Developer 5-Year Experience Guide](./javadev5yearexp.md)
