@@ -33,6 +33,7 @@ Move into framework-based development with Spring MVC and request flow.
 Build REST services and Spring Boot applications.
 
 - [REST API Basics](./restapibasics.md)
+- [Why Spring boot](./whyspringboot.md)
 - [Spring Initializer](./springbootinitializer.md)
 - [Spring Boot API](./springbootapi.md)
 
