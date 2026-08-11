@@ -1,4 +1,8 @@
 
+
+
+
+
 # “RESTful APIs – The Waiter's Notebook in a Digital Restaurant”
 
 ## 🍽️ Scene: A Digital Restaurant
