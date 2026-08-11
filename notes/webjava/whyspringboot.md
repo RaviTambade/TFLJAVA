@@ -4,15 +4,6 @@
 
  **Let us explain  not just as a technology timeline, but as a story of **problems, learning, and engineering evolution**.
 
-![Image](https://images.openai.com/static-rsc-4/RV5xg0aqxKWrJmhYJHffrPvhxB-DYytQ5HrWNu0hne3XFS7FKC1FNIO9BCsQj25oAlh8KRTry1e1wBuA_DEvReYT1037-4KKFOpiID6g2pxyNAgOlJ8k6htd7xpy6UchW89x--zpFzBBs6d2v3wHj8VPwkXJEht-OOAjN21c-rz6_-6ACwRvLeOeAFlX347C?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/LoQrr6kZdZNtXwwzDpkyILv-81vrrzBIXJ6Y91Az2bJmLB9C7yvQMbJLXMn0X3UZ8qN9fzkgjF_hQsMSDy54sJafOj4sv7FsG2Xsea_up-6Fz7Nvt0yekdlomLoteH1icrMdixYB0MoRzc7rFjzbz5UOXOLhztS6KP5dMR8Af7s2alPd6cf5QTlfH3tswz_8?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/j-WtpDKYFVOvhiCU2AyYMdZceF1iCnpFtQOIMd46TPuVh4XFtTADP6lncwg-NW2ITpmVUZTJRZIABCuAqocoQ1yU0c6eGDCQfbYuWMx3HZDs4GPcEnw0PX5AkOTaqWShF-tvM9sfDPY_Z_NRdkjmn9gCGORk9DMdGnoMBpg7XGDSddD2Se4E5SGlISfl1D9e?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/K_r1g3pTPPP__i6Th_zm_lZIHKQjCYFillO_zGB5UD8S6vWTVuiKZCclg4L6KhHfbhWIKweQDrnD3WfQ_NivDaFrsvqFRtAny4i-fDoxMgRhw9aiLzjZsekADGHWOoZ3kZN2NrG0CskOVZ-BKdq4y7oiBrfzcCd1mIES7AFfgpVxhdOEtcKeIMtRAsi8-ENo?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/zqawfh1tMZUvw7dDa8BjBWzVr0tzHQy6ydFcwlYrLPGKgHXYJ7OS5T2tmg7lS35Sos2_AyB-3PqEoCRDpXUNxwWdL0BkncPh0em9R8jJn6Zs_i_4lm9bo9klNFZEnSxJ8ksl1-YDg_U10S8rdCfVlks_eChlZ4g0P51ydEJjmAXzjzZAD3cbQqRx8WpaZr3O?purpose=fullsize)
 
 ## 🌱 First, understand the real story
 
@@ -667,3 +658,15 @@ Developer Productivity
 ### 🌸 Transflower Mentor Takeaway
  
 **Technology evolves when developers encounter pain.** A good developer doesn't simply ask:  "What is Spring Boot?" A better developer asks:  **"What problem was Spring Boot created to solve?"** And an even better developer asks:  **"What problem will the next generation of frameworks need to solve?"** That mindset takes a student from **learning syntax → understanding architecture → becoming an engineer.** 
+
+
+
+![Image](https://images.openai.com/static-rsc-4/RV5xg0aqxKWrJmhYJHffrPvhxB-DYytQ5HrWNu0hne3XFS7FKC1FNIO9BCsQj25oAlh8KRTry1e1wBuA_DEvReYT1037-4KKFOpiID6g2pxyNAgOlJ8k6htd7xpy6UchW89x--zpFzBBs6d2v3wHj8VPwkXJEht-OOAjN21c-rz6_-6ACwRvLeOeAFlX347C?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/LoQrr6kZdZNtXwwzDpkyILv-81vrrzBIXJ6Y91Az2bJmLB9C7yvQMbJLXMn0X3UZ8qN9fzkgjF_hQsMSDy54sJafOj4sv7FsG2Xsea_up-6Fz7Nvt0yekdlomLoteH1icrMdixYB0MoRzc7rFjzbz5UOXOLhztS6KP5dMR8Af7s2alPd6cf5QTlfH3tswz_8?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/j-WtpDKYFVOvhiCU2AyYMdZceF1iCnpFtQOIMd46TPuVh4XFtTADP6lncwg-NW2ITpmVUZTJRZIABCuAqocoQ1yU0c6eGDCQfbYuWMx3HZDs4GPcEnw0PX5AkOTaqWShF-tvM9sfDPY_Z_NRdkjmn9gCGORk9DMdGnoMBpg7XGDSddD2Se4E5SGlISfl1D9e?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/K_r1g3pTPPP__i6Th_zm_lZIHKQjCYFillO_zGB5UD8S6vWTVuiKZCclg4L6KhHfbhWIKweQDrnD3WfQ_NivDaFrsvqFRtAny4i-fDoxMgRhw9aiLzjZsekADGHWOoZ3kZN2NrG0CskOVZ-BKdq4y7oiBrfzcCd1mIES7AFfgpVxhdOEtcKeIMtRAsi8-ENo?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/zqawfh1tMZUvw7dDa8BjBWzVr0tzHQy6ydFcwlYrLPGKgHXYJ7OS5T2tmg7lS35Sos2_AyB-3PqEoCRDpXUNxwWdL0BkncPh0em9R8jJn6Zs_i_4lm9bo9klNFZEnSxJ8ksl1-YDg_U10S8rdCfVlks_eChlZ4g0P51ydEJjmAXzjzZAD3cbQqRx8WpaZr3O?purpose=fullsize)
