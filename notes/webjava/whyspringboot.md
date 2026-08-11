@@ -16,19 +16,11 @@
 
 ## 🌱 First, understand the real story
 
-Imagine you are a Java developer in the late 1990s.
+Imagine you are a Java developer in the late 1990s. Your manager says:  **"We need a web application. It should accept requests from browsers, execute business logic, talk to a database, and return HTML."**
 
-Your manager says:
+You have Java. So you start with **Servlets**. Later, applications become bigger. You discover problems. Then comes **Spring**. Again, applications become more sophisticated. You discover another set of problems. Then comes **Spring MVC**. And finally developers say: "Spring is powerful, but why do I need so much configuration just to start an application?"
 
-> **"We need a web application. It should accept requests from browsers, execute business logic, talk to a database, and return HTML."**
-
-You have Java. So you start with **Servlets**. Later, applications become bigger. You discover problems. Then comes **Spring**. Again, applications become more sophisticated. You discover another set of problems. Then comes **Spring MVC**. And finally developers say:
-
-> "Spring is powerful, but why do I need so much configuration just to start an application?"
-
-That leads to **Spring Boot**. So remember:
-
-> **Every new technology is usually an answer to the pain created by the previous technology.**
+That leads to **Spring Boot**. So remember:  **Every new technology is usually an answer to the pain created by the previous technology.**
 
 The evolution is:
 
@@ -49,7 +41,7 @@ Spring Boot
 ```
 
 
-# 1️⃣ Servlet — The Beginning
+## 1️⃣ Servlet — The Beginning
 
 Let's go back to the basics. A web browser sends:
 
@@ -113,7 +105,7 @@ Now the application has a problem.
 And the classes are tightly coupled.
 
  
-# 2️⃣ The Servlet Era Problem
+## 2️⃣ The Servlet Era Problem
 
 The first important lesson for students is: **Servlets were not bad technology. They solved the problem of building Java web applications.** But as applications grew, new problems appeared.
 
@@ -149,9 +141,8 @@ A lot of configuration was required.
 
 Large enterprise applications became difficult to manage. And this is where an important architectural idea appeared.
 
----
-
-# 3️⃣ Spring Framework — "Let the Framework Manage My Objects"
+ 
+## 3️⃣ Spring Framework — "Let the Framework Manage My Objects"
 
 Now imagine telling Java:  "I don't want every class to create its dependencies."  Instead of: 
 ```java
@@ -248,7 +239,7 @@ The class doesn't worry about **how** the dependency is created.
 
  
 
-# 4️⃣ But Spring Created Another Problem
+## 4️⃣ But Spring Created Another Problem
 
 Now students ask an excellent question: "If Spring solved object management, why did we need Spring MVC?" Excellent question. Spring Framework was much bigger than just web development. But building web applications still required developers to configure many things.
 
@@ -270,7 +261,7 @@ View
 
 And developers had to configure these components. So another problem emerged:  **How do we organize web applications cleanly using Spring?**   Enter...
 
-# 5️⃣ Spring MVC
+## 5️⃣ Spring MVC
 
 Spring MVC introduced a structured web architecture based on:
 
@@ -324,7 +315,7 @@ This is much cleaner than manually handling every request through raw Servlet co
 
  
 
-# 🌸 Mentor's Architecture Story
+## 🌸 Mentor's Architecture Story
 
 Now our architecture starts looking like a real enterprise application:
 
@@ -363,7 +354,7 @@ This is where students should start thinking beyond syntax.  **Frameworks are no
 
  
 
-# 6️⃣ Spring MVC Solved Many Problems
+## 6️⃣ Spring MVC Solved Many Problems
 
 Spring MVC gave us:
 
@@ -413,7 +404,7 @@ There was still another problem.
 
  
 
-# 7️⃣ The Configuration Problem
+## 7️⃣ The Configuration Problem
 
 Imagine a new developer joins your project. You tell them: "Let's create a Spring MVC application." They ask:  "Okay. What do I need?"
 
@@ -440,11 +431,11 @@ This was the pain point. Spring was powerful. But setting up Spring applications
 
  
 
-# 8️⃣ Spring Boot — "Just Start Coding"
+## 8️⃣ Spring Boot — "Just Start Coding"
 
 Then came: 
 
-# 🚀 Spring Boot
+### 🚀 Spring Boot
 
 Spring Boot's philosophy is essentially:
 
@@ -482,9 +473,9 @@ Browser / React / Angular
 ```
 
  
-# 9️⃣ What Makes Spring Boot Special?
+## 9️⃣ What Makes Spring Boot Special?
 
-## 1. Auto Configuration
+### 1. Auto Configuration
 
 Spring Boot examines the application's dependencies and configuration and automatically configures many common components. Instead of manually configuring everything:
 
@@ -500,7 +491,7 @@ Converters
 Spring Boot provides sensible defaults.
 
  
-## 2. Starter Dependencies
+### 2. Starter Dependencies
 
 Instead of manually finding and configuring many individual dependencies, Spring Boot provides starters.
 
@@ -525,7 +516,7 @@ JSON support
 ```
  
 
-# 🔟 Embedded Tomcat
+## 🔟 Embedded Tomcat
 
 This is another major difference. Traditional Java web application:
 
@@ -563,7 +554,7 @@ This dramatically simplifies deployment.
 
  
 
-# 1️⃣1️⃣ Production-Ready Features
+## 1️⃣1️⃣ Production-Ready Features
 
 Spring Boot also provides features useful for operating applications in production. One important example is:
 
@@ -583,7 +574,7 @@ Monitoring endpoints
 Now the application isn't merely:  "Code that works on my laptop." It can become:  **"An application that can be monitored and operated in production."**
  
 
-# 🌸 The Complete Evolution
+## 🌸 The Complete Evolution
 
 Now let's put everything together.
 
@@ -619,7 +610,7 @@ Now let's put everything together.
 ```
  
 
-# 🧠 Interviewer's Question
+## 🧠 Interviewer's Question
 
 Now let's answer the original interview question.
 
@@ -673,20 +664,6 @@ Spring Boot
 Developer Productivity
 ```
 
-## 🌸 Transflower Mentor Takeaway
-
-> **Technology evolves when developers encounter pain.**
-
-A good developer doesn't simply ask:
-
-> "What is Spring Boot?"
-
-A better developer asks:
-
-> **"What problem was Spring Boot created to solve?"**
-
-And an even better developer asks:
-
-> **"What problem will the next generation of frameworks need to solve?"**
-
-That mindset takes a student from **learning syntax → understanding architecture → becoming an engineer.**
+### 🌸 Transflower Mentor Takeaway
+ 
+**Technology evolves when developers encounter pain.** A good developer doesn't simply ask:  "What is Spring Boot?" A better developer asks:  **"What problem was Spring Boot created to solve?"** And an even better developer asks:  **"What problem will the next generation of frameworks need to solve?"** That mindset takes a student from **learning syntax → understanding architecture → becoming an engineer.** 
