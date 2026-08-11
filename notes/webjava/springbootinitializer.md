@@ -1,7 +1,6 @@
 # Spring Boot Application
 
-> "Learning Spring Boot is not about memorizing annotations.
-> It is about understanding how a Java program becomes a real-world, multi-user web application."
+> "Learning Spring Boot is not about memorizing annotations. It is about understanding how a Java program becomes a real-world, multi-user web application."
 
 
 ## 1. From Standalone Apps to Web Apps
@@ -28,14 +27,7 @@ Now ask the students:
 > **"Who can use this application?"**
 
 Usually the answer is:
-
-> "The person who has the application installed."
-
-Exactly.
-
-That means our application is running locally.
-
-Imagine we build:
+ "The person who has the application installed." Exactly. That means our application is running locally. Imagine we build:
 
 ```text
 Library Management System
@@ -54,27 +46,17 @@ We may end up with:
 
 ```text
 Librarian A → Application A → Database A
-
 Librarian B → Application B → Database B
-
 Librarian C → Application C → Database C
 ```
-
-Now ask:
-
-> **"Are all librarians working with the same data?"**
-
-Not necessarily. This is one of the limitations of traditional standalone applications.
+ 
+Now ask: **"Are all librarians working with the same data?"** Not necessarily. This is one of the limitations of traditional standalone applications.
 
 
 
 ## 2. Why Web Applications?
 
-Now ask the students:
-
-> **"What if we keep only ONE copy of the application?"**
-
-Instead of installing the application on every computer, we put it on a server.
+Now ask the students:**"What if we keep only ONE copy of the application?"**Instead  of installing the application on every computer, we put it on a server.
 
 ```text
                          SERVER
@@ -95,13 +77,7 @@ Instead of installing the application on every computer, we put it on a server.
                   User   User   User
 ```
 
-Now multiple users can access the same application.
-
-The application becomes:
-
-> **A multi-user Web Application.**
-
-The basic idea is:
+Now multiple users can access the same application.The application becomes: **A multi-user Web Application.** The basic idea is:
 
 ```text
 Client
@@ -123,11 +99,7 @@ The source material describes this transition as centralizing the application on
 
 ## 3. Where Does Spring Boot Fit?
 
-Now I ask:
-
-> **"If Java can create applications, why do we need Spring Boot?"**
-
-Earlier, Java developers could create web applications using:
+Now I ask: **"If Java can create applications, why do we need Spring Boot?"** Earlier, Java developers could create web applications using:
 
 ```text
 Servlet
@@ -136,11 +108,7 @@ doGet()
 doPost()
 ```
 
-It works.
-
-But developers have to deal with a lot of infrastructure and configuration.
-
-Modern applications need:
+It works. But developers have to deal with a lot of infrastructure and configuration. Modern applications need:
 
 ```text
 Web Server
@@ -155,11 +123,7 @@ Logging
 Monitoring
 ```
 
-This is where **Spring Boot** comes in.
-
-> **Spring Boot helps Java developers build production-ready applications quickly with minimal configuration.**
-
-It gives us:
+This is where **Spring Boot** comes in.  **Spring Boot helps Java developers build production-ready applications quickly with minimal configuration.** It gives us:
 
 ```text
 Project Structure
@@ -186,10 +150,7 @@ The source positions Spring Boot as the layer that hides much of the servlet com
 
 ### Mentor says:
 
-> "Spring Boot is not a replacement for Java.
-> It is a framework built on top of the Spring ecosystem that helps us build Java applications faster."
-
-Think of the relationship like this:
+> "Spring Boot is not a replacement for Java. It is a framework built on top of the Spring ecosystem that helps us build Java applications faster." Think of the relationship like this:
 
 ```text
 Java
@@ -254,7 +215,7 @@ Spring Boot provides testing support through its ecosystem. The source uses this
 
 
 
-# 6. Why Spring Initializr?
+## 6. Why Spring Initializr?
 
 Now ask:
 
@@ -276,20 +237,12 @@ That setup takes time. So Spring provides:
 
 # Spring Initializr
 
-Think of it as:
-
-> **A project generator.**
-
-It creates the basic Spring Boot project for us.
+Think of it as:  **A project generator.** It creates the basic Spring Boot project for us.
 
 
-## 6.1 Pizza Analogy
+### 6.1 Pizza Analogy
 
-### Mentor says:
-
-> "Imagine you want to make pizza."
-
-Do you want to start by:
+> "Imagine you want to make pizza." Do you want to start by:
 
 ```text
 Growing wheat
@@ -301,9 +254,7 @@ Making dough
 Preparing the oven
 ```
 
-No.
-
-You want:
+No. You want:
 
 ```text
 Ready Pizza Base
@@ -331,9 +282,8 @@ Spring Boot Application
 
 The uploaded source uses the same “ready-made base” idea for Spring Initializr. 
 
- 
 
-# 6.2 Create a Spring Boot Project
+### 6.2 Create a Spring Boot Project
 
 Open:
 
@@ -372,7 +322,7 @@ The source recommends this setup for the initial REST API and database exercise.
 
  
 
-# 7. Import the Project into the IDE
+## 7. Import the Project into the IDE
 
 Open the generated project in:
 
@@ -409,17 +359,7 @@ public class DemoApplication {
 }
 ```
 
-Now ask:
-
-> **"What does `main()` normally do?"**
-
-Student:
-
-> "It starts the Java application."
-
-Correct.
-
-But something interesting happens here.
+Now ask:  **"What does `main()` normally do?"** Student:  "It starts the Java application." Correct. But something interesting happens here.
 
 ```java
 SpringApplication.run(
@@ -431,8 +371,7 @@ SpringApplication.run(
 Spring Boot starts the application and its web infrastructure. The source specifically highlights this as the entry point that starts the application and embedded Tomcat server. 
 
  
-
-# 8. Embedded Tomcat
+## 8. Embedded Tomcat
 
 Traditional thinking:
 
@@ -459,7 +398,7 @@ Application Running
 So we can run our application directly. The developer doesn't have to separately install and configure an external web server for the basic application.
 
 
-# 9. First REST API
+## 9. First REST API
 
 Now tell the students:
 
@@ -514,7 +453,7 @@ Hello, Spring Boot!
 The source demonstrates this exact first-API exercise. 
 
 
-# 10. Mentor's Question
+## 10. Mentor's Question
 
 Now stop. Ask:  **"Where did we write `doGet()`?"**
 Students: "We didn't."
@@ -526,7 +465,7 @@ Then say: **"That is the power of abstraction."**
 Spring Boot is taking care of infrastructure while we focus on application behavior.
 
 
-# 11. What Is a REST API?
+## 11. What Is a REST API?
 
 A REST API allows different applications to communicate using HTTP.
 
@@ -579,11 +518,9 @@ Spring Boot API
 Database
 ```
 
-# 12. Spring Boot API — Online Shopping Analogy
+## 12. Spring Boot API — Online Shopping Analogy
 
-### Mentor says: "Think about an online shopping system."
-
-When you click:
+"Think about an online shopping system." When you click:
 
 ```text
 Buy Product
@@ -645,7 +582,7 @@ Client
 
 The source uses this online-shopping analogy to explain how the API hides internal processing from the client. 
 
-# 13. Layers in a Spring Boot Application
+## 13. Layers in a Spring Boot Application
 
 Now we move from:
 
@@ -661,7 +598,7 @@ Real Application
 
 Suppose we build:
 
-# Insurance Management System
+### Insurance Management System
 
 We have:
 
@@ -700,9 +637,7 @@ Instead:
 ```
 
 
-# 14. Controller — "The Receptionist"
-
-### Mentor Story
+## 14. Controller — "The Receptionist"
 
 Imagine an insurance office. A customer enters: "I want to purchase a policy."The receptionist receives the request. The receptionist does not:
 
@@ -728,7 +663,7 @@ public class PolicyController {
 > **Controller receives the request.**
 
 
-# 15. Service — "The Business Expert"
+## 15. Service — "The Business Expert"
 
 Now the request goes to the Service. Suppose:
 
@@ -775,7 +710,7 @@ public class PolicyService {
 
 
 
-# 16. Repository — "The Database Specialist"
+## 16. Repository — "The Database Specialist"
 
 Now suppose the Service needs customer information. Traditional JDBC approach:
 
@@ -814,7 +749,7 @@ deleteById()
 The source explicitly uses this repository approach to demonstrate how common CRUD operations can be obtained without manually writing the JDBC plumbing. 
 
 
-# 17. Entity — "Java Representation of Data"
+## 17. Entity — "Java Representation of Data"
 
 Suppose our database has:
 
@@ -853,7 +788,7 @@ Java Entity
 The Entity represents persistent application data. The source introduces this same `Product` entity example before moving to repository operations. 
 
 
-# 18. Replace JDBC with Spring Data JPA
+## 18. Replace JDBC with Spring Data JPA
 
 ### Earlier:
 
@@ -911,7 +846,7 @@ Query Performance
 A framework makes you productive. It does not make database knowledge unnecessary.
 
 
-# 19. First CRUD API
+## 19. First CRUD API
 
 Now let's build a Product API.
 
@@ -955,7 +890,7 @@ DELETE /products/{id}
 
 The source demonstrates this same repository-backed CRUD pattern. 
 
-# 20. Complete Request Flow
+## 20. Complete Request Flow
 
 This is the picture I would draw on the classroom board:
 
@@ -1011,7 +946,7 @@ React / Angular
 The source summarizes the request path as client → Controller → Service → Repository → Database → JSON response. 
 
 
-# 21. Spring Boot vs JDBC
+## 21. Spring Boot vs JDBC
 
 Now ask students:
 
@@ -1052,11 +987,11 @@ Database
 The source makes this exact comparison: JDBC requires manual connection, SQL, and result-set handling, while Spring Data JPA allows developers to define repository interfaces. 
 
 
-# 🔹 22. Mentor's Simple Analogy
+## 🔹 22. Mentor's Simple Analogy
 
 ### JDBC
 
-> **"Writing every letter yourself with a pen."**
+> **"Writing every letter yourself with a pen."** 
 
 You control every small detail.
 
@@ -1218,8 +1153,7 @@ repository.save(product);
 
 This comparison is specifically recommended in the source as a hands-on learning exercise. 
 
-
-# 🔹 24. The Learning Journey
+##  24. The Learning Journey
 
 Now connect everything.
 
@@ -1310,7 +1244,7 @@ Architecture:
 Now we are no longer learning annotations. We are building a **business application**.
 
 
-# 26. Mentor's Questions
+## 26. Mentor's Questions
 
 Before ending the session, ask the students:
 
@@ -1396,7 +1330,7 @@ JSON Response
 React
 ```
 
-# 27. Mentor's Final Mantra
+## 27. Mentor's Final Mantra
 
 Write this on the classroom board:
 
