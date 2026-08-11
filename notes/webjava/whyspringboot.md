@@ -1,8 +1,8 @@
 
 
-# 🌸 Transflower Mentor Style: Evolution of Java Web Development
+# Evolution of Java Web Development
 
- **Let us explain  not just as a technology timeline, but as a story of **problems, learning, and engineering evolution**.
+**Let us explain  not just as a technology timeline, but as a story of **problems, learning, and engineering evolution**.
 
 
 ## 🌱 First, understand the real story
