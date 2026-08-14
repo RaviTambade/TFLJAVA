@@ -1,6 +1,6 @@
 
 
-## 🌱 From Learning Java in 1997 to Teaching Java in 2026
+# 🌱 From Learning Java in 1997 to Teaching Java in 2026
 
 Imagine a mentor standing in front of a classroom in 2026. He looks at his students and says:“You are learning Java today. I learned Java when I was around your age. But we are not learning the same Java.”
 The students look surprised. “Sir… Java is Java, isn't it?”
@@ -51,6 +51,7 @@ And the expectation became:  **“Take this requirement and build the feature.�
 
 Now look at the same classroom in 2026. I tell the students: “You still need Core Java.” They nod. Then I continue: “But Core Java is only your **foundation**.” Today, a Java developer may encounter:
 
+``
 **Java 17 / 21+**
 ↓
 **Spring Boot**
@@ -78,16 +79,12 @@ Now look at the same classroom in 2026. I tell the students: “You still need C
 **AI-assisted development**
 ↓
 **AI-integrated applications**
-
+``
 The student suddenly asks: “Sir… are you teaching us Java or the whole IT industry?”.The mentor laughs.“That's exactly the point.”
 
 # 🧠 The Java Language Didn't Become the Whole Job
 
-This is one of the most important lessons I would give a student.A modern Java developer cannot think: **Java = Job**
-
-Instead: **Java = One important instrument in the engineering toolbox.**
-
-Think about a carpenter. Knowing how to use a hammer doesn't make somebody a master carpenter. Similarly: Knowing Java syntax doesn't make somebody a software engineer. You need to understand:
+This is one of the most important lessons I would give a student.A modern Java developer cannot think: **Java = Job** Instead: **Java = One important instrument in the engineering toolbox.** Think about a carpenter. Knowing how to use a hammer doesn't make somebody a master carpenter. Similarly: Knowing Java syntax doesn't make somebody a software engineer. You need to understand:
 
 **Problem → Design → Architecture → Code → Data → Infrastructure → Security → Testing → Deployment → Monitoring → Business Outcome**
 
@@ -98,10 +95,9 @@ That is software engineering.
 
 ### Earlier Java Developer
 
-The mindset was often:  **“Implement this requirement.”** The developer received a specification.Then:
-
+The mindset was often:  **“Implement this requirement.”** 
+The developer received a specification.Then:
 **Understand → Code → Test → Deliver**
-
 That was the primary responsibility.
 
 ### Modern Java Developer
@@ -125,8 +121,6 @@ Now the developer asks:
 
 This is no longer merely **coding**. This is **engineering**.
 
- 
-
 # 🤖 And Then AI Arrived
 
 Now comes the most interesting part. I tell my students: “When I learned Java, I had to search books, documentation and examples. Today, you have something sitting beside you that can generate code in seconds.” The student smiles.  “Sir, then programming has become easy!” I stop. And ask: “Really?” The student becomes quiet. I write two questions on the board.
@@ -135,25 +129,21 @@ Now comes the most interesting part. I tell my students: “When I learned Java,
 
 That distinction is enormous.
 
- 
-
-# 🧩 AI Can Generate Code. Engineers Must Judge It.
+#### 🧩 AI Can Generate Code. Engineers Must Judge It.
  
 Suppose AI generates a beautiful Spring Boot service. It compiles. The tests pass. The student says: “Sir, done!”
 I ask: “What happens when 50,000 users call it simultaneously?” Silence.
 
 I ask:  
-“Why did you select this database?” Silence.
-“Why is this operation transactional?” Silence.
-“What happens if the external service times out?” Silence.
-“Is the generated authentication mechanism secure?” Silence.
-“What happens if the Kafka consumer processes the same message twice?” Silence.
+- “Why did you select this database?” Silence.
+- “Why is this operation transactional?” Silence.
+- “What happens if the external service times out?” Silence.
+- “Is the generated authentication mechanism secure?” Silence.
+- “What happens if the Kafka consumer processes the same message twice?” Silence.
 
 Then I tell them: **“AI generated the code.  But nobody generated the responsibility.”** That responsibility still belongs to the engineer.
 
-
-
-# 🌳 The Fundamentals Become MORE Important
+####🌳 The Fundamentals Become MORE Important
 
 This is where I would connect your **1997 → 2026 journey** to your mentoring philosophy. Some students think: “Because AI can write code, fundamentals are no longer important.” I would say exactly the opposite.
 
@@ -161,21 +151,19 @@ This is where I would connect your **1997 → 2026 journey** to your mentoring p
 
 Why? Because when code was difficult to produce, the programmer spent much of his energy **writing code**. Now AI can produce a large amount of code. Therefore the human has to spend more energy on:
 
-**Understanding**
-**Reasoning**
-**Design**
-**Verification**
-**Debugging**
-**Architecture**
-**Trade-offs**
-**Decision making**
-**Ownership**
+- **Understanding**
+- **Reasoning**
+- **Design**
+- **Verification**
+- **Debugging**
+- **Architecture**
+- **Trade-offs**
+- **Decision making**
+- **Ownership**
 
 So the valuable engineer of the AI era isn't necessarily the person who types the fastest. It is the person who **thinks the deepest**.
 
- 
-
-# 🌱 What Should a 2026 Java Student Learn?
+#### 🌱 What Should a 2026 Java Student Learn?
 
 I would draw a pyramid on the board.
 
