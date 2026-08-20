@@ -48,7 +48,7 @@ Nobody can modify the contents of that String object. They can only create anoth
 
 > **When data represents identity, paths, credentials, URLs, or configuration, stability matters.**
 
-# 2. String Pool — One Object, Many References
+## 2. String Pool — One Object, Many References
 
 Now comes one of Java's clever memory optimizations.
 
@@ -90,7 +90,7 @@ That would be a nightmare. Because Strings are immutable, Java can safely share 
 
  
 
-# 3. Thread Safety — Many Threads, No Modification
+## 3. Thread Safety — Many Threads, No Modification
 
 Suppose an application has 100 threads. All of them are using:
 
@@ -118,7 +118,7 @@ This doesn't mean every operation involving a String is automatically thread-saf
 
  
 
-# 4. HashMap Performance — Stable HashCode
+## 4. HashMap Performance — Stable HashCode
 
 Consider:
 
@@ -152,7 +152,7 @@ Now where should Java look for it? That's a serious problem. Because String valu
 
  
 
-# Now Look at This Example
+## Now Look at This Example
 
 ```java
 String s1 = "Hello";
@@ -190,7 +190,7 @@ The original `"Hello"` was not modified. That is the essence of immutability.
 
  
 
-# But Then Why Does `String` Look Like It Changes?
+## But Then Why Does `String` Look Like It Changes?
 
 Look at:
 
@@ -224,7 +224,7 @@ eligible for garbage collection.
 The String object did not. This distinction is extremely important for Java developers.
 
  
-# 🛠️ What If I Need Lots of String Changes?
+## 🛠️ What If I Need Lots of String Changes?
 
 Now the student asks the next intelligent question: "Sir, if String is immutable, what happens when I concatenate thousands of times?" For example:
 
@@ -261,7 +261,7 @@ StringBuffer
 ```
 
 
-# 🌱 The Bigger Engineering Lesson
+## The Bigger Engineering Lesson
 
 Java did not make `String` immutable simply because it was convenient. It is a **design decision** that gives several benefits at once:
 

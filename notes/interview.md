@@ -1,26 +1,24 @@
 # Mock Java Full Stack Interview
 
+This mock interview closely resembles a **45–60 minute Java Full Stack Developer interview** conducted by companies hiring freshers or interns, combining project discussion, technical concepts, coding knowledge, and behavioral questions.
+
+
 ## Interviewer: Ravi Tambade
 
 **Good morning, Sahil. Please introduce yourself.**
 
----
-
 ## Candidate: Sahil Kamble
 
-Good morning, Sir.
-
-My name is Sahil Kamble. I have been working as a Java Full Stack Developer Intern at Transflower since June 2025.
+Good morning, Sir. My name is Sahil Kamble. I have been working as a Java Full Stack Developer Intern at Transflower since June 2025. 
 
 During my internship, I have worked with Java, Spring Boot, REST APIs, MySQL, React, GitHub, and Maven. I have also worked on enterprise application development using layered architecture.
 
 The major project I have contributed to is **TFLComentor**, a mentor-driven skill evaluation platform. Through this project I learned backend development using Spring Boot, frontend development using React, database design, REST API development, team collaboration, and Git version control.
 
 I am looking for an opportunity where I can continue learning while contributing as a Java Full Stack Developer.
+ 
 
----
-
-# Project Discussion
+## Project Discussion
 
 ### Ravi
 
@@ -51,7 +49,7 @@ The application currently contains seven major modules.
 
 Each module has a separate responsibility.
 
----
+ 
 
 ### Ravi
 
@@ -68,7 +66,7 @@ I developed REST APIs, business logic, repository classes and database tables fo
 
 I also developed around 15 React components for filtering questions based on question type, status and IDs.
 
----
+ 
 
 ### Ravi
 
@@ -100,9 +98,8 @@ Tools
 * Maven
 * Postman
 
----
-
-# Architecture Discussion
+ 
+## Architecture Discussion
 
 ### Ravi
 
@@ -118,23 +115,16 @@ Inside every module we followed Layered Architecture.
 
 ```
 Controller
-
 ↓
-
 Service
-
 ↓
-
 Repository
-
 ↓
-
 Database
 ```
 
 Each layer has a specific responsibility which makes the application easy to maintain and test.
-
----
+ 
 
 ### Ravi
 
@@ -147,10 +137,9 @@ Microservices introduced deployment complexity, API communication, service disco
 Since our project was only around 20% complete, a Modular Monolith was easier to develop and maintain.
 
 Later we can extract modules into independent microservices.
+ 
 
----
-
-# Database
+## Database
 
 ### Ravi
 
@@ -172,8 +161,7 @@ I mainly worked on
 * MCQ Options
 
 tables.
-
----
+ 
 
 ### Ravi
 
@@ -185,21 +173,13 @@ Initially the Question Bank required joining many tables.
 
 ```
 Question
-
 ↓
-
 Concept
-
 ↓
-
 Runtime
-
 ↓
-
 Framework
-
 ↓
-
 Technology
 ```
 
@@ -209,9 +189,8 @@ To improve perfogit rmance, we denormalized some independent tables by storing r
 
 This reduced query complexity and improved API response time.
 
----
 
-# Spring Boot
+## Spring Boot
 
 ### Ravi
 
@@ -230,7 +209,6 @@ It simplifies enterprise application development by providing
 
 so developers don't need XML configuration.
 
----
 
 ### Ravi
 
@@ -251,9 +229,8 @@ I frequently used
 * @Id
 * @GeneratedValue
 
----
 
-# REST APIs
+## REST APIs
 
 ### Ravi
 
@@ -263,39 +240,24 @@ Explain the flow of a REST request.
 
 ```
 React UI
-
 ↓
-
 HTTP Request
-
 ↓
-
 Controller
-
 ↓
-
 Service
-
 ↓
-
 Repository
-
 ↓
-
 MySQL
-
 ↓
-
 JSON Response
-
 ↓
-
 React UI
 ```
 
----
 
-# React
+## React
 
 ### Ravi
 
@@ -316,9 +278,7 @@ Some examples are
 
 The components communicate with Spring Boot REST APIs using Fetch API.
 
----
-
-# Java
+## Java
 
 ### Ravi
 
@@ -327,24 +287,14 @@ Which OOP concepts did you implement?
 ### Sahil
 
 All four.
-
 Encapsulation
-
 Private fields with getters and setters.
-
 Abstraction
-
 Repository interfaces.
-
 Inheritance
-
 Common entity classes.
-
 Polymorphism
-
 Method overriding and interface implementation.
-
----
 
 ### Ravi
 
@@ -361,9 +311,9 @@ Modern Java uses
 
 for automatic resource management.
 
----
 
-# JDBC
+
+## JDBC
 
 ### Ravi
 
@@ -380,9 +330,8 @@ CallableStatement
 
 * Executes Stored Procedures inside the database.
 
----
 
-# Java Concurrency
+## Java Concurrency
 
 ### Ravi
 
@@ -400,9 +349,9 @@ ForkJoinPool
 
 which assigns tasks to worker threads without manually creating Thread objects.
 
----
+ 
 
-# Git
+## Git
 
 ### Ravi
 
@@ -414,37 +363,23 @@ Our workflow was
 
 ```
 Pull latest code
-
 ↓
-
 Create feature
-
 ↓
-
 Commit
-
 ↓
-
 Push
-
 ↓
-
 Create Pull Request
-
 ↓
-
 Code Review
-
 ↓
-
 Merge
 ```
 
 Git helped us collaborate and resolve conflicts efficiently.
 
----
-
-# CI/CD
+## CI/CD
 
 ### Ravi
 
@@ -453,16 +388,13 @@ What is CI/CD?
 ### Sahil
 
 CI means Continuous Integration.
-
 Whenever developers push code to GitHub, automated builds and tests are triggered.
-
 CD means Continuous Deployment or Delivery.
-
 Once all checks pass, the latest version is deployed automatically.
 
----
+ 
 
-# HR Round
+## HR Round
 
 ### Ravi
 
@@ -471,9 +403,7 @@ What was the biggest lesson you learned?
 ### Sahil
 
 Working in a team.
-
 I learned
-
 * Code reviews
 * Git collaboration
 * Requirement discussions
@@ -482,7 +412,7 @@ I learned
 
 I also understood that software engineering is much more than writing code.
 
----
+ 
 
 ### Ravi
 
@@ -494,7 +424,7 @@ I have practical experience building enterprise applications using Java, Spring 
 
 I enjoy learning new technologies, solving problems and working collaboratively. I believe I can contribute effectively while continuously improving my skills.
 
----
+ 
 
 ### Ravi
 
@@ -508,8 +438,6 @@ Yes, Sir.
 2. What kind of training is provided to freshers?
 3. What projects would I initially work on?
 4. What growth opportunities are available for Java Full Stack Developers?
-
----
 
 ## Interviewer's Assessment
 
@@ -532,5 +460,3 @@ Yes, Sir.
 * Improve knowledge of Design Patterns
 * Strengthen Data Structures and Algorithms (DSA)
 * Practice system design for scalable applications
-
-This mock interview closely resembles a **45–60 minute Java Full Stack Developer interview** conducted by companies hiring freshers or interns, combining project discussion, technical concepts, coding knowledge, and behavioral questions.

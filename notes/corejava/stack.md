@@ -6,17 +6,7 @@ let’s do this **Transflower mentor-style** — thinking first, code later (or 
 
 ## 1️⃣ Mentor Mindset First (Before Any Code)
 
-When students hear **Stack**, they jump to:
-
-> “push, pop, top… memorise it”
-
-❌ Wrong approach.
-
-Instead, ask:
-
-> **Where in real life do things happen in reverse order?**
-
-Healthcare is full of such situations.
+When students hear **Stack**, they jump to:  “push, pop, top… memorise it” ❌ Wrong approach. Instead, ask:  **Where in real life do things happen in reverse order?** Healthcare is full of such situations.
 
 
 ## 2️⃣ Real-World Healthcare Scenario (Intuitive)
@@ -37,7 +27,7 @@ What happens?
 👉 Handles **latest emergency first**
 👉 After resolving it, **resumes previous task**
 
-This is **NOT FIFO**
+This is **NOT FIFO** 
 This is **LIFO**
 
 
@@ -85,8 +75,7 @@ Review Blood Report
 | Doctor resumes previous task | Stack remembers order        |
 | Operation steps              | Reverse order cleanup        |
 | Undo medical form edits      | Last change undone first     |
-
----
+ 
 
 ## 6️⃣ Mentor Explanation (Interview / Teaching Style)
 
@@ -142,11 +131,7 @@ After this explanation, a student should be able to:
 * Decide **when NOT to use Stack**
 * Speak confidently in interviews
 
-
-
-Perfect, let’s keep this **clean, mentor-style, Java-centric**, and **healthcare-named** 🩺
-We’ll implement **Stack (LIFO)** using **Java**, with **meaningful domain names**, not generic `push/pop`.
-
+ 
 # 🏥 Java Stack Implementation
 
 ## Concept: **LIFO (Last In, First Out)**
@@ -175,7 +160,7 @@ We’ll think in terms of:
 * `addDoctorTask()`
 * `handleLatestTask()`
 
----
+ 
 
 ## 2️⃣ Healthcare Stack Model
 
@@ -287,23 +272,21 @@ No pending tasks for doctor.
 > “In healthcare applications, Stack is ideal for managing doctor tasks where interruptions occur. Emergency cases override routine tasks, and once resolved, the doctor resumes work in reverse order of interruption.”
 
 This explanation shows:
-✅ Domain understanding
-✅ Data structure clarity
-✅ Real-world reasoning
+- ✅ Domain understanding
+- ✅ Data structure clarity
+- ✅ Real-world reasoning
 
 
 ## 7️⃣ When to Use Stack in Healthcare Systems
 
-✔ Emergency handling
-✔ Undo medical form edits
-✔ Operation step rollback
-✔ Nested clinical decisions
+- ✔ Emergency handling
+- ✔ Undo medical form edits
+- ✔ Operation step rollback
+- ✔ Nested clinical decisions
 
-❌ OPD patient registration
-❌ Appointment scheduling
+- ❌ OPD patient registration
+- ❌ Appointment scheduling
 (Those need **Queue – FIFO**)
-
-
 
 ## 8️⃣ One-Line Transflower Summary ⭐
 
