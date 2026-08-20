@@ -178,6 +178,7 @@ Learn classes, objects, polymorphism, interfaces, and OOP design.
 
 - [OOP Basics](./oops.md)
 - [OOP Advanced](./oops2.md)
+- [String Class](./strings.md)
 - [Containment & Inheritance](./containmtinheritance.md)
 - [Method Overriding](./overriding.md)
 - [Interfaces](./interfaces.md)
